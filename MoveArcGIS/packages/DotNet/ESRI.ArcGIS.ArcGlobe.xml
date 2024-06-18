@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>ESRI.ArcGIS.ArcGlobe</name>
+  </assembly>
+  <members>
+    <member name="T:ESRI.ArcGIS.ArcGlobe.IGlobeDeployment">
+      <summary>Provides access to the Globe deployment.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGlobeDeployment.AddLayer(ESRI.ArcGIS.Carto.ILayer)">
+      <summary>Adds a layer to be deployed.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGlobeDeployment.DefaultCacheLocation">
+      <summary>The default location for setting/copying the caches.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGlobeDeployment.Deploy">
+      <summary>Perform the deployment operations.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGlobeDeployment.Document">
+      <summary>The deployed document.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGlobeDeployment.GetCacheOp(ESRI.ArcGIS.Carto.ILayer,ESRI.ArcGIS.ArcGlobe.esriGlobeDeployCacheOp@)">
+      <summary>The operation to be performed with the cache of a layer.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGlobeDeployment.GetCacheOpByIndex(System.Int32,ESRI.ArcGIS.ArcGlobe.esriGlobeDeployCacheOp@)">
+      <summary>The operation to be performed with the cache of a layer by index.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGlobeDeployment.GetCachePath(ESRI.ArcGIS.Carto.ILayer,System.String@,System.String@)">
+      <summary>The deployment cache for a layer.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGlobeDeployment.GetCachePathByIndex(System.Int32,System.String@,System.String@)">
+      <summary>The deployment cache path of a layer by index.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGlobeDeployment.GetLayer(System.Int32,ESRI.ArcGIS.Carto.ILayer@)">
+      <summary>Gets a layer by index.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGlobeDeployment.GetTablePath(System.Int32,System.String@,System.String@)">
+      <summary>Get each of the absolute and local cache paths accumulated.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGlobeDeployment.LayerCount">
+      <summary>The number of layers to be deployed.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGlobeDeployment.LocalPath(System.String,System.String@)">
+      <summary>The local path corresponding to the given absolute path.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGlobeDeployment.PathTableCount">
+      <summary>The number of different cache paths accumulated.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGlobeDeployment.PutCacheOp(ESRI.ArcGIS.Carto.ILayer,ESRI.ArcGIS.ArcGlobe.esriGlobeDeployCacheOp)">
+      <summary>The operation to be performed with the cache.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGlobeDeployment.PutCachePath(ESRI.ArcGIS.Carto.ILayer,System.String,System.String)">
+      <summary>The deployment cache for a layer.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGlobeDeployment.PutTablePath(System.String,System.String)">
+      <summary>Set an entry in the path table.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGlobeDeployment.RemoveAllLayers">
+      <summary>Removes all layers from the deployment list.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGlobeDeployment.RemoveLayer(ESRI.ArcGIS.Carto.ILayer)">
+      <summary>Removes a layer from the deployment list.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGlobeDeployment.SaveDocumentName">
+      <summary>The full name of the new document to be saved.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGlobeDeployment.SaveNewDocument">
+      <summary>Indicates whether a new document will be saved as opposed to modifying the current one.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGlobeDeployment.Summary(System.Boolean)">
+      <summary>The text summary describing the deployment configuration.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGlobeDeployment.UseLocalPaths">
+      <summary>Indicates whether to use internal local paths for data caches, given by the path table.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.ArcGlobe.IGlobeDeployWizard">
+      <summary>Provides access to the Globe deployment wizard.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGlobeDeployWizard.Run(System.Int32,ESRI.ArcGIS.ArcGlobe.IGMxDocument,ESRI.ArcGIS.ArcGlobe.IGlobeDeployment)">
+      <summary>Run the wizard, with an optional input deployment.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.ArcGlobe.IGlobeLayerProcessingDialog">
+      <summary>Provides access to the Globe Layer Processing Dialog.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGlobeLayerProcessingDialog.DoModal(ESRI.ArcGIS.ArcGlobe.IGMxDocument,System.Boolean@)">
+      <summary>Do Modal.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGlobeLayerProcessingDialog.ExpandGroupLayers">
+      <summary>Indicates if Group Layers are expanded.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.ArcGlobe.IGMxApplication">
+      <summary>Provides access to members that control the ArcGlobe Application object.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxApplication.BuildNum">
+      <summary>The build number.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxApplication.ClearGesture">
+      <summary>Clears gesture.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxApplication.CopyToClipboard">
+      <summary>Copies the current scene to the Clipboard.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxApplication.CreateSubView">
+      <summary>Makes a new viewer.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxApplication.DefaultHighBackgroundColor">
+      <summary>The Default High Background Color for New Documents.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxApplication.DefaultLowBackgroundColor">
+      <summary>The Default Low Background Color for New Documents.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxApplication.Export2d">
+      <summary>Exports the Current Document to a 2d file format.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxApplication.Export3d">
+      <summary>Exports the Current Document to a 3d file format.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxApplication.GetDefaultBackgroundTransitionDistances(System.Single@,System.Single@)">
+      <summary>The Default Background Transition Distances for New Documents.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxApplication.Page">
+      <summary>The current page settings.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxApplication.Paper">
+      <summary>The current paper settings.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxApplication.Printer">
+      <summary>The current printer settings.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxApplication.RestoreGesture">
+      <summary>Restores gesture.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxApplication.SelectionEnvironment">
+      <summary>The selection environment.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxApplication.SetDefaultBackgroundTransitionDistances(System.Single,System.Single)">
+      <summary>The Default Background Transition Distances for New Documents.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxApplication.SetDefaultContentsViews">
+      <summary>Set current TOC configuration as defaults in Normal.3dt.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxApplication.ShowContextMenu(System.Int32,System.Int32)">
+      <summary>Displays a context menu for the current selection.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxApplication.ShowTOC(System.Boolean)">
+      <summary>Displays the table content.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxApplication.SuspendGesture">
+      <summary>Suspends gesture.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxApplication.TOCVisible">
+      <summary>Indicates if the TOC is visible.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.ArcGlobe.IGMxApplicationEvents">
+      <summary>Provides access to events that the ArcGlobe application can fire.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxApplicationEvents.OnClipboardChanged">
+      <summary>Called when the clipboard contents have changed.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.ArcGlobe.IGMxDefaultLayers">
+      <summary>Provides access to Default Layers for New Documents.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxDefaultLayers.NewDocumentDefaultLayersSetting">
+      <summary>The selected layer in the layer control.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxDefaultLayers.UseTOCAsCustomDefaultLayersForNewDocuments">
+      <summary>Use Current Document TOC as Custom Default Layers for New Documents.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxDefaultLayers.UseTOCAsSystemDefaultLayersForNewDocuments">
+      <summary>Use Current Document TOC as System Default Layers for New Documents.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.ArcGlobe.IGMxDocument">
+      <summary>Provides access to members that control the ArcGlobe Document object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxDocument.AddLayer(ESRI.ArcGIS.Carto.ILayer)">
+      <summary>Adds a layer to the current focus map.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxDocument.ContentsView(System.Int32)">
+      <summary>The contents view at the specified index.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxDocument.ContentsViewCount">
+      <summary>The number of contents views in the document.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxDocument.ContextItem">
+      <summary>The item that is selected or was last right-clicked.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxDocument.CurrentContentsView">
+      <summary>The current contents view of the document.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxDocument.DefaultColor(ESRI.ArcGIS.ArcMapUI.esriMxDefaultColorTypes)">
+      <summary>The default color for the given type.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxDocument.DelayUpdateContents">
+      <summary>Indicates whether to ignore document update notifications.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxDocument.RelativePaths">
+      <summary>Indicates if path names are stored relative to the document.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxDocument.RemoveAllLayers">
+      <summary>Removes all layers.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxDocument.SavePreview">
+      <summary>Indicates if a preview image is saved in the document.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxDocument.Scene">
+      <summary>The scene.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxDocument.SearchTolerancePixels">
+      <summary>The global search tolerance in pixels for selection.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxDocument.SelectedItem">
+      <summary>The selected item in the layer control.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxDocument.SelectedLayer">
+      <summary>The selected layer in the layer control.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxDocument.UpdateContents">
+      <summary>Notifies the document that the contents have been updated.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.ArcGlobe.IGMxDocumentEvents">
+      <summary>Provides access to the events fired by ArcGlobe.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxDocumentEvents.BeforeCloseDocument">
+      <summary>Fired before a document is closed. Return True to abort the close process.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxDocumentEvents.CloseDocument">
+      <summary>Fired when a document is closed.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxDocumentEvents.NewDocument">
+      <summary>Fired when a new document is created.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxDocumentEvents.OnContextMenu(System.Int32,System.Int32)">
+      <summary>Fired when a context menu should be displayed at the given xy location. Returns true if handled.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxDocumentEvents.OpenDocument">
+      <summary>Fired when a document is opened.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.ArcGlobe.IGMxDocumentEventsDisp">
+      <summary>Provides access to events fired by ArcGlobe.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.ArcGlobe.IGMxDocumentEventsDisp_Event">
+      <summary>Provides access to events fired by ArcGlobe.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxDocumentEventsDisp.BeforeCloseDocument">
+      <summary>Fired before a document is closed. Return True to abort the close process.</summary>
+    </member>
+    <member name="E:ESRI.ArcGIS.ArcGlobe.IGMxDocumentEventsDisp_Event.BeforeCloseDocument">
+      <summary>Fired before a document is closed. Return True to abort the close process.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxDocumentEventsDisp.CloseDocument">
+      <summary>Fired when a document is closed. Return true if handled.</summary>
+    </member>
+    <member name="E:ESRI.ArcGIS.ArcGlobe.IGMxDocumentEventsDisp_Event.CloseDocument">
+      <summary>Fired when a document is closed. Return true if handled.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxDocumentEventsDisp.NewDocument">
+      <summary>Fired when a new document is created. Return true if handled.</summary>
+    </member>
+    <member name="E:ESRI.ArcGIS.ArcGlobe.IGMxDocumentEventsDisp_Event.NewDocument">
+      <summary>Fired when a new document is created. Return true if handled.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxDocumentEventsDisp.OnContextMenu(System.Int32,System.Int32)">
+      <summary>Fired when a context menu should be displayed at the given xy location. Return true if handled.</summary>
+    </member>
+    <member name="E:ESRI.ArcGIS.ArcGlobe.IGMxDocumentEventsDisp_Event.OnContextMenu">
+      <summary>Fired when a context menu should be displayed at the given xy location. Return true if handled.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxDocumentEventsDisp.OpenDocument">
+      <summary>Fired when a document is opened. Return true if handled.</summary>
+    </member>
+    <member name="E:ESRI.ArcGIS.ArcGlobe.IGMxDocumentEventsDisp_Event.OpenDocument">
+      <summary>Fired when a document is opened. Return true if handled.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IGMxDocumentEventsDisp.VBAReset">
+      <summary>Fired when VBA is reset. Return true if handled.</summary>
+    </member>
+    <member name="E:ESRI.ArcGIS.ArcGlobe.IGMxDocumentEventsDisp_Event.VBAReset">
+      <summary>Fired when VBA is reset. Return true if handled.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.ArcGlobe.IGMxDocumentInfo">
+      <summary>Provides access to members that control the ArcGlobe document information.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxDocumentInfo.Author">
+      <summary>The author of the document.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxDocumentInfo.Category">
+      <summary>The category of the document.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxDocumentInfo.Comments">
+      <summary>The comments for the document.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxDocumentInfo.DocumentTitle">
+      <summary>The title of the document.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxDocumentInfo.HyperlinkBase">
+      <summary>The hyperlink base of the document.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxDocumentInfo.Keywords">
+      <summary>The keywords for the document.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.ArcGlobe.IGMxDocumentInfo.Subject">
+      <summary>The subject of the document.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.ArcGlobe.IProtectNameArcGlobe">
+      <summary>Provides access to dummy methods protecting name correctness.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IProtectNameArcGlobe.ProtectOLE_COLOR(System.Int32)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.ArcGlobe.IProtectNameArcGlobe.ProtectOLE_HANDLE(System.Int32)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.ArcGlobe.Application">
+      <summary>Esri ArcGlobe Application.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.ArcGlobe.ApplicationClass">
+      <summary>Esri ArcGlobe Application.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.ArcGlobe.esriDefaultLayersMode">
+      <summary>New Document Default Layers.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.ArcGlobe.esriDefaultLayersMode.esriDefaultLayersSystem">
+      <summary>System Defined.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.ArcGlobe.esriDefaultLayersMode.esriDefaultLayersCustom">
+      <summary>Custom Defined.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.ArcGlobe.esriDefaultLayersMode.esriDefaultLayersNone">
+      <summary>None Defined.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.ArcGlobe.esriDefaultLayersMode.esriDefaultLayersOnline">
+      <summary>Online Defined.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.ArcGlobe.esriGlobeDeployCacheOp">
+      <summary>Operations on the globe cache.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.ArcGlobe.esriGlobeDeployCacheOp.esriGlobeDeploySetLocation">
+      <summary>Set the new cache location, without copying.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.ArcGlobe.esriGlobeDeployCacheOp.esriGlobeDeployCopyCache">
+      <summary>Copy the cache to a new location.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.ArcGlobe.esriGMxCustomizationEvent">
+      <summary>GMx customization event types.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.ArcGlobe.esriGMxCustomizationEvent.esriCEShowGlobeProperties">
+      <summary>Show Globe Properties.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.ArcGlobe.esriGMxCustomizationEvent.esriCEShowGMxAddDataDialog">
+      <summary>Show Add Data Dialog.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.ArcGlobe.esriGMxCustomizationEvent.esriCEShowGMxLayersProperties">
+      <summary>Show Layer Properties.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.ArcGlobe.esriGMxDlgIDs">
+      <summary>The ArcGlobe dialog identifiers.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.ArcGlobe.esriGMxDlgIDs.esriGMxDlgCustomize">
+      <summary>Customize Dialog.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.ArcGlobe.esriGMxDlgIDs.esriGMxDlgOptions">
+      <summary>Options Dialog.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.ArcGlobe.esriGMxDlgIDs.esriGMxDlgMacros">
+      <summary>Macros Dialog.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.ArcGlobe.esriGMxDlgIDs.esriGMxDlgVBA">
+      <summary>VBA Dialog.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.ArcGlobe.esriGMxDlgIDs.esriGMxDlgPageSetup">
+      <summary>Page Setup Dialog.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.ArcGlobe.esriGMxDlgIDs.esriGMxDlgPrintSetup">
+      <summary>Print Setup Dialog.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.ArcGlobe.esriGMxDlgIDs.esriGMxDlgProperties">
+      <summary>Properties Dialog.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.ArcGlobe.esriGMxDlgIDs.esriGMxDlgUnlockCustomization">
+      <summary>Unlock Customization Dialog.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.ArcGlobe.esriGMxDlgIDs.esriGMxDlgLockCustomization">
+      <summary>Lock Customization Dialog.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.ArcGlobe.esriGMxDlgIDs.esriGMxDlgContents">
+      <summary>Contents Dialog.</summary>
+    </member>
+  </members>
+</doc>

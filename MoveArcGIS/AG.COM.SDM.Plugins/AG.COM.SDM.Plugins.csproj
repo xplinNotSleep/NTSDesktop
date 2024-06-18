@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{023A4FFE-9E97-4E5D-A6A3-798D60BB26F4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AG.COM.SDM.Plugins</RootNamespace>
+    <AssemblyName>AG.COM.SDM.Plugins</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Debug\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '全部生成|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\全部生成\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '全部生成|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Debug\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AG.COM.SDM.Config, Version=10.8.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Bin\AG.COM.SDM.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="AG.COM.SDM.Framework, Version=10.8.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Bin\AG.COM.SDM.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="AG.COM.SDM.Model, Version=10.8.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Bin\AG.COM.SDM.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="AG.COM.SDM.ORM, Version=10.8.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Bin\AG.COM.SDM.ORM.dll</HintPath>
+    </Reference>
+    <Reference Include="AG.COM.SDM.SystemUI, Version=10.8.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Bin\AG.COM.SDM.SystemUI.dll</HintPath>
+    </Reference>
+    <Reference Include="AG.COM.SDM.Utility, Version=10.8.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Bin\AG.COM.SDM.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dll\DevExpress.XtraBars.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.9.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dll\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\CmdTheme2013Gray.cs" />
+    <Compile Include="Common\CmdTheme2010Silver.cs" />
+    <Compile Include="Common\CmdTheme2010Black.cs" />
+    <Compile Include="Common\CmdTheme2010Blue.cs" />
+    <Compile Include="Common\CmdTheme2013.cs" />
+    <Compile Include="Common\CmdThemeVS2013Dark.cs" />
+    <Compile Include="Common\Exit.cs" />
+    <Compile Include="Common\HelpCommand.cs" />
+    <Compile Include="Common\MeasureResultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\MeasureResultForm.designer.cs">
+      <DependentUpon>MeasureResultForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ReLogin.cs" />
+    <Compile Include="Config\DeptLayerManageCommand.cs" />
+    <Compile Include="Config\DeptManageCommand.cs" />
+    <Compile Include="Config\DeptProManageCommand.cs" />
+    <Compile Include="Config\LoginUserCommand.cs" />
+    <Compile Include="Config\OptionsCommand.cs" />
+    <Compile Include="Config\PositionManageCommand.cs" />
+    <Compile Include="Config\RoleManageCommand.cs" />
+    <Compile Include="Config\UserManageCommand.cs" />
+    <Compile Include="Context\MainDefaultContextMenu.cs" />
+    <Compile Include="Context\TocDefaultContextMenu.cs" />
+    <Compile Include="Demo\CmdCommand.cs" />
+    <Compile Include="Demo\ReadDirCommand.cs" />
+    <Compile Include="Demo\TimerTestCommand.cs" />
+    <Compile Include="Logger\MyLogger.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ConstVariant.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup\InitSystem.cs" />
+    <Compile Include="WindView\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindView\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindView\AboutBoxCommad.cs" />
+    <Compile Include="WindView\HelpView.cs" />
+    <Compile Include="WindView\TocView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Bitmap\ZoomIn.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Cursor\ZoomIn.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Cursor\MoveZoomIn.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Cursor\MoveZoomOut.cur" />
+    <EmbeddedResource Include="Resources\Cursor\ZoomOut.cur" />
+    <EmbeddedResource Include="Resources\Bitmap\ZoomOut.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Cursor\Pan.cur" />
+    <EmbeddedResource Include="Resources\Cursor\PanMove.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Bitmap\ReDoDraw.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\UnDoDraw.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Bitmap\FullExtent.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Bitmap\Pan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Bitmap\AddData.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Bitmap\OpenMXD.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Bitmap\Save.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Bitmap\NewDocument.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Bitmap\Identify.gif" />
+    <EmbeddedResource Include="Resources\Bitmap\SaveEdit.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\StartEdit.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\StopEdit.bmp" />
+    <EmbeddedResource Include="Resources\Cursor\Identify.cur" />
+    <EmbeddedResource Include="Resources\Cursor\IdentifyMouseDown.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Bitmap\RedoEditor.gif" />
+    <EmbeddedResource Include="Resources\Bitmap\UndoEditor.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Bitmap\EditDataBiaozhun.jpg" />
+    <EmbeddedResource Include="Resources\Bitmap\NewDataBiaozhun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Bitmap\ZoomToLayer.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\ybsx_new.png" />
+    <None Include="Resources\ybsx.png" />
+    <None Include="Resources\qcgz.png" />
+    <None Include="Resources\dbsx.png" />
+    <None Include="Resources\workflow16.png" />
+    <None Include="Resources\workflow32.png" />
+    <None Include="Resources\yin32.png" />
+    <None Include="Resources\yin16.png" />
+    <None Include="Resources\GenericOpen32.png" />
+    <None Include="Resources\GenericOpen16.png" />
+    <None Include="Resources\lv32.png" />
+    <None Include="Resources\lv16.png" />
+    <None Include="Resources\lan32.png" />
+    <None Include="Resources\lan16.png" />
+    <None Include="Resources\hei32.png" />
+    <None Include="Resources\hei16.png" />
+    <None Include="Resources\GC4_32.png" />
+    <None Include="Resources\GC4.png" />
+    <None Include="Resources\GC2_32.png" />
+    <None Include="Resources\GC2-.png" />
+    <None Include="Resources\GC1+_32.png" />
+    <None Include="Resources\GC1+.png" />
+    <None Include="Resources\Pan32.ico" />
+    <None Include="Resources\Pan.ico" />
+    <None Include="Resources\OpenMXD32.ico" />
+    <None Include="Resources\OpenMXD.ico" />
+    <EmbeddedResource Include="Common\MeasureResultForm.resx">
+      <DependentUpon>MeasureResultForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Bitmap\CombinationQuery.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\CustomQuery.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\Distance.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\Area.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\Clear.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\BufferEX.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\FixedZoomIn.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\FixedZoomOut.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\AttributeTableEdit.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\Circle.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\Copy_Paste.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\AddData.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\delete.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\NewDocument.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\Distance32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\NewDocument32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\Edit.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\FeatureCut.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\OpenMXD.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\Save.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\UnDoDraw.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\ReDoDraw.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\OpenMXD32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\Clear32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\Save32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\UnDoDraw32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\ReDoDraw32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\GroupLayer.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\Identify.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\Identify32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\Intersect.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\Layer.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\LayerSymbolManger.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\MapAttribute.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\ZoomToLayer.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\Pan32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\FullExtent32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\ZoomIn32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\ZoomOut32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\ZoomToLayer32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\Line2close.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\Distance.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\Area.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\Area32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\MoveTool.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\Open.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\SimpleQuery.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\MeasureArea.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\MeasureLength.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\Quickinfo.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\QueryPolygon.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\QueryPolyline.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\Pan.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\Redo.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\Clear.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\SelectFeatures.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\QueryPolygon.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\QueryPolyline.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\ClearSelection.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\SelectFeatures32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\QueryPolygon32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\QueryPolyline32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\ClearSelection32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\Sketch.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\Split.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\StyleManage.BMP" />
+    <EmbeddedResource Include="Resources\Bitmap\Undo.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\Union.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\FullExtent.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\ZoomIn.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\ZoomOut.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\AddData32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\CustomQuery.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\CustomQuery32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\SimpleQuery32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\SimpleQuery.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\B0_32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\B0.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\A3.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\A3_32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\C01.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\C01_32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\C06.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\C06_32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\C07.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\C07_32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\C08.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\C08_32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\C09.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\C09_32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\C20+.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\C20_32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\D1.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\D1_32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\D2+.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\D2_32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\D3+.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\D3_32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\E8+.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\E8+_32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\GC1+.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\GC1+_32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\GC2-.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\GC2_32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\H1.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\H1_32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\CatalogTreeWindowShow16.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\CatalogTreeWindowShow32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\hei16.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\hei32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\lv16.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\lv32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\lan16.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\lan32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\yin16.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\yin32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\helpBook16.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\helpBook32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\about16.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\about32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\eagleView16.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\eagleView32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\helpView16.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\helpView32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\Close16.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\Close32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\GenericRefresh16.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\GenericRefresh32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\CADIntersectQuery.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\CADIntersectQuery32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\ReLogin.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\ReLogin_32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\F8.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\F8_32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\VersionManager16.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\VersionManager32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\B0232.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\B0232_1.ico" />
+    <None Include="Resources\addField_16px.png" />
+    <None Include="Resources\addField_32px.png" />
+    <Content Include="Resources\Bitmap\addgroup.bmp" />
+    <Content Include="Resources\Bitmap\addroot.bmp" />
+    <Content Include="Resources\Bitmap\adduser.bmp" />
+    <Content Include="Resources\Bitmap\delete.gif" />
+    <Content Include="Resources\Bitmap\delgroup.bmp" />
+    <Content Include="Resources\Bitmap\deluser.bmp" />
+    <Content Include="Resources\Bitmap\edit.ico" />
+    <Content Include="Resources\Bitmap\editgroup.bmp" />
+    <Content Include="Resources\Bitmap\edituser.bmp" />
+    <EmbeddedResource Include="Resources\Bitmap\G1.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\G1_32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\G2.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\G2_32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\G3+.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\G3+_32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\G4.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\G4_32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\G5.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\G5_32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\G6.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\G6_32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\G7.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\G7+_32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\G8+.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\G8+_32.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\G9++.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\G9++_32.ico" />
+    <Content Include="Resources\Bitmap\group.ico" />
+    <Content Include="Resources\Bitmap\info.gif" />
+    <Content Include="Resources\Bitmap\unpacker.ico" />
+    <Content Include="Resources\Bitmap\UpdateFormIcon.ico" />
+    <EmbeddedResource Include="Resources\Bitmap\UpdatePhoto.jpg" />
+    <Content Include="Resources\Bitmap\user.ico" />
+    <Content Include="Resources\Cursor\Edit.cur" />
+    <Content Include="Resources\Cursor\EditMove.cur" />
+    <Content Include="Resources\Cursor\Sketch.cur" />
+    <Content Include="Resources\Cursor\VertexEdit.cur" />
+    <EmbeddedResource Include="Resources\Bitmap\ZoomToSelectedFeatures.bmp" />
+    <EmbeddedResource Include="Resources\Cursor\BufferEX.cur" />
+    <EmbeddedResource Include="Resources\Cursor\Area.cur">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Cursor\Distance.cur" />
+    <EmbeddedResource Include="Resources\Cursor\Draw.cur" />
+    <EmbeddedResource Include="WindView\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AG.COM.SDM.CommonFun\AG.COM.SDM.CommonFun.csproj">
+      <Project>{81da05dc-679d-4b0e-9dd7-6924f424665c}</Project>
+      <Name>AG.COM.SDM.CommonFun</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

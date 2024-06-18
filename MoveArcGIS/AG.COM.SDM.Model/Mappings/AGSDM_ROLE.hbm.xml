@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+	<class name="AG.COM.SDM.Model.AGSDM_ROLE,AG.COM.SDM.Model" table="AM_ROLE">
+
+		<id name="ROLE_ID" column="ROLE_ID" type="Decimal" unsaved-value="0">
+			<generator class="sequence">
+				<param name="sequence">AGSDM_SEQ_ROLE</param>
+			</generator>
+		</id>
+		<property column="ROLE_CODE" type="String" name="ROLE_CODE" length="20" />
+		<property column="ROLE_NAME" type="String" name="ROLE_NAME" length="20" />
+		<property column="ISVALID" type="String" name="ISVALID" length="1" />
+		<property column="ISAUTHORIZATION" type="String" name="ISAUTHORIZATION" length="1" />
+		<property column="PARENT_ROLE_ID" type="Decimal" name="PARENT_ROLE_ID" />
+		<property column="DESCRIPTION" type="String" name="DESCRIPTION" length="200" />
+    <property column="VISIBLEEXTENT" type="String" name="VISIBLEEXTENT" />
+		
+	</class>
+</hibernate-mapping>

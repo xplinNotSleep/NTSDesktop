@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  default-lazy="false">
+	<class name="AG.COM.SDM.Model.AGSDM_PROJECT_SERVICE,AG.COM.SDM.Model" table="AM_PROJECT_SERVICE">
+
+		<id name="ID" column="ID" type="Decimal" unsaved-value="0">
+      <generator class="sequence">
+        <param name="sequence">AGSDM_SEQ_PROJECT_SERVICE</param>
+      </generator>
+		</id>
+		<property column="PROJECT_ID" type="Decimal" name="PROJECT_ID" />
+		<property column="SERVICE_ID" type="Decimal" name="SERVICE_ID" />
+
+		
+	</class>
+</hibernate-mapping>

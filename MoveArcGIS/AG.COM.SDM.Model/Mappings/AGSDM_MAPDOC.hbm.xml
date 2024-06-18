@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+  <class name="AG.COM.SDM.Model.AGSDM_MAPDOC,AG.COM.SDM.Model" table="AM_MAPDOC">
+
+<id name="ID" column="ID" type="Decimal" unsaved-value="0">
+<generator class="sequence">
+<param name="sequence">AGSDM_SEQ_MAPDOC</param>
+</generator>
+</id>
+<property column="NAME" type="String" name="NAME"  />
+<property column="MXDFILE" type="String" name="MXDFILE"  />
+<property column="DESCRIPTION" type="String" name="DESCRIPTION"  />
+<property column="UPDATETIME" type="DateTime" name="UPDATETIME"  />
+<property column="CREATETIME" type="DateTime" name="CREATETIME"  />
+
+
+  </class>
+</hibernate-mapping>
+

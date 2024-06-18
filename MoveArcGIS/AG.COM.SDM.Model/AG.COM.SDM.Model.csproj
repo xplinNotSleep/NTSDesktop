@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F017DDA1-BF88-4282-9671-8BAB2FD38B2D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AG.COM.SDM.Model</RootNamespace>
+    <AssemblyName>AG.COM.SDM.Model</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>1591,1587,1572,1573,1571</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Debug\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>1591,1587,1572,1573,1571</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '全部生成|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\全部生成\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <NoWarn>1591,1587,1572,1573,1571</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '全部生成|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Debug\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <NoWarn>1591,1587,1572,1573,1571</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AG.COM.SDM.ORM, Version=10.8.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Bin\AG.COM.SDM.ORM.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\AGSDM_ACTIVITYDEF.cs" />
+    <Compile Include="Entities\AGSDM_ACTIVITYINST.cs" />
+    <Compile Include="Entities\AGSDM_ACTUSERDEF.cs" />
+    <Compile Include="Entities\AGSDM_DATASET.cs" />
+    <Compile Include="Entities\AGSDM_DATASOURCE.cs" />
+    <Compile Include="Entities\AGSDM_DATA_SERVICE.cs" />
+    <Compile Include="Entities\AGSDM_DIR_TYPE.cs" />
+    <Compile Include="Entities\AGSDM_FEATURECHANGES_RECORD.cs" />
+    <Compile Include="Entities\AGSDM_FILE.cs" />
+    <Compile Include="Entities\AGSDM_LAYER.cs" />
+    <Compile Include="Entities\AGSDM_LAYER_STRUCTURE.cs" />
+    <Compile Include="Entities\AGSDM_LAYER_FIELD.cs" />
+    <Compile Include="Entities\AGSDM_LOGGER.cs" />
+    <Compile Include="Entities\AGSDM_MAPDOC.cs" />
+    <Compile Include="Entities\AGSDM_MAPDOCMXD.cs" />
+    <Compile Include="Entities\AGSDM_MENU.cs" />
+    <Compile Include="Entities\AGSDM_METADATA.cs" />
+    <Compile Include="Entities\AGSDM_ORG.cs" />
+    <Compile Include="Entities\AGSDM_PROCESSDEF.cs" />
+    <Compile Include="Entities\AGSDM_PROCESSINST.cs" />
+    <Compile Include="Entities\AGSDM_PROJECT.cs" />
+    <Compile Include="Entities\AGSDM_PROJECT_LAYER.cs" />
+    <Compile Include="Entities\AGSDM_PROJECT_SERVICE.cs" />
+    <Compile Include="Entities\AGSDM_ROLE.cs" />
+    <Compile Include="Entities\AGSDM_ROLELAYERRLT.cs" />
+    <Compile Include="Entities\AGSDM_ROLE_MENU.cs" />
+    <Compile Include="Entities\AGSDM_STARTITEM.cs" />
+    <Compile Include="Entities\AGSDM_SYSTEM_USER.cs" />
+    <Compile Include="Entities\AGSDM_UIMENU.cs" />
+    <Compile Include="Entities\AGSDM_UI_DESIGN.cs" />
+    <Compile Include="Entities\AGSDM_UI_ROLEFUNRLT.cs" />
+    <Compile Include="Entities\AGSDM_USER_ORG.cs" />
+    <Compile Include="Entities\AGSDM_USER_ROLE.cs" />
+    <Compile Include="Entities\AGSDM_TEMPLATE.cs" />
+    <Compile Include="Entities\AGSDM_TEMPLATE_ATTR.cs" />
+    <Compile Include="Entities\AGSDM_ORG_LAYER.cs" />
+    <Compile Include="Entities\AGSDM_ORG_PROJECT.cs" />
+    <Compile Include="Entities\AGSDM_METADATA_IDENTIFYINFO.cs" />
+    <Compile Include="Entities\AGSDM_METADATA_QUALITYINFO.cs" />
+    <Compile Include="Entities\AGSDM_METADATA_SPATIALINFO.cs" />
+    <Compile Include="Entities\AGSDM_POSITION.cs" />
+    <Compile Include="Entities\AGSDM_USERPOSITIONRLT.cs" />
+    <Compile Include="Entities\AGSDM_SYSTEMCONFIG.cs" />
+    <Compile Include="Entities\AGSDM_USUALOPINION.cs" />
+    <Compile Include="Entities\AGSDM_WFOPINION.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\AGSDM_PROJECT.hbm.xml">
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\AGSDM_DATASET.hbm.xml">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\AGSDM_DATASOURCE.hbm.xml">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\AGSDM_LAYER.hbm.xml">
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\AGSDM_LAYER_FIELD.hbm.xml">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\AGSDM_MENU.hbm.xml">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\AGSDM_ORG.hbm.xml">
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\AGSDM_ROLE.hbm.xml">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\AGSDM_ROLE_MENU.hbm.xml">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\AGSDM_STARTITEM.hbm.xml">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\AGSDM_SYSTEM_USER.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\AGSDM_USER_ROLE.hbm.xml">
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\AGSDM_LOGGER.hbm.xml">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\AGSDM_USER_ORG.hbm.xml">
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\AGSDM_DIR_TYPE.hbm.xml">
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\AGSDM_FEATURECHANGES_RECORD.hbm.xml">
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\AGSDM_TEMPLATE.hbm.xml">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\AGSDM_TEMPLATE_ATTR.hbm.xml">
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\AGSDM_ORG_LAYER.hbm.xml">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\AGSDM_ORG_PROJECT.hbm.xml">
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\AGSDM_LAYER_STRUCTURE.hbm.xml">
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\AGSDM_METADATA.hbm.xml" />
+    <EmbeddedResource Include="Mappings\AGSDM_POSITION.hbm.xml" />
+    <EmbeddedResource Include="Mappings\AGSDM_USERPOSITIONRLT.hbm.xml" />
+    <EmbeddedResource Include="Mappings\AGSDM_METADATA_IDENTIFYINFO.hbm.xml" />
+    <EmbeddedResource Include="Mappings\AGSDM_METADATA_QUALITYINFO.hbm.xml" />
+    <EmbeddedResource Include="Mappings\AGSDM_METADATA_SPATIALINFO.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\AGSDM_DATA_SERVICE.hbm.xml" />
+    <EmbeddedResource Include="Mappings\AGSDM_PROJECT_SERVICE.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\AGSDM_UI_DESIGN.hbm.xml" />
+    <EmbeddedResource Include="Mappings\AGSDM_UI_ROLEFUNRLT.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\AGSDM_ROLELAYERRLT.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\AGSDM_SYSTEMCONFIG.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\AGSDM_UIMENU.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\AGSDM_ACTIVITYDEF.hbm.xml" />
+    <EmbeddedResource Include="Mappings\AGSDM_ACTIVITYINST.hbm.xml" />
+    <EmbeddedResource Include="Mappings\AGSDM_ACTUSERDEF.hbm.xml" />
+    <EmbeddedResource Include="Mappings\AGSDM_PROCESSDEF.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\AGSDM_PROCESSINST.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\AGSDM_USUALOPINION.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\AGSDM_WFOPINION.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\AGSDM_FILE.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\AGSDM_MAPDOC.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

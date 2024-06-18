@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+  <class name="AG.COM.SDM.Model.AGSDM_METADATA_IDENTIFYINFO,AG.COM.SDM.Model" table="AM_METADATA_IDENTIFYINFO">
+
+    <id name="ID" column="ID" type="Decimal" unsaved-value="0">
+      <generator class="sequence">
+        <param name="sequence">AGSDM_SEQ_MD_IDENTIFYINFO</param>
+      </generator>
+    </id>
+    <property column="DATASETID" type="Decimal" name="DATASETID" />
+    <property column="SUBJECTNAME" type="String" name="SUBJECTNAME" length="50" />
+    <property column="MC" type="String" name="MC" length="50" />
+    <property column="RQ" type="DateTime" name="RQ" />
+    <property column="BB" type="String" name="BB" length="50" />
+    <property column="YZ" type="String" name="YZ" length="50" />
+    <property column="ZY" type="String" name="ZY" length="50" />
+    <property column="XZ" type="String" name="XZ" length="50" />
+    <property column="FL" type="String" name="FL" length="50" />
+    <property column="XBJD" type="Decimal" name="XBJD" />
+    <property column="DBJD" type="Decimal" name="DBJD" />
+    <property column="NBWD" type="Decimal" name="NBWD" />
+    <property column="BBWD" type="Decimal" name="BBWD" />
+    <property column="DLBSF" type="String" name="DLBSF" length="50" />
+    <property column="ZZSJ" type="DateTime" name="ZZSJ" />
+    <property column="BSFS" type="String" name="BSFS" length="50" />
+    <property column="KJFBL" type="String" name="KJFBL" length="50" />
+    <property column="LB" type="String" name="LB" length="50" />
+    <property column="FZDWMC" type="String" name="FZDWMC" length="50" />
+    <property column="LXR" type="String" name="LXR" length="50" />
+    <property column="DH" type="String" name="DH" length="50" />
+    <property column="CZ" type="String" name="CZ" length="50" />
+    <property column="TXDZ" type="String" name="TXDZ" length="50" />
+    <property column="YZBM" type="String" name="YZBM" length="50" />
+    <property column="DZXXDZ" type="String" name="DZXXDZ" length="50" />
+    <property column="WZ" type="String" name="WZ" length="50" />
+    <property column="WJMC" type="String" name="WJMC" length="50" />
+    <property column="SYXZDM" type="String" name="SYXZDM" length="50" />
+    <property column="AQDJDM" type="String" name="AQDJDM" length="50" />
+    <property column="GSMC" type="String" name="GSMC" length="50" />
+    <property column="GSBB" type="String" name="GSBB" length="50" />
+    <property column="GLRJMC" type="String" name="GLRJMC" length="50" />
+
+  </class>
+</hibernate-mapping>

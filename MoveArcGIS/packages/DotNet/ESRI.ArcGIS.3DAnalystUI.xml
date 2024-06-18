@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>ESRI.ArcGIS.Analyst3DUI</name>
+  </assembly>
+  <members>
+    <member name="T:ESRI.ArcGIS.Analyst3DUI.IDddEnvironment">
+      <summary>Provides access to the 3D Analyst license.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.IDddEnvironment.Display3D">
+      <summary>Reference to the 3D display, if available.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Analyst3DUI.IDddEnvironment.GetRasterSettings">
+      <summary>Returns global raster settings.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.IDddEnvironment.Parent">
+      <summary>Reference to the parent application.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Analyst3DUI.IDDDToolbarEnvironment">
+      <summary>Provides access to members that control the 3D Analyst Toolbar Environment.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.IDDDToolbarEnvironment.CurrentSelectedLayer">
+      <summary>The ILayer interface of the current selected layer.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Analyst3DUI.IDDDToolbarEnvironment2">
+      <summary>Provides access to members that control the 3D Analyst Toolbar Environment.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.IDDDToolbarEnvironment2.CurrentSelectedLayer">
+      <summary>The ILayer interface of the current selected layer.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.IDDDToolbarEnvironment2.GraphDataSaveLocation">
+      <summary>The location to save graph data.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.IDDDToolbarEnvironment2.InterpolateMethod">
+      <summary>The interpolation method for interactive tools.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.IDDDToolbarEnvironment2.InterpolateSampleDistance">
+      <summary>Sampling distance for interpolation of interactive tools.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.IDDDToolbarEnvironment2.InterpolateVerticesOnly">
+      <summary>Interpolate only vertices for interactive tools.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Analyst3DUI.IDDDToolbarEnvironment3">
+      <summary>Provides access to members that control the 3D Analyst Toolbar Environment.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.IDDDToolbarEnvironment3.CurrentSelectedLayer">
+      <summary>The ILayer interface of the current selected layer.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.IDDDToolbarEnvironment3.GraphDataSaveLocation">
+      <summary>The location to save graph data.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.IDDDToolbarEnvironment3.GraphDataTemplate">
+      <summary>The template to render graph data.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.IDDDToolbarEnvironment3.InterpolateMethod">
+      <summary>The interpolation method for interactive tools.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.IDDDToolbarEnvironment3.InterpolateSampleDistance">
+      <summary>Sampling distance for interpolation of interactive tools.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.IDDDToolbarEnvironment3.InterpolateVerticesOnly">
+      <summary>Interpolate only vertices for interactive tools.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Analyst3DUI.IGxSceneFilter">
+      <summary>Provides access to members that filter data for the scene.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.IGxSceneFilter.Scene">
+      <summary>The decision-making scene.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Analyst3DUI.IGxWorldView">
+      <summary>Provides access to members that control the World View.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Analyst3DUI.IGxWorldView.GetSceneViewer(ESRI.ArcGIS.Analyst3D.ISceneViewer@)">
+      <summary>Returns the ISceneViewer interface.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Analyst3DUI.ILasDatasetToolbarEnvironment">
+      <summary>Provides access to members that control the LAS Dataset Toolbar Environment.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.ILasDatasetToolbarEnvironment.CurrentSelectedLayer">
+      <summary>The ILasDatasetLayer interface of the current selected layer.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.ILasDatasetToolbarEnvironment.MaxProfilePointCount">
+      <summary>The maximum profile point count in the Profile View.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Analyst3DUI.ILasDatasetToolbarEnvironment.QueryLastPointRenderer(ESRI.ArcGIS.Carto.ILasDatasetLayer)">
+      <summary>Get the last selected point renderer for the given layer.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Analyst3DUI.ILasDatasetToolbarEnvironment.QueryLastTinRenderer(ESRI.ArcGIS.Carto.ILasDatasetLayer)">
+      <summary>Get the last selected TIN renderer for the given layer.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Analyst3DUI.ILasDatasetToolbarEnvironment.QueryPanStep(ESRI.ArcGIS.Carto.ILasDatasetLayer)">
+      <summary>Get the pan step in X and Y for the given layer.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Analyst3DUI.ILasDatasetToolbarEnvironment.SetLastPointRenderer(ESRI.ArcGIS.Carto.ILasDatasetLayer,System.Guid@)">
+      <summary>Set the last selected point renderer for the given layer.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Analyst3DUI.ILasDatasetToolbarEnvironment.SetLastTinRenderer(ESRI.ArcGIS.Carto.ILasDatasetLayer,System.Guid@)">
+      <summary>Set the last selected TIN renderer for the given layer.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Analyst3DUI.ILasDatasetToolbarEnvironment.SetPanStep(ESRI.ArcGIS.Carto.ILasDatasetLayer,ESRI.ArcGIS.esriSystem._WKSPoint@)">
+      <summary>Set the pan step in X and Y for the given layer.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Analyst3DUI.IMd3DaDecimateCtrl">
+      <summary>Provides access to IMd3DaDecimateCtrl Interface.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Analyst3DUI.IMd3DaFolderFileCtrl">
+      <summary>Provides access to IMd3DaFolderFileCtrl Interface.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Analyst3DUI.IMd3DaInterpolateCtrl">
+      <summary>Provides access to IMd3DaInterpolateCtrl Interface.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Analyst3DUI.IMd3DaLasFolderFileCtrl">
+      <summary>Provides access to IMd3DaLasFolderFileCtrl Interface.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Analyst3DUI.IMd3DaMultiFFCtrl">
+      <summary>Provides access to IMd3DaMultiFFCtrl Interface.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Analyst3DUI.ISceneExport2dDialog">
+      <summary>Provides access to members that control the exporting of a scene to a 2d graphics file.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.ISceneExport2dDialog.DocumentName">
+      <summary>Name of the Active Document.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Analyst3DUI.ISceneExport2dDialog.DoModal(ESRI.ArcGIS.Geometry.IEnvelope,System.Int16)">
+      <summary>Displays Scene Export Dialog.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.ISceneExport2dDialog.Exporter">
+      <summary>The Scene exporter.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.ISceneExport2dDialog.MapExtent">
+      <summary>The Map Extent which gets passed to IWorldFileSettings.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.ISceneExport2dDialog.SceneSize">
+      <summary>The Scene size.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Analyst3DUI.ISceneExport3dDialog">
+      <summary>Provides access to members that control export of a 3D scene at the user interface level.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.ISceneExport3dDialog.DocumentName">
+      <summary>The name of the active document.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Analyst3DUI.ISceneExport3dDialog.DoModal">
+      <summary>Displays the 3D-export dialog.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.ISceneExport3dDialog.SceneExporter3d">
+      <summary>The exporter.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Analyst3DUI.ISceneExportFile2dDialog">
+      <summary>Provides access to members that control the new exporting of a scene to a 2d graphics file.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.ISceneExportFile2dDialog.DocumentName">
+      <summary>Name of the Active Document.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Analyst3DUI.ISceneExportFile2dDialog.DoModal(ESRI.ArcGIS.Geometry.IEnvelope,System.Double)">
+      <summary>Displays Scene Export File Dialog.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.ISceneExportFile2dDialog.Export">
+      <summary>The Scene exporter.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.ISceneExportFile2dDialog.MapExtent">
+      <summary>The Map Extent which gets passed to IWorldFileSettings.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Analyst3DUI.ISceneExportFile2dDialog.SceneSize">
+      <summary>The Scene size.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Analyst3DUI.DddEnvironment">
+      <summary>3D Environment singleton object.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Analyst3DUI.DddEnvironmentClass">
+      <summary>3D Environment singleton object.</summary>
+    </member>
+  </members>
+</doc>

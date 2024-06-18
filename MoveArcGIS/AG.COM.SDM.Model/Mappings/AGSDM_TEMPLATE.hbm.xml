@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+  <class name="AG.COM.SDM.Model.AGSDM_TEMPLATE,AG.COM.SDM.Model" table="AM_TEMPLATE" lazy="false">
+    
+    <id name="ID" column="ID" type="Decimal" unsaved-value="0">
+      <generator class="sequence">
+        <param name="sequence">AGSDM_SEQ_TEMPLATE</param>
+      </generator>
+    </id>
+    
+    <property column="TEMPLATE_NAME" type="String" name="TEMPLATE_NAME" not-null="true" length="50" />
+    <property column="TEMPLATE_CLASS" type="String" name="TEMPLATE_CLASS" length="50" />
+    <property column="CREATOR" type="String" name="CREATOR" length="50" />
+    <property column="CREATE_TIME" type="DateTime" name="CREATE_TIME" />
+
+    <!--一对多关系：MIC_TEMPLATE有一个或多个MIC_TEMPLATE_ATTR-->
+    <!--<set name="TEMPLATE_ATTRS" cascade="all" lazy="false" inverse="true">
+      <key column="ID"/>
+      <one-to-many class="AG.COM.SDM.Model.MIC_TEMPLATE_ATTR,AG.COM.SDM.Model"></one-to-many>
+    </set>-->
+  </class>
+</hibernate-mapping>

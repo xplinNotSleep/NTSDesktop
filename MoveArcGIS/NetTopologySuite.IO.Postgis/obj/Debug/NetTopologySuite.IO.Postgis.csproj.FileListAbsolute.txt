@@ -1,0 +1,14 @@
+D:\Code\CSharp\MoveArcGIS\NetTopologySuite.IO.Postgis\obj\Debug\NetTopologySuite.IO.Postgis.csproj.AssemblyReference.cache
+D:\Code\CSharp\MoveArcGIS\NetTopologySuite.IO.Postgis\obj\Debug\NetTopologySuite.IO.Postgis.csproj.CoreCompileInputs.cache
+D:\Code\CSharp\MoveArcGIS\Debug\Bin\NetTopologySuite.IO.Postgis.dll
+D:\Code\CSharp\MoveArcGIS\Debug\Bin\NetTopologySuite.IO.Postgis.pdb
+D:\Code\CSharp\MoveArcGIS\NetTopologySuite.IO.Postgis\obj\Debug\NetTopol.9279EC6E.Up2Date
+D:\Code\CSharp\MoveArcGIS\NetTopologySuite.IO.Postgis\obj\Debug\NetTopologySuite.IO.Postgis.dll
+D:\Code\CSharp\MoveArcGIS\NetTopologySuite.IO.Postgis\obj\Debug\NetTopologySuite.IO.Postgis.pdb
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite.IO.Postgis\obj\Debug\NetTopologySuite.IO.Postgis.csproj.AssemblyReference.cache
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite.IO.Postgis\obj\Debug\NetTopologySuite.IO.Postgis.csproj.CoreCompileInputs.cache
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite.IO.Postgis\obj\Debug\NetTopologySuite.IO.Postgis.dll
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite.IO.Postgis\obj\Debug\NetTopologySuite.IO.Postgis.pdb
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\Debug\Bin\NetTopologySuite.IO.Postgis.dll
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\Debug\Bin\NetTopologySuite.IO.Postgis.pdb
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite.IO.Postgis\obj\Debug\NetTopologySuite.IO.Postgis.csproj.CopyComplete

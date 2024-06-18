@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ESRI.ArcGIS.ParcelFabricTools</name>
+    </assembly>
+    <members>
+        <member name="T:ESRI.ArcGIS.ParcelFabricTools.MakeParcelFabricLayer">
+            <summary> Creates a parcel fabric layer from an input parcel fabric. The parcel fabric layer that is created by the tool is temporary and will not persist after the session ends unless the document is saved.  This tool is needed if you want a parcel fabric sublayer to participate in a geoprocessing model.</summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ParcelFabricTools.MakeParcelFabricLayer.#ctor(System.Object,System.Object)">
+            <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+            <param name="in_parcel_fabric"> The parcel fabric dataset that will be used to create the parcel fabric layer.  (In, Required)</param>
+            <param name="parcel_fabric_layer"> The output parcel fabric layer.  (Out, Required)</param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.MakeParcelFabricLayer.in_parcel_fabric">
+            <summary> The parcel fabric dataset that will be used to create the parcel fabric layer.  (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.MakeParcelFabricLayer.parcel_fabric_layer">
+            <summary> The output parcel fabric layer.  (Out, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.MakeParcelFabricLayer.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.MakeParcelFabricLayer.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.MakeParcelFabricLayer.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.MakeParcelFabricLayer.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.MakeParcelFabricLayer.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ParcelFabricTools.MakeParcelFabricTableView">
+            <summary> Creates a table view from an input parcel fabric feature class or table. The table view that is created by the tool is temporary and will not persist after the session ends unless the document is saved. This tool is useful for accessing hidden, nonspatial parcel fabric tables, such as the  Plans table and the Accuracy table.</summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ParcelFabricTools.MakeParcelFabricTableView.#ctor(System.Object,System.String,System.Object)">
+            <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+            <param name="in_parcel_fabric"> The parcel fabric dataset that contains the feature class or table that will be used to create a table view. (In, Required)</param>
+            <param name="parcel_fabric_table"> The parcel fabric feature class or nonspatial table that will be used to create a table view.  (In, Required)</param>
+            <param name="out_view"> The name of the output table view.  (Out, Required)</param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.MakeParcelFabricTableView.in_parcel_fabric">
+            <summary> The parcel fabric dataset that contains the feature class or table that will be used to create a table view. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.MakeParcelFabricTableView.parcel_fabric_table">
+            <summary> The parcel fabric feature class or nonspatial table that will be used to create a table view.  (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.MakeParcelFabricTableView.out_view">
+            <summary> The name of the output table view.  (Out, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.MakeParcelFabricTableView.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.MakeParcelFabricTableView.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.MakeParcelFabricTableView.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.MakeParcelFabricTableView.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.MakeParcelFabricTableView.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ParcelFabricTools.LoadTopologyToParcelFabric">
+            <summary> Loads polygon and line features that participate in a topology into a target parcel fabric. The topology requires a predefined set of topology rules:Line—Must be Covered by Boundary Of (polygon)Line—Must Not Self-OverlapLine—Must Not Self-IntersectLine—Must be Single PartLine—Must Not Intersect Or Touch InteriorPolygon—Boundary Must be Covered By (Line)</summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ParcelFabricTools.LoadTopologyToParcelFabric.#ctor(System.Object,System.Object,System.String,System.String)">
+            <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+            <param name="target_parcel_fabric">The target parcel fabric where the data will be loaded. (In, Required)</param>
+            <param name="in_topology_class"> Input feature class or layer that is part of a topology. The feature class can either be a line or polygon. (In, Required)</param>
+            <param name="unjoined_group"><summary>Determines how features will be migrated.
+            (In, Required)</summary></param>
+            <param name="compute_area"><summary>Determines how features will be migrated.
+            (In, Required)</summary></param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.LoadTopologyToParcelFabric.target_parcel_fabric">
+            <summary>The target parcel fabric where the data will be loaded. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.LoadTopologyToParcelFabric.in_topology_class">
+            <summary> Input feature class or layer that is part of a topology. The feature class can either be a line or polygon. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.LoadTopologyToParcelFabric.in_point_class">
+             <summary>
+            Input point feature class or layer. The point feature class does not need to be part of a topology. Only user-defined attributes on the input point feature class will be loaded to corresponding points in the parcel fabric. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.LoadTopologyToParcelFabric.linestring_minimum_segments">
+            <summary> The minimum number of segments a polyline feature can have before it is loaded as a line string or natural boundary in the parcel fabric. The default is a minimum of 10 segments. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.LoadTopologyToParcelFabric.control_match_tolerance">
+            <summary>The tolerance in which new parcel fabric points are associated with existing control points in the fabric. The tolerance length units are the same as the length units of the coordinate system of the fabric. If a control match tolerance is not specified, the default of 0.1 meters is used. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.LoadTopologyToParcelFabric.unjoined_group">
+            <summary>Determines how features will be migrated.
+            (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.LoadTopologyToParcelFabric.direction_units">
+            <summary>The direction units that will be used when generating COGO-bearing attributes for line features during the loading process. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.LoadTopologyToParcelFabric.direction_type">
+             <summary>
+            The direction type that will be used when generating COGO-bearing attributes for line features during the loading process. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.LoadTopologyToParcelFabric.compute_area">
+            <summary>Determines how features will be migrated.
+            (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.LoadTopologyToParcelFabric.area_units">
+             <summary>
+            If the Compute Area for New Parcels option is checked, select the area units to be used when computing parcel area during the migration process.
+             (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.LoadTopologyToParcelFabric.radial_point_tolerance">
+             <summary>
+            The tolerance in which new, computed curve center points are matched with existing curve center points found in the fabric. Furthermore, if several computed  curve center points lie within this tolerance, they are averaged and merged into a single center point.  If a radial tolerance is not specified, the default of  
+            0.5 meters is used. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.LoadTopologyToParcelFabric.accuracy_units">
+             <summary>
+            The accuracy category of the lines and polygons being migrated. Accuracy categories are defined by date of survey in the parcel fabric. Accuracy category 1 is the highest data accuracy (recently surveyed)  and accuracy category 6  is the lowest data accuracy (year 1800 or lower). Accuracy categories are used in the fabric adjustment. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.LoadTopologyToParcelFabric.output_parcel_fabric">
+            <summary>Output Parcel Fabric (out, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.LoadTopologyToParcelFabric.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.LoadTopologyToParcelFabric.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.LoadTopologyToParcelFabric.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.LoadTopologyToParcelFabric.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.LoadTopologyToParcelFabric.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ParcelFabricTools.AppendParcelFabric">
+            <summary>
+            Appends one or multiple parcel fabrics into an existing target parcel fabric. The spatial reference of the input parcel fabrics must match the spatial reference of the target parcel fabric.</summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ParcelFabricTools.AppendParcelFabric.#ctor(System.Object,System.Object,System.String)">
+            <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+            <param name="in_parcels"><summary>
+            The input parcel fabrics that will be appended into the target parcel fabric. The spatial reference of the input parcel fabric must match that of the target parcel fabric.
+            (In, Required)</summary></param>
+            <param name="target"><summary>
+            The existing parcel fabric that the input parcel fabrics will be appended into. The spatial reference of the input parcel fabric must match that of the target parcel fabric.
+            (In, Required)</summary></param>
+            <param name="unjoined_group"><summary>Determines how parcels will be appended.
+            (In, Required)</summary></param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.AppendParcelFabric.in_parcels">
+            <summary>
+            The input parcel fabrics that will be appended into the target parcel fabric. The spatial reference of the input parcel fabric must match that of the target parcel fabric.
+            (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.AppendParcelFabric.target">
+            <summary>
+            The existing parcel fabric that the input parcel fabrics will be appended into. The spatial reference of the input parcel fabric must match that of the target parcel fabric.
+            (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.AppendParcelFabric.unjoined_group">
+            <summary>Determines how parcels will be appended.
+            (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.AppendParcelFabric.parcels_schema_type">
+            <summary>Specifies if the schema (field definitions) of the input parcel  fabric parcels table must match the schema of the target parcel fabric parcels table for data to be appended. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.AppendParcelFabric.field_mapping_parcels">
+            <summary>Lists the attribute fields that will be mapped to  the target parcels table. The list includes the existing attribute fields of the target parcels table and attributes fields that match between the input parcels table and the target parcels table.   (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.AppendParcelFabric.parcels_subtype">
+            <summary>A subtype description to assign that subtype to all new  parcel features in a parcel fabric that is  appended to the target parcel fabric. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.AppendParcelFabric.lines_schema_type">
+            <summary>Specifies if the schema (field definitions) of the input parcel  fabric lines table must match the schema of the target parcel fabric lines table for data to be appended. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.AppendParcelFabric.field_mapping_lines">
+            <summary>Lists the attribute fields that will be mapped to  the target lines table. The list includes the existing attribute fields of the target lines table and attribute fields that match between the input lines table and the target lines table.   (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.AppendParcelFabric.lines_subtype">
+            <summary>A subtype description to assign that subtype to all new  line features in a parcel fabric that is  appended to the target parcel fabric. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.AppendParcelFabric.control_schema_type">
+            <summary>Specifies if the schema (field definitions) of the input parcel  fabric control table must match the schema of the target parcel fabric control table for data to be appended. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.AppendParcelFabric.field_mapping_control">
+            <summary>Lists the attribute fields that will be mapped to  the target control table. The list includes the existing attribute fields of the target control table and attribute fields that match between the input control table and the target control table.   (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.AppendParcelFabric.control_subtype">
+            <summary>A subtype description to assign that subtype to all new  control point features in a parcel fabric that is  appended to the target parcel fabric. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.AppendParcelFabric.output">
+            <summary>Output Parcel Fabric (out, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.AppendParcelFabric.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.AppendParcelFabric.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.AppendParcelFabric.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.AppendParcelFabric.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.AppendParcelFabric.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ParcelFabricTools.CopyParcelFabric">
+             <summary>
+             Copies parcels from the input parcel fabric dataset or  layer to a new parcel fabric.
+            </summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ParcelFabricTools.CopyParcelFabric.#ctor(System.Object,System.Object)">
+             <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+             <param name="in_parcels"><summary>
+            The parcels to be copied to another parcel fabric.
+             (In, Required)</summary></param>
+             <param name="output_parcels"><summary> The new parcel fabric  to which the parcels will be copied. If the  parcel fabric exists and you have chosen to overwrite the outputs of geoprocessing operations by setting arcpy.env.overwriteOutput
+             to True,   the existing parcel fabric will be overwritten with a new parcel fabric containing the copied parcels.  (Out, Required)</summary></param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.CopyParcelFabric.in_parcels">
+             <summary>
+            The parcels to be copied to another parcel fabric.
+             (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.CopyParcelFabric.output_parcels">
+            <summary> The new parcel fabric  to which the parcels will be copied. If the  parcel fabric exists and you have chosen to overwrite the outputs of geoprocessing operations by setting arcpy.env.overwriteOutput
+            to True,   the existing parcel fabric will be overwritten with a new parcel fabric containing the copied parcels.  (Out, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.CopyParcelFabric.config_keyword">
+            <summary>Specifies the storage parameters (configuration) for parcel fabrics in file and ArcSDE geodatabases. Personal geodatabases do not use configuration keywords. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.CopyParcelFabric.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.CopyParcelFabric.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.CopyParcelFabric.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.CopyParcelFabric.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ParcelFabricTools.CopyParcelFabric.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+    </members>
+</doc>

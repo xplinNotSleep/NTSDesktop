@@ -1,0 +1,39 @@
+[2024-06-18 09:27:10] INFO  - 系统正在初始化 
+[2024-06-18 09:30:50] ERROR - 错误: 22023: NUMERIC 0 的精度必须在 1 和 1000 之间 
+Npgsql.NpgsqlException:
+NUMERIC 0 的精度必须在 1 和 1000 之间
+Severity: 错误
+Code: 22023
+   在 Npgsql.NpgsqlState.<ProcessBackendResponses>d__0.MoveNext()
+   在 Npgsql.ForwardsOnlyDataReader.GetNextResponseObject(Boolean cleanup)
+   在 Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   在 Npgsql.ForwardsOnlyDataReader.NextResultInternal()
+   在 Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean preparedStatement, NpgsqlRowDescription rowDescription)
+   在 Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   在 Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   在 AG.COM.SDM.Database.AdoDatabase.AddColumn(String tableName, String ColumnName, String type) 位置 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.Database\Database\AdoDatabase.cs:行号 579
+   在 AG.COM.SDM.DataOperate.SpatialDbHelper.AddFields(AdoDatabase adoDb, String layerName, DbfField[] FieldInfos) 位置 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.DataOperate\Operate\SpatialDbOperate\SpatialDbHelper.cs:行号 86
+   在 AG.COM.SDM.DataOperate.SpatialDbHelper.CreateTable(AdoDatabase adoDb, String layerName, String idField, String geoField, String geoType, DbfField[] FieldInfos) 位置 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.DataOperate\Operate\SpatialDbOperate\SpatialDbHelper.cs:行号 62
+   在 AG.COM.SDM.DataOperate.ShpToDbHelper.ExportShpToDb(String shpPath, Boolean IsOverload, Int32 SRID) 位置 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.DataOperate\Operate\SpatialDbOperate\ShpToDbHelper.cs:行号 61
+[2024-06-18 09:37:24] ERROR - 错误: 42601: 语法错误 在 "," 或附近的 
+Npgsql.NpgsqlException:
+语法错误 在 "," 或附近的
+Severity: 错误
+Code: 42601
+   在 Npgsql.NpgsqlState.<ProcessBackendResponses>d__0.MoveNext()
+   在 Npgsql.ForwardsOnlyDataReader.GetNextResponseObject(Boolean cleanup)
+   在 Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   在 Npgsql.ForwardsOnlyDataReader.NextResultInternal()
+   在 Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean preparedStatement, NpgsqlRowDescription rowDescription)
+   在 Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   在 Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   在 AG.COM.SDM.Database.AdoDatabase.AddColumn(String tableName, String ColumnName, String type) 位置 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.Database\Database\AdoDatabase.cs:行号 579
+   在 AG.COM.SDM.DataOperate.SpatialDbHelper.AddFields(AdoDatabase adoDb, String layerName, DbfField[] FieldInfos)
+   在 AG.COM.SDM.DataOperate.SpatialDbHelper.CreateTable(AdoDatabase adoDb, String layerName, String idField, String geoField, String geoType, DbfField[] FieldInfos)
+   在 AG.COM.SDM.DataOperate.ShpToDbHelper.ExportShpToDb(String shpPath, Boolean IsOverload, Int32 SRID)
+[2024-06-18 09:54:47] ERROR - 未将对象引用设置到对象的实例。 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NetTopologySuite.IO.Esri.Shapefile.getShpFieldInfo(DbfField[] fields, Feature feature) 位置 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite.IO.Esri.Shapefile\Shapefile.cs:行号 345
+   在 NetTopologySuite.IO.Esri.ShapefileUtils.getShpFieldInfo(DbfField[] fields, Feature feature) 位置 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite.IO.Esri.Shapefile\ShapefileUtils.cs:行号 108
+   在 AG.COM.SDM.DataOperate.ShpToDbHelper.ExportShpToDb(String shpPath, Boolean IsOverload, Int32 SRID)
+[2024-06-18 10:56:59] INFO  - 系统正在初始化 

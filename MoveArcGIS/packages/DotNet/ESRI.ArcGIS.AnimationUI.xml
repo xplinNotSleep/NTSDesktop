@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>ESRI.ArcGIS.AnimationUI</name>
+  </assembly>
+  <members>
+    <member name="T:ESRI.ArcGIS.AnimationUI.IAnimationControlsDialog">
+      <summary>Provides access to members of the animation controls dialog.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.AnimationUI.IAnimationControlsDialog.Hook(ESRI.ArcGIS.Framework.IApplication)">
+      <summary>Connect the dialog with the current app.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.AnimationUI.IAnimationControlsDialog.Refresh">
+      <summary>Refresh the dialog settings.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.AnimationUI.IAnimationControlsDialog.Show(System.Boolean)">
+      <summary>Show or hide the dialog.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.AnimationUI.IAnimationCreateKeyframeDialog">
+      <summary>Provides access to members of the 'create keyframe' dialog.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.AnimationUI.IAnimationCreateKeyframeDialog.SetUpDialog(ESRI.ArcGIS.Animation.IAGAnimationTracks,ESRI.ArcGIS.Animation.IAGAnimationEnvironment)">
+      <summary>Sets up the dialog.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.AnimationUI.IAnimationCreateKeyframeDialog.ShowDialog">
+      <summary>Show the dialog.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.AnimationUI.IAnimationFromPathDialog">
+      <summary>Provides access to members of the 'import animation from path' dialog.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.AnimationUI.IAnimationFromPathDialog.RunDialog(ESRI.ArcGIS.Animation.IAGImportPathOptions)">
+      <summary>Runs the dialog to create an animation from a path.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.AnimationUI.IAnimationLayerGroupDialog">
+      <summary>Provides access to members of the 'create group animation' dialog.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.AnimationUI.IAnimationLayerGroupDialog.RunDialog(ESRI.ArcGIS.Animation.IAGGroupAnimationOptions)">
+      <summary>Runs the dialog to create a layer group animation.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.AnimationUI.IAnimationManagerDialog">
+      <summary>Provides access to members of the animation manager dialog.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.AnimationUI.IAnimationManagerDialog.Hook(ESRI.ArcGIS.Framework.IApplication)">
+      <summary>Connect the dialog with the current app.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.AnimationUI.IAnimationManagerDialog.Refresh">
+      <summary>Refresh the dialog settings.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.AnimationUI.IAnimationManagerDialog.Show(System.Boolean)">
+      <summary>Show or hide the dialog.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.AnimationUI.IAnimationManagerPropertyPage">
+      <summary>Provides access to members that control Animation Manager Property Pages.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.AnimationUI.IAnimationManagerPropertyPage.AllowsRefresh">
+      <summary>Indicates if the property page accepts automatic refresh.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.AnimationUI.IAnimationManagerPropertyPage.DestroyWindow">
+      <summary>Indicates that the COM PropertyPage should destroy the MFC propertypage.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.AnimationUI.IAnimationManagerPropertyPage.Resize(System.Int32,System.Int32)">
+      <summary>Resize the property page.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.AnimationUI.IExportVideoDialog">
+      <summary>Provides access to members that control export of an animation to video at the user interface level.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.AnimationUI.IExportVideoDialog.DocumentName">
+      <summary>The name of the active document.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.AnimationUI.IExportVideoDialog.DoModal">
+      <summary>Displays the video export dialog.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.AnimationUI.IExportVideoDialog.VideoExporter">
+      <summary>The exporter.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.AnimationUI.AnimationActivePropertiesPropPage">
+      <summary>The animation tracks property page.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.AnimationUI.AnimationActivePropertiesPropPageClass">
+      <summary>The animation tracks property page.</summary>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+	<class name="AG.COM.SDM.Model.AGSDM_DIR_TYPE,AG.COM.SDM.Model" table="AM_DIR_TYPE">
+
+		<id name="ID" column="ID" type="Decimal" unsaved-value="0">
+      <generator class="sequence">
+        <param name="sequence">AGSDM_SEQ_TYPE</param>
+      </generator>
+		</id>
+    <property column="ITEM_NAME" type="String" name="ITEM_NAME" length="50" />
+    <property column="ITEM_TYPE" type="Decimal" name="ITEM_TYPE" />
+    <property column="ITEM_ICON" type="Byte[]" name="ITEM_ICON" />
+    <property column="DEPEND_ID" type="Decimal" name="DEPEND_ID" />
+		
+	</class>
+</hibernate-mapping>

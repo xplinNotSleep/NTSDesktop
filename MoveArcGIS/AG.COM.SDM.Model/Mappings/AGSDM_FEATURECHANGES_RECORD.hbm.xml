@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+  <class name="AG.COM.SDM.Model.AGSDM_FEATURECHANGES_RECORD,AG.COM.SDM.Model" table="AGSDM_FEATURECHANGES_RECORD">
+
+<id name="ID" column="ID" type="Decimal" unsaved-value="0">
+<generator class="sequence">
+<param name="sequence">AGSDM_SEQ_FTCHANGES_RECORD</param>
+</generator>
+</id>
+<property column="USRID" type="Decimal" name="USRID"  />
+<property column="USRNAME" type="String" name="USRNAME"  />
+<property column="MODI_TIME" type="DateTime" name="MODI_TIME"  />
+<property column="MODI_TABLE" type="String" name="MODI_TABLE"  />
+<property column="FEATUREID" type="Decimal" name="FEATUREID"  />
+<property column="FEATUREUSID" type="String" name="FEATUREUSID"  />
+<property column="CHANGESTYPE" type="String" name="CHANGESTYPE"  />
+<property column="CHANGESINFO" type="String" name="CHANGESINFO"  />
+<property column="COMMENTS" type="String" name="COMMENTS"  />
+
+
+  </class>
+</hibernate-mapping>
+

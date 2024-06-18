@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+  <class name="AG.COM.SDM.Model.AGSDM_PROJECT,AG.COM.SDM.Model" table="AM_PROJECT">
+
+    <id name="ID" column="ID" type="Decimal" unsaved-value="0">
+      <generator class="sequence">
+        <param name="sequence">AGSDM_SEQ_PROJECT</param>
+      </generator>
+    </id>
+    <property column="OBJECTTYPE" type="String" name="OBJECTTYPE" length="10" />
+    <property column="CLASSID" type="Decimal" name="CLASSID" />
+    <property column="PROJECT_NAME" type="String" name="PROJECT_NAME" length="50" />
+    <property column="STATE" type="String" name="STATE" length="10" />
+    <property column="CREATE_TIME" type="String" name="CREATE_TIME" length="50" />
+    <property column="CREATOR" type="String" name="CREATOR" length="20" />
+    <property column="OWNERID" type="Decimal" name="OWNERID" />
+    <property column="MAPUNIT" type="String" name="MAPUNIT" length ="20" />
+    <property column="DISPLAYUNIT" type="String" name="DISPLAYUNIT" length="20" />
+    <property column="ROTATION" type="Decimal" name="ROTATION" />
+    <property column="REFERENCESCALE" type="Decimal" name="REFERENCESCALE"/>
+    <property column="REMARK" type="String" name="REMARK" length="40" />
+    <property column="FULLEXTEND" type="String" name="FULLEXTEND" />
+    <property column="LABELENGINE" type="String" name="LABELENGINE" length="20" />
+    <property column="CLIPGEOMETRY" type="String" name="CLIPGEOMETRY" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>ESRI.ArcGIS.PublisherUI</name>
+  </assembly>
+  <members>
+    <member name="T:ESRI.ArcGIS.PublisherUI.IPMF">
+      <summary>Provides access to the IPMF Interface which used to programatically create PMF files.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.PublisherUI.IPMF.PMFPublish(System.String)">
+      <summary>Create the PMF file using the current settings.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.PublisherUI.IPMF.PMFSettings">
+      <summary>Settings used when creating the PMF file.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.PublisherUI.IPMF.PMFValidateObject(System.Object,System.String,System.String@)">
+      <summary>Perform validation on the view.   The results of the validation are returned in the BSTR results parameter.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.PublisherUI.IPublisher">
+      <summary>Provides access to the IPublisher notification Interface.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.PublisherUI.Publisher">
+      <summary>The Publisher Extension coclass.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.PublisherUI.PublisherClass">
+      <summary>The Publisher Extension coclass.</summary>
+    </member>
+  </members>
+</doc>

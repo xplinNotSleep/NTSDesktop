@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+	<class name="AG.COM.SDM.Model.AGSDM_SYSTEM_USER,AG.COM.SDM.Model" table="AM_SYSTEM_USER">
+
+		<id name="USER_ID" column="USER_ID" type="Decimal" unsaved-value="0">
+			<generator class="sequence">
+				<param name="sequence">AGSDM_SEQ_SYSTEM_USER</param>
+			</generator>
+		</id>
+		<property column="USER_CODE" type="String" name="USER_CODE" length="30" />
+		<property column="NAME_CN" type="String" name="NAME_CN" length="50" />
+		<property column="NAME_EN" type="String" name="NAME_EN" length="50" />
+		<property column="PASSWORD" type="String" name="PASSWORD" length="50" />
+		<property column="PASSWORDTYPE" type="Decimal" name="PASSWORDTYPE"  />
+		<property column="SEX" type="String" name="SEX" length="10" />
+		<property column="TEL" type="String" name="TEL" length="30" />
+		<property column="MOBILE" type="String" name="MOBILE" length="30" />
+		<property column="FAX" type="String" name="FAX" length="30" />
+		<property column="EMAIL" type="String" name="EMAIL" length="30" />
+		<property column="POSITION" type="String" name="POSITION" length="50" />
+		<property column="CTEATE_TIME" type="DateTime" name="CTEATE_TIME" />
+		<property column="DESCRIPTION" type="String" name="DESCRIPTION" length="100" />
+		
+	</class>
+</hibernate-mapping>

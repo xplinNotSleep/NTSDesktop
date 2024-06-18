@@ -1,0 +1,15 @@
+F:\地下空间管理系统代码\git\AGMPLIS_TY\Debug\Bin\AG.COM.SDM.ORM.dll.config
+F:\地下空间管理系统代码\git\AGMPLIS_TY\Debug\Bin\AG.COM.SDM.ORM.dll
+F:\地下空间管理系统代码\git\AGMPLIS_TY\Debug\Bin\AG.COM.SDM.ORM.pdb
+F:\地下空间管理系统代码\git\AGMPLIS_TY\AG.COM.SDM.ORM\obj\Debug\AG.COM.SDM.ORM.csproj.AssemblyReference.cache
+F:\地下空间管理系统代码\git\AGMPLIS_TY\AG.COM.SDM.ORM\obj\Debug\AG.COM.SDM.ORM.csproj.CoreCompileInputs.cache
+F:\地下空间管理系统代码\git\AGMPLIS_TY\AG.COM.SDM.ORM\obj\Debug\AG.COM.SDM.ORM.csproj.CopyComplete
+F:\地下空间管理系统代码\git\AGMPLIS_TY\AG.COM.SDM.ORM\obj\Debug\AG.COM.SDM.ORM.dll
+F:\地下空间管理系统代码\git\AGMPLIS_TY\AG.COM.SDM.ORM\obj\Debug\AG.COM.SDM.ORM.pdb
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.ORM\obj\Debug\AG.COM.SDM.ORM.csproj.CoreCompileInputs.cache
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.ORM\obj\Debug\AG.COM.SDM.ORM.dll
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.ORM\obj\Debug\AG.COM.SDM.ORM.pdb
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\Debug\Bin\AG.COM.SDM.ORM.dll.config
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\Debug\Bin\AG.COM.SDM.ORM.dll
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\Debug\Bin\AG.COM.SDM.ORM.pdb
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.ORM\obj\Debug\AG.COM.SDM.ORM.csproj.CopyComplete

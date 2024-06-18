@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+	<class name="AG.COM.SDM.Model.AGSDM_METADATA_SPATIALINFO,AG.COM.SDM.Model" table="AM_METADATA_SPATIALINFO">
+
+		<id name="ID" column="ID" type="Decimal" unsaved-value="0">
+      <generator class="sequence">
+        <param name="sequence">AGSDM_SEQ_MD_SPATIALINFO</param>
+      </generator>
+		</id>
+		<property column="DATASETID" type="Decimal" name="DATASETID" />
+		<property column="SUBJECTNAME" type="String" name="SUBJECTNAME" length="50" />
+		<property column="DDZBCZXTMC" type="String" name="DDZBCZXTMC" length="50" />
+		<property column="ZBXTLX" type="String" name="ZBXTLX" length="50" />
+		<property column="ZBXTMC" type="String" name="ZBXTMC" length="100" />
+		<property column="TYZBXTCS" type="String" name="TYZBXTCS" length="200" />
+		
+	</class>
+</hibernate-mapping>

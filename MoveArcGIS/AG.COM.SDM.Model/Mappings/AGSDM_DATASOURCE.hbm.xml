@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+	<class name="AG.COM.SDM.Model.AGSDM_DATASOURCE,AG.COM.SDM.Model" table="AM_DATASOURCE">
+
+		<id name="ID" column="ID" type="Decimal" unsaved-value="0">
+			<generator class="sequence">
+				<param name="sequence">AGSDM_SEQ_DATASOURCE</param>
+			</generator>
+		</id>
+		<property column="SOURCE_NAME" type="String" name="SOURCE_NAME" length="50" />
+		<property column="IP" type="String" name="IP" length="50" />
+		<property column="USER_NAME" type="String" name="USER_NAME" length="50" />
+		<property column="PASSWORD" type="String" name="PASSWORD" length="50" />
+		<property column="SERVICE_NAME" type="String" name="SERVICE_NAME" length="50" />
+		<property column="DATABASE_NAME" type="String" name="DATABASE_NAME" length="50" />
+		<property column="REMARK" type="String" name="REMARK" length="100" />
+    <property column="STATE" type="String" name="STATE" length="2" />
+	</class>
+</hibernate-mapping>

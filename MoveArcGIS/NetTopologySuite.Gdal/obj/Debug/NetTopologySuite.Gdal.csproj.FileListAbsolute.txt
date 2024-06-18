@@ -1,0 +1,7 @@
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\Debug\Bin\NetTopologySuite.Gdal.dll
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\Debug\Bin\NetTopologySuite.Gdal.pdb
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite.Gdal\obj\Debug\NetTopologySuite.Gdal.csproj.AssemblyReference.cache
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite.Gdal\obj\Debug\NetTopologySuite.Gdal.csproj.CoreCompileInputs.cache
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite.Gdal\obj\Debug\NetTopologySuite.Gdal.csproj.CopyComplete
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite.Gdal\obj\Debug\NetTopologySuite.Gdal.dll
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite.Gdal\obj\Debug\NetTopologySuite.Gdal.pdb

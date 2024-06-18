@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  default-lazy="false">
+	<class name="AG.COM.SDM.Model.AGSDM_POSITION,AG.COM.SDM.Model" table="AM_POSITION">
+
+		<id name="ID" column="ID" type="Decimal" unsaved-value="0">
+      <generator class="sequence">
+        <param name="sequence">AGSDM_SEQ_POSITION</param>
+      </generator>
+		</id>
+    <property column="ORG_ID" type="Decimal" name="ORG_ID" />
+    <property column="OPU_ID" type="Decimal" name="OPU_ID" />
+    <property column="POS_NAME" type="String" name="POS_NAME" length="50" />
+    <property column="POS_FUNCTION" type="String" name="POS_FUNCTION" length="200" />
+    <property column="DESCRIPTION" type="String" name="DESCRIPTION" length="100" />
+    <property column="EMAIL" type="String" name="EMAIL" length="30" />
+    <property column="RANK" type="String" name="RANK" length="10" />
+    <property column="NO" type="String" name="NO" length="10" />
+    <property column="NO_IN_ORG" type="String" name="NO_IN_ORG" length="10" />
+    <property column="NO_IN_CITY" type="String" name="NO_IN_CITY" length="10" />
+    <property column="IS_EDITOR_CREATE" type="String" name="IS_EDITOR_CREATE" length="1" />
+    <property column="EDITE_TYPE" type="String" name="EDITE_TYPE" length="10" />
+    <property column="IS_FIRST_LEADER" type="String" name="IS_FIRST_LEADER" length="1" />
+    <property column="IS_PUB" type="String" name="IS_PUB" length="1" />
+    <property column="CAN_MAN_DEPTS" type="String" name="CAN_MAN_DEPTS" length="100" />
+
+    <property column="CREATER" type="String" name="CREATER" length="20" />
+    <property column="CREATE_TIME" type="DateTime" name="CREATE_TIME" />
+    <property column="UPDATER" type="String" name="UPDATER" length="100" />
+    <property column="UPDATE_TIME" type="DateTime" name="UPDATE_TIME" />
+    <property column="DEL_FLAG" type="String" name="DEL_FLAG" length="1" />
+		
+	</class>
+</hibernate-mapping>

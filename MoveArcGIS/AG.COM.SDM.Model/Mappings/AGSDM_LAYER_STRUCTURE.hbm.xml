@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+	<class name="AG.COM.SDM.Model.AGSDM_LAYER_STRUCTURE,AG.COM.SDM.Model" table="AM_LAYER_STRUCTURE">
+
+		<id name="ID" column="ID" type="Decimal" unsaved-value="0">
+			<generator class="sequence">
+				<param name="sequence">AGSDM_SEQ_LAYER_STRUCTURE</param>
+			</generator>
+		</id>
+    <property column="OWNERID" type="Decimal" name="OWNERID" />
+    <property column="OBJECTTYPE" type="String" name="OBJECTTYPE" length="10" />
+    <property column="CLASSID" type="Decimal" name="CLASSID" />
+		<property column="NAME" type="String" name="NAME" length="100" />
+		<property column="PRANTID" type="Decimal" name="PARENTID" />
+		<property column="LAYERID" type="Decimal" name="LAYERID" />
+		<property column="PROJECTID" type="Decimal" name="PROJECTID" />
+    <property column="PROJECT_LAYER_ID" type="Decimal" name="PROJECT_LAYER_ID" />
+    <property column="FEATURE_TYPE" type="String" name="FEATURE_TYPE" length="50" />
+	</class>
+</hibernate-mapping>

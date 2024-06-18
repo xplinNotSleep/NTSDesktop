@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+  <class name="AG.COM.SDM.Model.AGSDM_PROCESSINST,AG.COM.SDM.Model" table="AM_PROCESSINST">
+
+    <id name="ID" column="ID" type="Decimal" unsaved-value="0">
+      <generator class="sequence">
+        <param name="sequence">AGSDM_SEQ_PROCESSINST</param>
+      </generator>
+    </id>
+    <property column="PROCESSDEFID" type="String" name="PROCESSDEFID"  />
+    <property column="NAME" type="String" name="NAME"  />
+    <property column="TITLE" type="String" name="TITLE"  />
+    <property column="ACTIVITYTEXT" type="String" name="ACTIVITYTEXT"  />
+    <property column="STATE" type="int" name="STATE"  />
+    <property column="CREATEUSERID" type="Decimal" name="CREATEUSERID"  />
+    <property column="CREATETIME" type="DateTime" name="CREATETIME"  />
+    <property column="UPDATETIME" type="DateTime" name="UPDATETIME"  />
+    <property column="BSID" type="String" name="BSID" />
+
+  </class>
+</hibernate-mapping>
+

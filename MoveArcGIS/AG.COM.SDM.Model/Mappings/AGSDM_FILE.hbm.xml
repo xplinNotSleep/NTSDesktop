@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+  <class name="AG.COM.SDM.Model.AGSDM_FILE,AG.COM.SDM.Model" table="AM_FILE">
+
+    <id name="ID" column="ID" type="Decimal" unsaved-value="0">
+      <generator class="sequence">
+        <param name="sequence">AGSDM_SEQ_FILE</param>
+      </generator>
+    </id>
+    <property column="FKID" type="Decimal" name="FKID"  />
+    <property column="FKTYPE" type="String" name="FKTYPE"  />
+    <property column="FILENAME" type="String" name="FILENAME"  />
+    <property column="FILEPATH" type="String" name="FILEPATH"  />
+    <property column="FILEEXT" type="String" name="FILEEXT"  />
+    <property column="CREATETIME" type="DateTime" name="CREATETIME"  />
+    <property column="CREATEUSERID" type="Decimal" name="CREATEUSERID"  />
+
+
+  </class>
+</hibernate-mapping>
+

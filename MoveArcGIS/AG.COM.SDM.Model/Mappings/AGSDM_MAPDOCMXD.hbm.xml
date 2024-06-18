@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+  <class name="AG.COM.SDM.Model.AGSDM_MAPDOCMXD,AG.COM.SDM.Model" table="AM_MAPDOCMXD">
+
+<id name="ID" column="ID" type="Decimal" unsaved-value="0">
+<generator class="sequence">
+<param name="sequence">AGSDM_SEQ_MAPDOCMXD</param>
+</generator>
+</id>
+<property column="MAPDOCID" type="Decimal" name="MAPDOCID"  />
+<property column="MXDCONTENT" type="AG.COM.SDM.ORM.OracleClobField,AG.COM.SDM.ORM" name="MXDCONTENT"  />
+
+
+  </class>
+</hibernate-mapping>
+

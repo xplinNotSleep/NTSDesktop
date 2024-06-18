@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>ESRI.ArcGIS.DataInteropUI</name>
+  </assembly>
+  <members>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.IAdviseSink">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IAdviseSink.RemoteOnClose">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IAdviseSink.RemoteOnDataChange(ESRI.ArcGIS.DataInteropUI.tagFORMATETC@,ESRI.ArcGIS.DataInteropUI._userSTGMEDIUM@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IAdviseSink.RemoteOnRename(ESRI.ArcGIS.DataInteropUI.IMoniker)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IAdviseSink.RemoteOnSave">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IAdviseSink.RemoteOnViewChange(System.UInt32,System.Int32)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.IBindCtx">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IBindCtx.EnumObjectParam(ESRI.ArcGIS.DataInteropUI.IEnumString@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IBindCtx.GetObjectParam(System.String,System.Object@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IBindCtx.GetRunningObjectTable(ESRI.ArcGIS.DataInteropUI.IRunningObjectTable@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IBindCtx.RegisterObjectBound(System.Object)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IBindCtx.RegisterObjectParam(System.String,System.Object)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IBindCtx.ReleaseBoundObjects">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IBindCtx.RemoteGetBindOptions(ESRI.ArcGIS.DataInteropUI.tagBIND_OPTS2@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IBindCtx.RemoteSetBindOptions(ESRI.ArcGIS.DataInteropUI.tagBIND_OPTS2@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IBindCtx.RevokeObjectBound(System.Object)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IBindCtx.RevokeObjectParam(System.String)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.IDataObject">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IDataObject.DAdvise(ESRI.ArcGIS.DataInteropUI.tagFORMATETC@,System.UInt32,ESRI.ArcGIS.DataInteropUI.IAdviseSink,System.UInt32@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IDataObject.DUnadvise(System.UInt32)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IDataObject.EnumDAdvise(ESRI.ArcGIS.DataInteropUI.IEnumSTATDATA@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IDataObject.EnumFormatEtc(System.UInt32,ESRI.ArcGIS.DataInteropUI.IEnumFORMATETC@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IDataObject.GetCanonicalFormatEtc(ESRI.ArcGIS.DataInteropUI.tagFORMATETC@,ESRI.ArcGIS.DataInteropUI.tagFORMATETC@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IDataObject.QueryGetData(ESRI.ArcGIS.DataInteropUI.tagFORMATETC@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IDataObject.RemoteGetData(ESRI.ArcGIS.DataInteropUI.tagFORMATETC@,ESRI.ArcGIS.DataInteropUI._userSTGMEDIUM@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IDataObject.RemoteGetDataHere(ESRI.ArcGIS.DataInteropUI.tagFORMATETC@,ESRI.ArcGIS.DataInteropUI._userSTGMEDIUM@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IDataObject.RemoteSetData(ESRI.ArcGIS.DataInteropUI.tagFORMATETC@,ESRI.ArcGIS.DataInteropUI._userFLAG_STGMEDIUM@,System.Int32)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.IEnumFORMATETC">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IEnumFORMATETC.Clone(ESRI.ArcGIS.DataInteropUI.IEnumFORMATETC@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IEnumFORMATETC.RemoteNext(System.UInt32,ESRI.ArcGIS.DataInteropUI.tagFORMATETC@,System.UInt32@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IEnumFORMATETC.Reset">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IEnumFORMATETC.Skip(System.UInt32)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.IEnumMoniker">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IEnumMoniker.Clone(ESRI.ArcGIS.DataInteropUI.IEnumMoniker@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IEnumMoniker.RemoteNext(System.UInt32,ESRI.ArcGIS.DataInteropUI.IMoniker@,System.UInt32@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IEnumMoniker.Reset">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IEnumMoniker.Skip(System.UInt32)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.IEnumSTATDATA">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IEnumSTATDATA.Clone(ESRI.ArcGIS.DataInteropUI.IEnumSTATDATA@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IEnumSTATDATA.RemoteNext(System.UInt32,ESRI.ArcGIS.DataInteropUI.tagSTATDATA@,System.UInt32@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IEnumSTATDATA.Reset">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IEnumSTATDATA.Skip(System.UInt32)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.IEnumString">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IEnumString.Clone(ESRI.ArcGIS.DataInteropUI.IEnumString@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IEnumString.RemoteNext(System.UInt32,System.String@,System.UInt32@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IEnumString.Reset">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IEnumString.Skip(System.UInt32)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.IMoniker">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IMoniker.CommonPrefixWith(ESRI.ArcGIS.DataInteropUI.IMoniker,ESRI.ArcGIS.DataInteropUI.IMoniker@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IMoniker.ComposeWith(ESRI.ArcGIS.DataInteropUI.IMoniker,System.Int32,ESRI.ArcGIS.DataInteropUI.IMoniker@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IMoniker.Enum(System.Int32,ESRI.ArcGIS.DataInteropUI.IEnumMoniker@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IMoniker.GetDisplayName(ESRI.ArcGIS.DataInteropUI.IBindCtx,ESRI.ArcGIS.DataInteropUI.IMoniker,System.String@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IMoniker.GetTimeOfLastChange(ESRI.ArcGIS.DataInteropUI.IBindCtx,ESRI.ArcGIS.DataInteropUI.IMoniker,ESRI.ArcGIS.esriSystem._FILETIME@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IMoniker.Hash(System.UInt32@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IMoniker.Inverse(ESRI.ArcGIS.DataInteropUI.IMoniker@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IMoniker.IsEqual(ESRI.ArcGIS.DataInteropUI.IMoniker)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IMoniker.IsRunning(ESRI.ArcGIS.DataInteropUI.IBindCtx,ESRI.ArcGIS.DataInteropUI.IMoniker,ESRI.ArcGIS.DataInteropUI.IMoniker)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IMoniker.IsSystemMoniker(System.UInt32@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IMoniker.ParseDisplayName(ESRI.ArcGIS.DataInteropUI.IBindCtx,ESRI.ArcGIS.DataInteropUI.IMoniker,System.String,System.UInt32@,ESRI.ArcGIS.DataInteropUI.IMoniker@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IMoniker.Reduce(ESRI.ArcGIS.DataInteropUI.IBindCtx,System.UInt32,ESRI.ArcGIS.DataInteropUI.IMoniker@,ESRI.ArcGIS.DataInteropUI.IMoniker@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IMoniker.RelativePathTo(ESRI.ArcGIS.DataInteropUI.IMoniker,ESRI.ArcGIS.DataInteropUI.IMoniker@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IMoniker.RemoteBindToObject(ESRI.ArcGIS.DataInteropUI.IBindCtx,ESRI.ArcGIS.DataInteropUI.IMoniker,System.Guid@,System.Object@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IMoniker.RemoteBindToStorage(ESRI.ArcGIS.DataInteropUI.IBindCtx,ESRI.ArcGIS.DataInteropUI.IMoniker,System.Guid@,System.Object@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.IProvideClassInfo">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IProvideClassInfo.GetClassInfo(ESRI.ArcGIS.DataInteropUI.ITypeInfo@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.IProvideClassInfo2">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IProvideClassInfo2.GetGUID(System.UInt32,System.Guid@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IProvideClassInfo2.GetClassInfo(ESRI.ArcGIS.DataInteropUI.ITypeInfo@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.IRunningObjectTable">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IRunningObjectTable.EnumRunning(ESRI.ArcGIS.DataInteropUI.IEnumMoniker@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IRunningObjectTable.GetObject(ESRI.ArcGIS.DataInteropUI.IMoniker,System.Object@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IRunningObjectTable.GetTimeOfLastChange(ESRI.ArcGIS.DataInteropUI.IMoniker,ESRI.ArcGIS.esriSystem._FILETIME@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IRunningObjectTable.IsRunning(ESRI.ArcGIS.DataInteropUI.IMoniker)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IRunningObjectTable.NoteChangeTime(System.UInt32,ESRI.ArcGIS.esriSystem._FILETIME@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IRunningObjectTable.Register(System.UInt32,System.Object,ESRI.ArcGIS.DataInteropUI.IMoniker,System.UInt32@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.IRunningObjectTable.Revoke(System.UInt32)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.ISpecifyPropertyPages">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ISpecifyPropertyPages.GetPages(ESRI.ArcGIS.DataInteropUI.tagCAUUID@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.ITypeComp">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeComp.RemoteBind(System.String,System.UInt32,System.VT_UI2:18,ESRI.ArcGIS.DataInteropUI.ITypeInfo@,ESRI.ArcGIS.DataInteropUI.tagDESCKIND@,ESRI.ArcGIS.DataInteropUI.tagFUNCDESC@,ESRI.ArcGIS.DataInteropUI.tagVARDESC@,ESRI.ArcGIS.DataInteropUI.ITypeComp@,System.UInt32@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeComp.RemoteBindType(System.String,System.UInt32,ESRI.ArcGIS.DataInteropUI.ITypeInfo@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.ITypeInfo">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeInfo.GetImplTypeFlags(System.UInt32,System.Int32@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeInfo.GetMops(System.Int32,System.String@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeInfo.GetRefTypeInfo(System.UInt32,ESRI.ArcGIS.DataInteropUI.ITypeInfo@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeInfo.GetRefTypeOfImplType(System.UInt32,System.UInt32@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeInfo.GetTypeComp(ESRI.ArcGIS.DataInteropUI.ITypeComp@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeInfo.LocalAddressOfMember">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeInfo.LocalGetIDsOfNames">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeInfo.LocalInvoke">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeInfo.LocalReleaseFuncDesc">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeInfo.LocalReleaseTypeAttr">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeInfo.LocalReleaseVarDesc">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeInfo.RemoteCreateInstance(System.Guid@,System.Object@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeInfo.RemoteGetContainingTypeLib(ESRI.ArcGIS.DataInteropUI.ITypeLib@,System.UInt32@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeInfo.RemoteGetDllEntry(System.Int32,ESRI.ArcGIS.DataInteropUI.tagINVOKEKIND,System.UInt32,System.String@,System.String@,System.VT_UI2:18@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeInfo.RemoteGetDocumentation(System.Int32,System.UInt32,System.String@,System.String@,System.UInt32@,System.String@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeInfo.RemoteGetFuncDesc(System.UInt32,ESRI.ArcGIS.DataInteropUI.tagFUNCDESC@,System.UInt32@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeInfo.RemoteGetNames(System.Int32,System.String@,System.UInt32,System.UInt32@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeInfo.RemoteGetTypeAttr(ESRI.ArcGIS.DataInteropUI.tagTYPEATTR@,System.UInt32@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeInfo.RemoteGetVarDesc(System.UInt32,ESRI.ArcGIS.DataInteropUI.tagVARDESC@,System.UInt32@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.ITypeLib">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeLib.GetTypeComp(ESRI.ArcGIS.DataInteropUI.ITypeComp@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeLib.GetTypeInfo(System.UInt32,ESRI.ArcGIS.DataInteropUI.ITypeInfo@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeLib.GetTypeInfoOfGuid(System.Guid@,ESRI.ArcGIS.DataInteropUI.ITypeInfo@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeLib.GetTypeInfoType(System.UInt32,ESRI.ArcGIS.DataInteropUI.tagTYPEKIND@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeLib.LocalReleaseTLibAttr">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeLib.RemoteFindName(System.String,System.UInt32,ESRI.ArcGIS.DataInteropUI.ITypeInfo@,System.Int32@,System.VT_UI2:18@,System.String@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeLib.RemoteGetDocumentation(System.Int32,System.UInt32,System.String@,System.String@,System.UInt32@,System.String@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeLib.RemoteGetLibAttr(ESRI.ArcGIS.DataInteropUI.tagTLIBATTR@,System.UInt32@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeLib.RemoteGetTypeInfoCount(System.UInt32@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataInteropUI.ITypeLib.RemoteIsName(System.String,System.UInt32,System.Int32@,System.String@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.FDLAdd">
+      <summary>FDLAdd Class</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.FDLAddClass">
+      <summary>FDLAdd Class</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.tagCALLCONV">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagCALLCONV.CC_FASTCALL">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagCALLCONV.CC_CDECL">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagCALLCONV.CC_MSCPASCAL">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagCALLCONV.CC_PASCAL">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagCALLCONV.CC_MACPASCAL">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagCALLCONV.CC_STDCALL">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagCALLCONV.CC_FPFASTCALL">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagCALLCONV.CC_SYSCALL">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagCALLCONV.CC_MPWCDECL">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagCALLCONV.CC_MPWPASCAL">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagCALLCONV.CC_MAX">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.tagDESCKIND">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagDESCKIND.DESCKIND_NONE">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagDESCKIND.DESCKIND_FUNCDESC">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagDESCKIND.DESCKIND_VARDESC">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagDESCKIND.DESCKIND_TYPECOMP">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagDESCKIND.DESCKIND_IMPLICITAPPOBJ">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagDESCKIND.DESCKIND_MAX">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.tagFUNCKIND">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagFUNCKIND.FUNC_VIRTUAL">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagFUNCKIND.FUNC_PUREVIRTUAL">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagFUNCKIND.FUNC_NONVIRTUAL">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagFUNCKIND.FUNC_STATIC">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagFUNCKIND.FUNC_DISPATCH">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.tagINVOKEKIND">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagINVOKEKIND.INVOKE_FUNC">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagINVOKEKIND.INVOKE_PROPERTYGET">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagINVOKEKIND.INVOKE_PROPERTYPUT">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagINVOKEKIND.INVOKE_PROPERTYPUTREF">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.tagSYSKIND">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagSYSKIND.SYS_WIN16">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagSYSKIND.SYS_WIN32">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagSYSKIND.SYS_MAC">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagSYSKIND.SYS_WIN64">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.tagTYPEKIND">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagTYPEKIND.TKIND_ENUM">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagTYPEKIND.TKIND_RECORD">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagTYPEKIND.TKIND_MODULE">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagTYPEKIND.TKIND_INTERFACE">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagTYPEKIND.TKIND_DISPATCH">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagTYPEKIND.TKIND_COCLASS">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagTYPEKIND.TKIND_ALIAS">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagTYPEKIND.TKIND_UNION">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagTYPEKIND.TKIND_MAX">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.tagVARKIND">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagVARKIND.VAR_PERINSTANCE">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagVARKIND.VAR_STATIC">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagVARKIND.VAR_CONST">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataInteropUI.tagVARKIND.VAR_DISPATCH">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.tagCAUUID">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.tagFORMATETC">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.wireCLIPFORMAT">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI._userCLIPFORMAT">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.tagDVTARGETDEVICE">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.wireSTGMEDIUM">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI._userSTGMEDIUM">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI._STGMEDIUM_UNION">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI._userHMETAFILEPICT">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI._remoteMETAFILEPICT">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI._userHMETAFILE">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI._BYTE_BLOB">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI._userHENHMETAFILE">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI._GDI_OBJECT">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI._userHBITMAP">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI._userBITMAP">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI._userHPALETTE">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.tagLOGPALETTE">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.tagPALETTEENTRY">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI._userHGLOBAL">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI._FLAGGED_BYTE_BLOB">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.wireFLAG_STGMEDIUM">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI._userFLAG_STGMEDIUM">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.wireASYNC_STGMEDIUM">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.tagBIND_OPTS2">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI._COSERVERINFO">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI._COAUTHINFO">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI._COAUTHIDENTITY">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.tagSTATDATA">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.tagTYPEATTR">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.tagTYPEDESC">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.tagARRAYDESC">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.tagSAFEARRAYBOUND">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.tagIDLDESC">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.tagFUNCDESC">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.tagELEMDESC">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.tagPARAMDESC">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.tagPARAMDESCEX">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.tagVARDESC">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInteropUI.tagTLIBATTR">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+  </members>
+</doc>

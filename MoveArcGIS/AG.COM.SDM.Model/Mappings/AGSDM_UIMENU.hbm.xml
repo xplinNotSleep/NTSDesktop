@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+  <class name="AG.COM.SDM.Model.AGSDM_UIMENU,AG.COM.SDM.Model" table="AM_UIMENU">
+
+    <id name="ID" column="ID" type="Decimal" unsaved-value="0">
+      <generator class="sequence">
+        <param name="sequence">AGSDM_SEQ_UIMENU</param>
+      </generator>
+    </id>
+    <property column="CODE" type="String" name="CODE"  />
+    <property column="GUID" type="String" name="GUID"  />
+    <property column="PARENTCODE" type="String" name="PARENTCODE"  />
+    <property column="CAPTION" type="String" name="CAPTION"  />
+    <property column="DLLFILE" type="String" name="DLLFILE"  />
+    <property column="CLASSNAME" type="String" name="CLASSNAME"  />
+    <property column="MENUTYPE" type="String" name="MENUTYPE"  />
+    <property column="EXT1" type="String" name="EXT1"  />
+    <property column="EXT2" type="String" name="EXT2"  />
+    <property column="EXT3" type="String" name="EXT3"  />
+    <property column="EXT4" type="String" name="EXT4"  />
+    <property column="EXT5" type="String" name="EXT5"  />
+    <property column="EXT6" type="String" name="EXT6"  />
+    <property column="EXT7" type="String" name="EXT7"  />
+    <property column="EXT8" type="String" name="EXT8"  />
+    <property column="EXT9" type="String" name="EXT9"  />
+    <property column="EXT10" type="String" name="EXT10"  />
+    <property column="SORT" type="Decimal" name="SORT"  />
+
+
+  </class>
+</hibernate-mapping>
+

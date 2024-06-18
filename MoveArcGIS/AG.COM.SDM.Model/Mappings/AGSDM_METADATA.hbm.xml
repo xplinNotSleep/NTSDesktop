@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+	<class name="AG.COM.SDM.Model.AGSDM_METADATA,AG.COM.SDM.Model" table="AM_METADATA">
+
+		<id name="ITEMID" column="ITEMID" type="Decimal" unsaved-value="0">
+      <generator class="sequence">
+        <param name="sequence">AGSDM_SEQ_METADATA</param>
+      </generator>
+		</id>
+		<property column="ITEMNAME" type="String" name="ITEMNAME" length="50" />
+		<property column="ITEMALIASNAME" type="String" name="ITEMALIASNAME" length="50" />
+		<property column="NODETYPE" type="String" name="NODETYPE" length="50" />
+		<property column="PARENTID" type="Decimal" name="PARENTID" />
+		<property column="FEATURETYPE" type="String" name="FEATURETYPE" length="20" />
+		<property column="GEOMETRYTYPE" type="String" name="GEOMETRYTYPE" length="20" />
+		
+	</class>
+</hibernate-mapping>

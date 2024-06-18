@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+  <class name="AG.COM.SDM.Model.AGSDM_WFOPINION,AG.COM.SDM.Model" table="AM_WFOPINION">
+
+    <id name="ID" column="ID" type="Decimal" unsaved-value="0">
+      <generator class="sequence">
+        <param name="sequence">AGSDM_SEQ_WFOPINION</param>
+      </generator>
+    </id>
+    <property column="ACTIVITYINSTID" type="Decimal" name="ACTIVITYINSTID"  />
+    <property column="ACTIVITYDEFGUID" type="String" name="ACTIVITYDEFGUID"  />
+    <property column="PROCESSINSTID" type="Decimal" name="PROCESSINSTID"  />
+    <property column="USERID" type="Decimal" name="USERID"  />
+    <property column="UPDATETIME" type="DateTime" name="UPDATETIME"  />
+    <property column="OPINIONCONTENT" type="String" name="OPINIONCONTENT"  />
+    <property column="NAME" type="String" name="NAME"  />
+  </class>
+</hibernate-mapping>
+

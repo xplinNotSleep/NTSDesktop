@@ -1,0 +1,767 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6B7FCFA4-80EA-49F7-AFBD-8AD60D1A472B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AG.COM.SDM.DataTools</RootNamespace>
+    <AssemblyName>AG.COM.SDM.DataTools</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\Debug\Bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '全部生成|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\全部生成\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '全部生成|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Debug\Bin\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AG.COM.SDM.Utility, Version=10.8.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Bin\AG.COM.SDM.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Utils.v14.2.14.2.3.0\lib\DevExpress.Utils.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ADF, Version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <HintPath>..\packages\ESRI.ArcGIS.ADF.10.8.0\lib\ESRI.ArcGIS.ADF.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.AxControls, Version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <HintPath>..\packages\ESRI.ArcGIS.AxControls.10.8.0\lib\ESRI.ArcGIS.AxControls.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Carto, Version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <HintPath>..\packages\ESRI.ArcGIS.Carto.10.8.0\lib\ESRI.ArcGIS.Carto.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Controls, Version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <HintPath>..\packages\ESRI.ArcGIS.Controls.10.8.0\lib\ESRI.ArcGIS.Controls.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataInteroperabilityTools, Version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <HintPath>..\packages\ESRI.ArcGIS.DataInteroperabilityTools.10.8.0\lib\ESRI.ArcGIS.DataInteroperabilityTools.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataManagementTools, Version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <HintPath>..\packages\ESRI.ArcGIS.DataManagementTools.10.8.0\lib\ESRI.ArcGIS.DataManagementTools.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesFile, Version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <HintPath>..\packages\ESRI.ArcGIS.DataSourcesFile.10.8.0\lib\ESRI.ArcGIS.DataSourcesFile.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesGDB, Version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <HintPath>..\packages\ESRI.ArcGIS.DataSourcesGDB.10.8.0\lib\ESRI.ArcGIS.DataSourcesGDB.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesRaster, Version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <HintPath>..\packages\ESRI.ArcGIS.DataSourcesRaster.10.8.0\lib\ESRI.ArcGIS.DataSourcesRaster.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Display, Version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <HintPath>..\packages\ESRI.ArcGIS.Display.10.8.0\lib\ESRI.ArcGIS.Display.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.GeoAnalyst, Version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <HintPath>..\packages\ESRI.ArcGIS.GeoAnalyst.10.8.0\lib\ESRI.ArcGIS.GeoAnalyst.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <HintPath>..\packages\ESRI.ArcGIS.Geodatabase.10.8.0\lib\ESRI.ArcGIS.Geodatabase.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geometry, Version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <HintPath>..\packages\ESRI.ArcGIS.Geometry.10.8.0\lib\ESRI.ArcGIS.Geometry.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessing, Version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <HintPath>..\packages\ESRI.ArcGIS.Geoprocessor.10.8.0\lib\ESRI.ArcGIS.Geoprocessing.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessor, Version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <HintPath>..\packages\ESRI.ArcGIS.Geoprocessor1.10.8.0\lib\ESRI.ArcGIS.Geoprocessor.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Output, Version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <HintPath>..\packages\ESRI.ArcGIS.Output.10.8.0\lib\ESRI.ArcGIS.Output.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SpatialAnalyst, Version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <HintPath>..\packages\ESRI.ArcGIS.SpatialAnalyst.10.8.0\lib\ESRI.ArcGIS.SpatialAnalyst.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.System, Version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <HintPath>..\packages\ESRI.ArcGIS.System.10.8.0\lib\ESRI.ArcGIS.System.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SystemUI, Version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <HintPath>..\packages\ESRI.ArcGIS.SystemUI.10.8.0\lib\ESRI.ArcGIS.SystemUI.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dll\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.9.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <HintPath>..\packages\WeifenLuo.WinFormsUI.Docking.2.9.0.1\lib\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\PlugCommand\CreateStructEnvCommand.cs" />
+    <Compile Include="Common\FormCreateStructEnv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\FormCreateStructEnv.Designer.cs">
+      <DependentUpon>FormCreateStructEnv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FormSetLayersSelectable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\FormSetLayersSelectable.Designer.cs">
+      <DependentUpon>FormSetLayersSelectable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\PlugCommand\SetLayersSelectable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConnecteBorder\ConnecteBorderCommand.cs" />
+    <Compile Include="ConnecteBorder\frmConnecteBorder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnecteBorder\frmConnecteBorder.Designer.cs">
+      <DependentUpon>frmConnecteBorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnecteBorder\frmProgeress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnecteBorder\frmProgeress.Designer.cs">
+      <DependentUpon>frmProgeress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnecteBorder\PublicMethod.cs" />
+    <Compile Include="ConstVariantDataTools.cs" />
+    <Compile Include="Conversion\CoClass\CADToFeatureDatasetInfo.cs" />
+    <Compile Include="Conversion\CoClass\CADToFeatureLayerInfo.cs" />
+    <Compile Include="Conversion\CoClass\CoverageToGDB.cs" />
+    <Compile Include="Conversion\FormArea2Line.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conversion\FormArea2Line.Designer.cs">
+      <DependentUpon>FormArea2Line.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conversion\FormCAD2Shp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conversion\FormCAD2Shp.Designer.cs">
+      <DependentUpon>FormCAD2Shp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conversion\FormCADToFeature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conversion\FormCADToFeature.designer.cs">
+      <DependentUpon>FormCADToFeature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conversion\FormImageConvert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conversion\FormImageConvert.Designer.cs">
+      <DependentUpon>FormImageConvert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conversion\FormLine2Area.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conversion\FormLine2Area.Designer.cs">
+      <DependentUpon>FormLine2Area.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conversion\FormExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conversion\FormExport.Designer.cs">
+      <DependentUpon>FormExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conversion\FormFormat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conversion\FormFormat.Designer.cs">
+      <DependentUpon>FormFormat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conversion\FormImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conversion\FormImport.Designer.cs">
+      <DependentUpon>FormImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conversion\CoClass\ICoverageToGDB.cs" />
+    <Compile Include="Conversion\CoClass\IQuickImportExport.cs" />
+    <Compile Include="Conversion\CoClass\MyQuickExport.cs" />
+    <Compile Include="Conversion\CoClass\MyQuickImport.cs" />
+    <Compile Include="Conversion\PlugCommand\Area2LineCommand.cs" />
+    <Compile Include="Conversion\PlugCommand\CAD2ShpCommand.cs" />
+    <Compile Include="Conversion\PlugCommand\CADToFeatureCommand.cs" />
+    <Compile Include="Conversion\PlugCommand\ImageConvertCommand.cs" />
+    <Compile Include="Conversion\PlugCommand\Line2AreaCommand.cs" />
+    <Compile Include="Conversion\PlugCommand\Other2ShpCommand.cs" />
+    <Compile Include="Conversion\PlugCommand\VCT2SHPCommand.cs" />
+    <Compile Include="Conversion\CoClass\QuickType.cs" />
+    <Compile Include="Conversion\PlugCommand\Shp2OtherCommand.cs" />
+    <Compile Include="DataCatalog\Commands\AddFeatureClass.cs" />
+    <Compile Include="DataCatalog\Commands\AddFeatureDataset.cs" />
+    <Compile Include="DataCatalog\Commands\CreateHisArchive.cs" />
+    <Compile Include="DataCatalog\Commands\DeleteHisArchive.cs" />
+    <Compile Include="DataCatalog\Commands\DeleteObject.cs" />
+    <Compile Include="DataCatalog\Commands\ModifyTableStructure.cs" />
+    <Compile Include="DataCatalog\Commands\RefreshObject.cs" />
+    <Compile Include="DataCatalog\Commands\RegisterVersion.cs" />
+    <Compile Include="DataCatalog\Commands\RenameObject.cs" />
+    <Compile Include="DataCatalog\Commands\UnRegisterVersion.cs" />
+    <Compile Include="DataCatalog\DataCatalogManagerCommand.cs" />
+    <Compile Include="DataCatalog\FormCatalog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataCatalog\FormCatalog.Designer.cs">
+      <DependentUpon>FormCatalog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataCatalog\FormRename.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataCatalog\FormRename.Designer.cs">
+      <DependentUpon>FormRename.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataProcess\AreaSelectType.cs" />
+    <Compile Include="DataProcess\CoClass\ExportCADConst.cs" />
+    <Compile Include="DataProcess\CoClass\ExportShpHelper.cs" />
+    <Compile Include="DataProcess\CoClass\SelectExtentExportCADInitTag.cs" />
+    <Compile Include="DataProcess\ControlSelArea.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataProcess\ControlSelArea.designer.cs">
+      <DependentUpon>ControlSelArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataProcess\FormCalculateEllipseArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataProcess\FormCalculateEllipseArea.Designer.cs">
+      <DependentUpon>FormCalculateEllipseArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataProcess\FormCombineByAttribute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataProcess\FormCombineByAttribute.Designer.cs">
+      <DependentUpon>FormCombineByAttribute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataProcess\FormExecuteSQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataProcess\FormExecuteSQL.Designer.cs">
+      <DependentUpon>FormExecuteSQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataProcess\FormExportShp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataProcess\FormExportShp.Designer.cs">
+      <DependentUpon>FormExportShp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataProcess\FormFFExportCAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataProcess\FormFFExportCAD.designer.cs">
+      <DependentUpon>FormFFExportCAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataProcess\FormGetFieldValueBySpatialRel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataProcess\FormGetFieldValueBySpatialRel.Designer.cs">
+      <DependentUpon>FormGetFieldValueBySpatialRel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataProcess\FormRasterClip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataProcess\FormRasterClip.Designer.cs">
+      <DependentUpon>FormRasterClip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataProcess\FormResetBSM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataProcess\FormResetBSM.Designer.cs">
+      <DependentUpon>FormResetBSM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataProcess\FormRasterSlope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataProcess\FormRasterSlope.Designer.cs">
+      <DependentUpon>FormRasterSlope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataProcess\FormSelectExtentExportCAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataProcess\FormSelectExtentExportCAD.designer.cs">
+      <DependentUpon>FormSelectExtentExportCAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataProcess\FormVectorClip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataProcess\FormVectorClip.Designer.cs">
+      <DependentUpon>FormVectorClip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataProcess\FormVectorClip2CAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataProcess\FormVectorClip2CAD.designer.cs">
+      <DependentUpon>FormVectorClip2CAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataProcess\FormXZQFFExportCAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataProcess\FormXZQFFExportCAD.designer.cs">
+      <DependentUpon>FormXZQFFExportCAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataProcess\PlugCommand\AdministrationExportCADCommand.cs" />
+    <Compile Include="DataProcess\PlugCommand\CalculateEllipseAreaCommand.cs" />
+    <Compile Include="DataProcess\PlugCommand\CmdExportShp.cs" />
+    <Compile Include="DataProcess\PlugCommand\CombineByAttributeCommand.cs" />
+    <Compile Include="DataProcess\PlugCommand\ExcuteSqlCommand.cs" />
+    <Compile Include="DataProcess\PlugCommand\FFExportCADCommand.cs" />
+    <Compile Include="DataProcess\PlugCommand\GetFieldValueBySpatialRelCommand.cs" />
+    <Compile Include="DataProcess\PlugCommand\ResetBSMCommand.cs" />
+    <Compile Include="DataProcess\PlugCommand\RasterClipCommand.cs" />
+    <Compile Include="DataProcess\PlugCommand\VectorClip2CADCommand.cs" />
+    <Compile Include="DataProcess\PlugCommand\XZQFFExportCADCommand.cs" />
+    <Compile Include="DataProcess\RasterSlopeClass.cs" />
+    <Compile Include="DataProcess\PlugCommand\RasterSlopeCommand.cs" />
+    <Compile Include="DataProcess\PlugCommand\VectorClipCommand.cs" />
+    <Compile Include="ImageRegistration\ConstVariant.cs" />
+    <Compile Include="ImageRegistration\frmGeoReference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageRegistration\frmGeoReference.Designer.cs">
+      <DependentUpon>frmGeoReference.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageRegistration\frmPointInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageRegistration\frmPointInfo.Designer.cs">
+      <DependentUpon>frmPointInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageRegistration\GeoReference.cs" />
+    <Compile Include="ImageRegistration\ToolAddPoint.cs" />
+    <Compile Include="ImageRegistration\ToolClearAllPoints.cs" />
+    <Compile Include="ImageRegistration\ToolDeletePoint.cs" />
+    <Compile Include="ImageRegistration\ToolEditPoint.cs" />
+    <Compile Include="ImageRegistration\ToolOpenFile.cs" />
+    <Compile Include="Manager\PlugCommand\CreatePyramidCommand.cs" />
+    <Compile Include="Manager\PlugCommand\CreateRaserDataSetCommand.cs" />
+    <Compile Include="Manager\FormCreateDataset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\FormCreateDataset.Designer.cs">
+      <DependentUpon>FormCreateDataset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\FormCreateFeatureClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\FormCreateFeatureClass.Designer.cs">
+      <DependentUpon>FormCreateFeatureClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\FormCreateLocalGeoDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\FormCreateLocalGeoDatabase.Designer.cs">
+      <DependentUpon>FormCreateLocalGeoDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\FormCreateOIDField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\FormCreateOIDField.Designer.cs">
+      <DependentUpon>FormCreateOIDField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\FormCreatePyramid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\FormCreatePyramid.designer.cs">
+      <DependentUpon>FormCreatePyramid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\FormCreateRasterDataSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\FormCreateRasterDataSet.designer.cs">
+      <DependentUpon>FormCreateRasterDataSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\FormImportRaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\FormImportRaster.designer.cs">
+      <DependentUpon>FormImportRaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\PlugCommand\ImportRasterCommand.cs" />
+    <Compile Include="Manager\PlugCommand\AddOIDFieldCommand.cs" />
+    <Compile Include="Manager\PlugCommand\CreateDatasetCommand.cs" />
+    <Compile Include="Manager\PlugCommand\CreateFeatureClassCommand.cs" />
+    <Compile Include="Manager\PlugCommand\CreateLocalGeoDatabaseCommand.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\FormSetLayersSelectable.resx">
+      <DependentUpon>FormSetLayersSelectable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnecteBorder\frmConnecteBorder.resx">
+      <DependentUpon>frmConnecteBorder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnecteBorder\frmProgeress.resx">
+      <DependentUpon>frmProgeress.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conversion\FormArea2Line.resx">
+      <DependentUpon>FormArea2Line.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conversion\FormCAD2Shp.resx">
+      <DependentUpon>FormCAD2Shp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conversion\FormLine2Area.resx">
+      <DependentUpon>FormLine2Area.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProcess\FormCalculateEllipseArea.resx">
+      <DependentUpon>FormCalculateEllipseArea.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProcess\FormCombineByAttribute.resx">
+      <DependentUpon>FormCombineByAttribute.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProcess\FormExecuteSQL.resx">
+      <DependentUpon>FormExecuteSQL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProcess\FormExportShp.resx">
+      <DependentUpon>FormExportShp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProcess\FormGetFieldValueBySpatialRel.resx">
+      <DependentUpon>FormGetFieldValueBySpatialRel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProcess\FormResetBSM.resx">
+      <DependentUpon>FormResetBSM.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProcess\FormRasterSlope.resx">
+      <DependentUpon>FormRasterSlope.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageRegistration\frmGeoReference.resx">
+      <DependentUpon>frmGeoReference.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageRegistration\frmPointInfo.resx">
+      <DependentUpon>frmPointInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\FormCreateDataset.resx">
+      <DependentUpon>FormCreateDataset.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\FormCreateLocalGeoDatabase.resx">
+      <DependentUpon>FormCreateLocalGeoDatabase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\FormCreateOIDField.resx">
+      <DependentUpon>FormCreateOIDField.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\Buffer.bmp" />
+    <None Include="Resources\ClearBuffer.bmp" />
+    <None Include="Resources\SetLayersSelectable.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\FormCreateStructEnv.resx">
+      <DependentUpon>FormCreateStructEnv.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conversion\FormCADToFeature.resx">
+      <DependentUpon>FormCADToFeature.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conversion\FormImageConvert.resx">
+      <DependentUpon>FormImageConvert.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conversion\FormExport.resx">
+      <DependentUpon>FormExport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conversion\FormFormat.resx">
+      <DependentUpon>FormFormat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conversion\FormImport.resx">
+      <DependentUpon>FormImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataCatalog\FormCatalog.resx">
+      <DependentUpon>FormCatalog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataCatalog\FormRename.resx">
+      <DependentUpon>FormRename.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProcess\ControlSelArea.resx">
+      <DependentUpon>ControlSelArea.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProcess\FormFFExportCAD.resx">
+      <DependentUpon>FormFFExportCAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProcess\FormRasterClip.resx">
+      <DependentUpon>FormRasterClip.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProcess\FormSelectExtentExportCAD.resx">
+      <DependentUpon>FormSelectExtentExportCAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProcess\FormVectorClip.resx">
+      <DependentUpon>FormVectorClip.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProcess\FormVectorClip2CAD.resx">
+      <DependentUpon>FormVectorClip2CAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProcess\FormXZQFFExportCAD.resx">
+      <DependentUpon>FormXZQFFExportCAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageRegistration\Resourses\Bitmap\AddPoint.bmp" />
+    <EmbeddedResource Include="ImageRegistration\Resourses\Bitmap\ClearAllPoints.bmp" />
+    <EmbeddedResource Include="ImageRegistration\Resourses\Bitmap\DeletePoint.bmp" />
+    <EmbeddedResource Include="ImageRegistration\Resourses\Bitmap\EditPoint.bmp" />
+    <EmbeddedResource Include="ImageRegistration\Resourses\Bitmap\FlipHorizontal.bmp" />
+    <EmbeddedResource Include="ImageRegistration\Resourses\Bitmap\FlipVertical.bmp" />
+    <EmbeddedResource Include="ImageRegistration\Resourses\Bitmap\GeoReference.bmp" />
+    <Content Include="ImageRegistration\Resourses\Bitmap\LeftRotate.bmp" />
+    <EmbeddedResource Include="ImageRegistration\Resourses\Bitmap\OpenFile.bmp" />
+    <EmbeddedResource Include="ImageRegistration\Resourses\Bitmap\RightRotate.bmp" />
+    <EmbeddedResource Include="ImageRegistration\Resourses\Cursor\AddPoint.cur" />
+    <EmbeddedResource Include="Manager\FormCreateFeatureClass.resx">
+      <DependentUpon>FormCreateFeatureClass.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\FormCreatePyramid.resx">
+      <DependentUpon>FormCreatePyramid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\FormCreateRasterDataSet.resx">
+      <DependentUpon>FormCreateRasterDataSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\FormImportRaster.resx">
+      <DependentUpon>FormImportRaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\C02.ico" />
+    <EmbeddedResource Include="Resources\C02_32.ico" />
+    <EmbeddedResource Include="Resources\C03.ico" />
+    <EmbeddedResource Include="Resources\C03_32.ico" />
+    <EmbeddedResource Include="Resources\C04.ico" />
+    <EmbeddedResource Include="Resources\C04_32.ico" />
+    <EmbeddedResource Include="Resources\C05.ico" />
+    <EmbeddedResource Include="Resources\C05_32.ico" />
+    <EmbeddedResource Include="Resources\C11.ico" />
+    <EmbeddedResource Include="Resources\C11_32.ico" />
+    <EmbeddedResource Include="Resources\C12.ico" />
+    <EmbeddedResource Include="Resources\C12_32.ico" />
+    <EmbeddedResource Include="Resources\C13.ico" />
+    <EmbeddedResource Include="Resources\C13_32.ico" />
+    <EmbeddedResource Include="Resources\C14.ico" />
+    <EmbeddedResource Include="Resources\C14_32.ico" />
+    <EmbeddedResource Include="Resources\C15.ico" />
+    <EmbeddedResource Include="Resources\C15_32.ico" />
+    <EmbeddedResource Include="Resources\C16.ico" />
+    <EmbeddedResource Include="Resources\C16_32.ico" />
+    <EmbeddedResource Include="Resources\C17+.ico" />
+    <EmbeddedResource Include="Resources\C17+_32.ico" />
+    <EmbeddedResource Include="Resources\C18+.ico" />
+    <EmbeddedResource Include="Resources\C18+_32.ico" />
+    <EmbeddedResource Include="Resources\C19+.ico" />
+    <EmbeddedResource Include="Resources\C19_32.ico" />
+    <EmbeddedResource Include="Resources\E1+.ico" />
+    <EmbeddedResource Include="Resources\E1+_32.ico" />
+    <EmbeddedResource Include="Resources\E2.ico" />
+    <EmbeddedResource Include="Resources\E2_32.ico" />
+    <EmbeddedResource Include="Resources\E3.ico" />
+    <EmbeddedResource Include="Resources\E3_32.ico" />
+    <EmbeddedResource Include="Resources\E4.ico" />
+    <EmbeddedResource Include="Resources\E4_32.ico" />
+    <EmbeddedResource Include="Resources\E6+~.ico" />
+    <EmbeddedResource Include="Resources\E6+~_32.ico" />
+    <EmbeddedResource Include="Resources\E7.ico" />
+    <EmbeddedResource Include="Resources\E7_32.ico" />
+    <EmbeddedResource Include="Resources\F1.ico" />
+    <EmbeddedResource Include="Resources\F1_32.ico" />
+    <EmbeddedResource Include="Resources\Cursor\PrintSelectExtent.cur" />
+    <EmbeddedResource Include="Resources\F5+.ico" />
+    <EmbeddedResource Include="Resources\F5+_32.ico" />
+    <EmbeddedResource Include="Resources\F4+.ico" />
+    <EmbeddedResource Include="Resources\F4+_32.ico" />
+    <Content Include="Resources\fileopen.bmp" />
+    <EmbeddedResource Include="Resources\SelectVisibleLayer.ico" />
+    <EmbeddedResource Include="Resources\SelectVisibleLayer32.ico" />
+    <EmbeddedResource Include="Resources\GridClip.bmp" />
+    <EmbeddedResource Include="Resources\RasterClip.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AG.COM.SDM.CADManager\AG.COM.SDM.CADManager.csproj">
+      <Project>{2c76e65b-d027-40c3-9594-c47871f09b20}</Project>
+      <Name>AG.COM.SDM.CADManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AG.COM.SDM.Catalog\AG.COM.SDM.Catalog.csproj">
+      <Project>{2f866fb3-dae6-48c9-805d-1aa90bd59c6a}</Project>
+      <Name>AG.COM.SDM.Catalog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AG.COM.SDM.Framework\AG.COM.SDM.Framework.csproj">
+      <Project>{6abb052c-8fdd-4629-940f-f5525a922f29}</Project>
+      <Name>AG.COM.SDM.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AG.COM.SDM.GeoDataBase\AG.COM.SDM.GeoDataBase.csproj">
+      <Project>{160946e7-3686-4c54-97df-e764b49f101f}</Project>
+      <Name>AG.COM.SDM.GeoDataBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AG.COM.SDM.QueryStat\AG.COM.SDM.QueryStat.csproj">
+      <Project>{48bdd733-a7c5-46a0-b87c-dedd2f17dd55}</Project>
+      <Name>AG.COM.SDM.QueryStat</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AG.COM.SDM.SystemUI\AG.COM.SDM.SystemUI.csproj">
+      <Project>{43e6461c-072f-408a-a9f7-62629700d3b9}</Project>
+      <Name>AG.COM.SDM.SystemUI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

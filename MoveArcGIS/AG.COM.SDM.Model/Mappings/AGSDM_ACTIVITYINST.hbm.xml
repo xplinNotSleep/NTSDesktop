@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+  <class name="AG.COM.SDM.Model.AGSDM_ACTIVITYINST,AG.COM.SDM.Model" table="AM_ACTIVITYINST">
+
+<id name="ID" column="ID" type="Decimal" unsaved-value="0">
+<generator class="sequence">
+<param name="sequence">AGSDM_SEQ_ACTIVITYINST</param>
+</generator>
+</id>
+<property column="ACTIVITYDEFID" type="String" name="ACTIVITYDEFID"  />
+<property column="PROCESSINSTID" type="Decimal" name="PROCESSINSTID"  />
+<property column="NAME" type="String" name="NAME"  />
+<property column="WFUSERID" type="Decimal" name="WFUSERID"  />
+<property column="WFUSERTYPE" type="int" name="WFUSERTYPE"  />
+<property column="STATE" type="int" name="STATE"  />
+<property column="ISDOING" type="int" name="ISDOING"  />
+<property column="CREATETIME" type="DateTime" name="CREATETIME"  />
+<property column="SUBMITUSERID" type="Decimal" name="SUBMITUSERID"  />
+<property column="SUBMITTIME" type="DateTime" name="SUBMITTIME"  />
+<property column="EXT1" type="String" name="EXT1"  />
+<property column="EXT2" type="String" name="EXT2"  />
+<property column="EXT3" type="String" name="EXT3"  />
+<property column="HANDLEUSERID" type="Decimal" name="HANDLEUSERID"  />
+<property column="RECEIVEUSERID" type="Decimal" name="RECEIVEUSERID"  />
+
+
+  </class>
+</hibernate-mapping>
+

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+	<class name="AG.COM.SDM.Model.AGSDM_LAYER,AG.COM.SDM.Model" table="AM_LAYER">
+
+		<id name="ID" column="ID" type="Decimal" unsaved-value="0">
+			<generator class="sequence">
+				<param name="sequence">AGSDM_SEQ_LAYER</param>
+			</generator>
+		</id>
+		<property column="DATASET_ID" type="Decimal" name="DATASET_ID" />
+    <property column="DATASOURCEID" type="Decimal" name="DATASOURCEID" />
+		<property column="SEQUENCE" type="Decimal" name="SEQUENCE" />
+		<property column="LAYER_NAME" type="String" name="LAYER_NAME" length="100" />
+		<property column="LAYER_TABLE" type="String" name="LAYER_TABLE" length="100" />
+		<property column="LAYER_PATH" type="String" name="LAYER_PATH" length="100" />
+		<property column="FEATURE_TYPE" type="String" name="FEATURE_TYPE" length="50" />
+		<property column="REMARK" type="String" name="REMARK" length="400" />
+    <property column="STATE" type="String" name="STATE" length="2" />
+	</class>
+</hibernate-mapping>

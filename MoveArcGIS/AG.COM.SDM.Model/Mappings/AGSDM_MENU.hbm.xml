@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+	<class name="AG.COM.SDM.Model.AGSDM_MENU,AG.COM.SDM.Model" table="AM_MENU">
+
+		<id name="ID" column="ID" type="Decimal" unsaved-value="0">
+			<generator class="sequence">
+				<param name="sequence">AGSDM_SEQ_MENU</param>
+			</generator>
+		</id>
+		<property column="MENU_ID" type="String" name="MENU_ID" length="30" />
+		<property column="PARENT_MENU_ID" type="String" name="PARENT_MENU_ID" length="30" />
+		<property column="MENU_CODE" type="String" name="MENU_CODE" length="30" />
+		<property column="MENU_NAME" type="String" name="MENU_NAME" length="50" />
+		<property column="ASSEMBLY_NAME" type="String" name="ASSEMBLY_NAME" length="100" />
+		<property column="TYPE_NAME" type="String" name="TYPE_NAME" length="200" />
+		<property column="SHORTCUT" type="String" name="SHORTCUT" length="50" />
+		<property column="ISBEGINGROUP" type="String" name="ISBEGINGROUP" length="1" />
+		<property column="MENU_TYPE" type="Decimal" name="MENU_TYPE" />
+		<property column="MENU_LEVEL" type="Decimal" name="MENU_LEVEL" />
+   <property column="SORTID" type="Decimal" name="SORTID" />
+    
+	</class>
+</hibernate-mapping>

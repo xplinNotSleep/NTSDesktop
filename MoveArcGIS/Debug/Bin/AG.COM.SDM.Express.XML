@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AG-Main</name>
+    </assembly>
+    <members>
+        <member name="T:AG.COM.SDM.Express.FormLogin">
+            <summary>
+            系统登录窗体
+            </summary>
+        </member>
+        <member name="M:AG.COM.SDM.Express.FormLogin.#ctor">
+            <summary>
+            初始化系统窗体实例
+            </summary>
+        </member>
+        <member name="M:AG.COM.SDM.Express.FormLogin.RefreshSessionFactory">
+            <summary>
+            刷新SessionFactory，在修改OLE数据库参数后调用
+            </summary>
+        </member>
+        <member name="M:AG.COM.SDM.Express.FormLogin.GetUserORG(System.Decimal)">
+            <summary>
+            获取用户部门信息
+            </summary>
+            <param name="orgID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AG.COM.SDM.Express.FormLogin.SaveUserName(System.String)">
+            <summary>
+            保存
+            </summary>
+        </member>
+        <member name="M:AG.COM.SDM.Express.FormLogin.GetUserName">
+            <summary>
+            获取上一次用户输入的用户名
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AG.COM.SDM.Express.FormLogin.DeleteOutOfDateFile">
+            <summary>
+            删除临时文件夹下的文件
+            </summary>
+        </member>
+        <member name="M:AG.COM.SDM.Express.FormLogin.GetTempPath">
+            <summary>
+            获取存放临时文件目录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AG.COM.SDM.Express.FormLogin.GetLogsPath">
+            <summary>
+            获取存放临时文件目录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:AG.COM.SDM.Express.FormLogin.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:AG.COM.SDM.Express.FormLogin.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:AG.COM.SDM.Express.FormLogin.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:AG.COM.SDM.Express.IMessageForm">
+            <summary>
+            消息显示接口
+            </summary>
+        </member>
+        <member name="F:AG.COM.SDM.Express.SplashForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AG.COM.SDM.Express.SplashForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AG.COM.SDM.Express.SplashForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:AG.COM.SDM.Express.StartupHandler">
+            <summary>
+            系统启动处理类
+            </summary>
+        </member>
+        <member name="M:AG.COM.SDM.Express.StartupHandler.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:AG.COM.SDM.Express.StartupHandler.Startup">
+            <summary>
+            系统启动处理
+            </summary>
+        </member>
+        <member name="M:AG.COM.SDM.Express.StartupHandler.OnCreate(System.Object)">
+            <summary>
+            创建时初始化赋值
+            </summary>
+            <param name="hook">hook对象</param>
+        </member>
+        <member name="T:AG.COM.SDM.Express.SystemLogin">
+            <summary>
+            功能说明：用于认证系统登录的用户信息。
+            </summary>
+        </member>
+        <member name="M:AG.COM.SDM.Express.SystemLogin.SysSpatialConnectionState">
+            <summary>
+            获取本地sde数据库连接操作。
+            </summary>
+            <returns>如果已经连接则返回true，否则返回false</returns>
+        </member>
+        <member name="M:AG.COM.SDM.Express.SystemLogin.SysLogin(System.String,System.String,System.Decimal@,System.String@)">
+            <summary>
+            系统登录的时候，认证用户		
+            </summary>
+            <param name="pLoginName">用户名称</param>
+            <param name="pLoginPassWord">用户密码</param>
+        </member>
+        <member name="M:AG.COM.SDM.Express.SystemLogin.SysOleConnectionState">
+            <summary>
+            判定ole库是否连接成功
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:AG.COM.SDM.Express.WinMain">
+            <summary>
+            系统主窗体
+            </summary>
+        </member>
+        <member name="M:AG.COM.SDM.Express.WinMain.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:AG.COM.SDM.Express.WinMain.CustomInitialize(AG.COM.SDM.Express.FormLogin)">
+            <summary>
+            自定义初始化
+            </summary>
+            <param name="pMsgFrm">消息窗体</param>
+        </member>
+        <member name="M:AG.COM.SDM.Express.WinMain.InitMenuContainer">
+            <summary>
+            从数据库中初始化菜单内容
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AG.COM.SDM.Express.WinMain.InitSkin">
+            <summary>
+            在“系统设置”菜单栏下添加devexpress的换肤按钮
+            </summary>
+        </member>
+        <member name="M:AG.COM.SDM.Express.WinMain.WinMain_SizeChanged(System.Object,System.EventArgs)">
+            <summary>
+            更新地图比例尺的状态显示
+            </summary>
+            <param name="displayTransformation"></param>
+            <param name="sizeChanged"></param>
+            <param name="newEnvelope"></param>
+        </member>
+        <member name="F:AG.COM.SDM.Express.WinMain.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:AG.COM.SDM.Express.WinMain.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:AG.COM.SDM.Express.WinMain.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:AG.COM.SDM.Express.Program.Main">
+            <summary>
+            应用程序的主入口点。
+            </summary>
+        </member>
+        <member name="M:AG.COM.SDM.Express.Program.SaveRestart(System.String)">
+            <summary>
+            保存
+            </summary>
+        </member>
+        <member name="M:AG.COM.SDM.Express.Program.Application_ThreadException(System.Object,System.Threading.ThreadExceptionEventArgs)">
+             <summary>
+            错误弹窗
+             </summary>
+             <param name="sender"></param>
+             <param name="e"></param>
+        </member>
+        <member name="M:AG.COM.SDM.Express.Program.WriteLog(System.String)">
+            <summary>
+            写文件
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="T:AG.COM.SDM.Express.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:AG.COM.SDM.Express.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:AG.COM.SDM.Express.Properties.Resources.Culture">
+            <summary>
+              重写当前线程的 CurrentUICulture 属性，对
+              使用此强类型资源类的所有资源查找执行重写。
+            </summary>
+        </member>
+        <member name="P:AG.COM.SDM.Express.Properties.Resources.loading_2">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:AG.COM.SDM.Express.Properties.Resources.process">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:AG.COM.SDM.Express.Properties.Resources.登陆界面">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:AG.COM.SDM.Express.Properties.Resources.登陆界面20170808">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:AG.COM.SDM.Express.Properties.Resources.登陆界面2021311">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:AG.COM.SDM.Express.Properties.Resources.登陆界面2021312">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:AG.COM.SDM.Express.Properties.Resources.系统首页">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:AG.COM.SDM.Express.Properties.Resources.系统首页_1">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:AG.COM.SDM.Express.Properties.Resources.系统首页2">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+    </members>
+</doc>

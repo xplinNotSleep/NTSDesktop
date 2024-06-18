@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0546A64F-FEFA-463F-8907-5F2A8A7FB346}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AG.COM.SDM.Manager</RootNamespace>
+    <AssemblyName>AG_Manager</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ApplicationIcon>otheroptions.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Debug\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '全部生成|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\全部生成\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '全部生成|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Debug\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AG.COM.SDM.Config, Version=10.8.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Bin\AG.COM.SDM.Config.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AG.COM.SDM.Framework, Version=10.8.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Bin\AG.COM.SDM.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="AG.COM.SDM.ORM, Version=10.8.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Bin\AG.COM.SDM.ORM.dll</HintPath>
+    </Reference>
+    <Reference Include="AG.COM.SDM.SystemUI, Version=10.8.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Bin\AG.COM.SDM.SystemUI.dll</HintPath>
+    </Reference>
+    <Reference Include="AG.COM.SDM.Utility, Version=10.8.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Bin\AG.COM.SDM.Utility.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ChnCharInfo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=18f031bd02e5e291, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dll\ChnCharInfo.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dll\Iesi.Collections.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mono.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.2.2.5\lib\net45\Mono.Security.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dll\NHibernate.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.LinFu">
+      <HintPath>..\Dll\NHibernate.ByteCode.LinFu.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Npgsql, Version=2.2.5.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.2.2.5\lib\net45\Npgsql.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NPOI, Version=2.4.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.4.0\lib\net40\NPOI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.4.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.4.0\lib\net40\NPOI.OOXML.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.4.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.4.0\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.4.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.4.0\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.9.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dll\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Database\CoClass\DatabaseHelper.cs" />
+    <Compile Include="FormKeyDict.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKeyDict.Designer.cs">
+      <DependentUpon>FormKeyDict.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuConfig.Designer.cs">
+      <DependentUpon>FormMenuConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormShowAllCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormShowAllCommand.designer.cs">
+      <DependentUpon>FormShowAllCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDesigner\AGControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoginDesigner\AGCustomProperty.cs" />
+    <Compile Include="LoginDesigner\AGCustomPropertyDescriptor.cs" />
+    <Compile Include="LoginDesigner\AGDesignSurface.cs" />
+    <Compile Include="LoginDesigner\AGForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoginDesigner\FormLoginSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginDesigner\FormLoginSetting.Designer.cs">
+      <DependentUpon>FormLoginSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddPlugIn.Designer.cs">
+      <DependentUpon>FormAddPlugIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStart.Designer.cs">
+      <DependentUpon>FormStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAddPlugIn.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormAddPlugIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKeyDict.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormKeyDict.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuConfig.resx">
+      <DependentUpon>FormMenuConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShowAllCommand.resx">
+      <DependentUpon>FormShowAllCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStart.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginDesigner\FormLoginSetting.resx">
+      <DependentUpon>FormLoginSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="StartupConfigManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bitmaps\anno.ico" />
+    <Content Include="Bitmaps\eye1.ico" />
+    <Content Include="Bitmaps\eye2.ico" />
+    <Content Include="Bitmaps\layers.bmp" />
+    <Content Include="Bitmaps\line.bmp" />
+    <Content Include="Bitmaps\map.bmp" />
+    <Content Include="Bitmaps\point.bmp" />
+    <Content Include="Bitmaps\polygon.bmp" />
+    <Content Include="Bitmaps\raster.bmp" />
+    <Content Include="Bitmaps\treeview.ico" />
+    <Content Include="otheroptions.ico" />
+    <Content Include="Resources\addgroup.bmp" />
+    <Content Include="Resources\addroot.bmp" />
+    <Content Include="Resources\adduser.bmp" />
+    <Content Include="Resources\Bitmap\addfield.gif" />
+    <Content Include="Resources\Bitmap\Button.bmp" />
+    <Content Include="Resources\Bitmap\ComboBox.bmp" />
+    <Content Include="Resources\Bitmap\delete.gif" />
+    <Content Include="Resources\Bitmap\delfield.gif" />
+    <Content Include="Resources\Bitmap\exit.ico" />
+    <Content Include="Resources\Bitmap\otheroptions.ico" />
+    <Content Include="Resources\Bitmap\save.bmp" />
+    <Content Include="Resources\Bitmap\ToolBar.bmp" />
+    <Content Include="Resources\Bitmap\MainMenu.bmp" />
+    <Content Include="Resources\Bitmap\Label.bmp" />
+    <Content Include="Resources\Bitmap\PageMenu.bmp" />
+    <Content Include="Resources\delete.gif" />
+    <Content Include="Resources\delgroup.bmp" />
+    <Content Include="Resources\deluser.bmp" />
+    <Content Include="Resources\edit.ico" />
+    <Content Include="Resources\editgroup.bmp" />
+    <Content Include="Resources\edituser.bmp" />
+    <Content Include="Resources\group.ico" />
+    <Content Include="Resources\info.gif" />
+    <Content Include="Resources\unpacker.ico" />
+    <Content Include="Resources\UpdateFormIcon.ico" />
+    <Content Include="Resources\user.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AG.COM.SDM.Model\AG.COM.SDM.Model.csproj">
+      <Project>{f017dda1-bf88-4282-9671-8bab2fd38b2d}</Project>
+      <Name>AG.COM.SDM.Model</Name>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+  <class name="AG.COM.SDM.Model.AGSDM_TEMPLATE_ATTR,AG.COM.SDM.Model" table="AM_TEMPLATE_ATTR" lazy="false">
+
+    <id name="ID" column="ID" type="Decimal" unsaved-value="0">
+      <generator class="sequence">
+        <param name="sequence">AGSDM_SEQ_TEMPLATE_ATTR</param>
+      </generator>
+    </id>
+    <!--<composite-id access="field">
+      <key-property name="SORT_NO" column="SORT_NO" type="Decimal" />
+      <key-property name="TEMPLATE_ID" column="TEMPLATE_ID" type="Decimal" />
+    </composite-id>-->
+    <property name="SORT_NO" column="SORT_NO" type="Decimal" />
+    <property name="TEMPLATE_ID" column="TEMPLATE_ID" type="Decimal" />
+    <property column="ROOT" type="Decimal" name="ROOT" />
+    <property column="FIRST_CATALOG" type="Decimal" name="FIRST_CATALOG" />
+    <property column="SECOND_CATALOG" type="String" name="SECOND_CATALOG" length="1000" />
+    
+    <!--多对一关系：多个模板属性属于一个目录模板-->
+    <!--<many-to-one name="TEMPLATE" column="TEMPLATE_ID" not-null="true" class="AG.COM.SDM.Model.MIC_TEMPLATE,AG.COM.SDM.Model" />-->
+  </class>
+</hibernate-mapping>

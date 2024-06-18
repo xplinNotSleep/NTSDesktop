@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{42C87DC4-AEDD-4DEC-8010-B6557CB02180}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NetTopologySuite.IO.Esri.Shapefile</RootNamespace>
+    <AssemblyName>NetTopologySuite.IO.Esri.Shapefile</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dbf\DbfReader.cs" />
+    <Compile Include="Dbf\DbfWriter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shapefile.cs" />
+    <Compile Include="ShapefileException.cs" />
+    <Compile Include="Shapefiles\Readers\GeometryBuilderMode.cs" />
+    <Compile Include="Shapefiles\Readers\ShapefileMultiPointReader.cs" />
+    <Compile Include="Shapefiles\Readers\ShapefilePointReader.cs" />
+    <Compile Include="Shapefiles\Readers\ShapefilePolygonReader.cs" />
+    <Compile Include="Shapefiles\Readers\ShapefilePolyLineReadercs.cs" />
+    <Compile Include="Shapefiles\Readers\ShapefileReader.cs" />
+    <Compile Include="Shapefiles\Readers\ShapefileReader.T.cs" />
+    <Compile Include="Shapefiles\Readers\ShapefileReaderOptions.cs" />
+    <Compile Include="Shapefiles\Writers\ShapefileMultiPointWriter.cs" />
+    <Compile Include="Shapefiles\Writers\ShapefilePointWriter.cs" />
+    <Compile Include="Shapefiles\Writers\ShapefilePolygonWriter.cs" />
+    <Compile Include="Shapefiles\Writers\ShapefilePolyLineWriter.cs" />
+    <Compile Include="Shapefiles\Writers\ShapefileWriter.cs" />
+    <Compile Include="Shapefiles\Writers\ShapefileWriter.T.cs" />
+    <Compile Include="Shapefiles\Writers\ShapefileWriterOptions.cs" />
+    <Compile Include="ShapefileUtils.cs" />
+    <Compile Include="Shp\Readers\ShpMultiPointReader.cs" />
+    <Compile Include="Shp\Readers\ShpPointReader.cs" />
+    <Compile Include="Shp\Readers\ShpPolygonReader.cs" />
+    <Compile Include="Shp\Readers\ShpPolyLineReader.cs" />
+    <Compile Include="Shp\Readers\ShpReader.cs" />
+    <Compile Include="Shp\Readers\ShpReader.T.cs" />
+    <Compile Include="Shp\Shp.cs" />
+    <Compile Include="Shp\ShpCoordinateExtensions.cs" />
+    <Compile Include="Shp\ShpExtent.cs" />
+    <Compile Include="Shp\ShpMultiPartBuilder.cs" />
+    <Compile Include="Shp\ShpRange.cs" />
+    <Compile Include="Shp\ShpStreamExtensions.cs" />
+    <Compile Include="Shp\Writers\ShpMultiPointWriter.cs" />
+    <Compile Include="Shp\Writers\ShpPointWriter.cs" />
+    <Compile Include="Shp\Writers\ShpPolygonWriter.cs" />
+    <Compile Include="Shp\Writers\ShpPolyLineWriter.cs" />
+    <Compile Include="Shp\Writers\ShpWriter.cs" />
+    <Compile Include="Shx\ShxReader.cs" />
+    <Compile Include="Shx\ShxStreamExtensions.cs" />
+    <Compile Include="Shx\ShxWriter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NetTopologySuite.Features\NetTopologySuite.Features.csproj">
+      <Project>{144033fe-65e7-4250-a30c-9bd48b7b1fbe}</Project>
+      <Name>NetTopologySuite.Features</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetTopologySuite\NetTopologySuite.csproj">
+      <Project>{44a666f2-a8a5-4553-abd4-f87e09377441}</Project>
+      <Name>NetTopologySuite</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

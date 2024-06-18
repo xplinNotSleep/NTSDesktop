@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+  <class name="AG.COM.SDM.Model.AGSDM_ACTIVITYDEF,AG.COM.SDM.Model" table="AM_ACTIVITYDEF">
+
+<id name="ID" column="ID" type="Decimal" unsaved-value="0">
+<generator class="sequence">
+<param name="sequence">AGSDM_SEQ_ACTIVITYDEF</param>
+</generator>
+</id>
+<property column="PROCESSDEFID" type="String" name="PROCESSDEFID"  />
+<property column="NAME" type="String" name="NAME"  />
+<property column="GUID" type="String" name="GUID"  />
+<property column="SORT" type="Decimal" name="SORT"  />
+<property column="FORMCLASS" type="String" name="FORMCLASS"  />
+<property column="ACTUSERTYPE" type="int" name="ACTUSERTYPE"  />
+<property column="SAMEUSERACTGUID" type="String" name="SAMEUSERACTGUID"  />
+
+
+  </class>
+</hibernate-mapping>
+

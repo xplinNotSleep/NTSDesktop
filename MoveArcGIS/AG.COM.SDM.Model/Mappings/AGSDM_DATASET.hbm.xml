@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+  <class name="AG.COM.SDM.Model.AGSDM_DATASET,AG.COM.SDM.Model" table="AM_DATASET">
+
+		<id name="ID" column="ID" type="Decimal" unsaved-value="0">
+			<generator class="sequence">
+				<param name="sequence">AGSDM_SEQ_DATASET</param>
+			</generator>
+		</id>
+		<property column="DATASET_NAME" type="String" name="DATASET_NAME" length="80" />
+		<property column="DATASET_NAME_CN" type="String" name="DATASET_NAME_CN" length="100" />
+		<property column="COORDINATE" type="String" name="COORDINATE" length="50" />
+		<property column="PROJECT_TYPE" type="String" name="PROJECT_TYPE" length="50" />
+		<property column="SEQUENCE" type="Decimal" name="SEQUENCE" />
+		<property column="SCALE" type="String" name="SCALE" length="50" />
+		<property column="YEAR" type="String" name="YEAR" length="10" />
+		<property column="DATASOURCE_ID" type="Decimal" name="DATASOURCE_ID" />
+		<property column="DATASET_TYPE" type="String" name="DATASET_TYPE" length="50" />
+		<property column="REMARK" type="String" name="REMARK" length="100" />
+    <property column="STATE" type="String" name="STATE" length="2" />
+	</class>
+</hibernate-mapping>

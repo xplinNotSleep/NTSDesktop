@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  default-lazy="false">
+  <class name="AG.COM.SDM.Model.AGSDM_METADATA_QUALITYINFO,AG.COM.SDM.Model" table="AM_METADATA_QUALITYINFO">
+
+    <id name="ID" column="ID" type="Decimal" unsaved-value="0">
+      <generator class="sequence">
+        <param name="sequence">AGSDM_SEQ_MD_QUALITYINFO</param>
+      </generator>
+    </id>
+    <property column="DATASETID" type="Decimal" name="DATASETID" />
+    <property column="SUBJECTNAME" type="String" name="SUBJECTNAME" length="50" />
+    <property column="SJZLMS" type="String" name="SJZLMS" length="2000" />
+    <property column="SJZ" type="String" name="SJZ" length="2000" />
+
+  </class>
+</hibernate-mapping>

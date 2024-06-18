@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+	<class name="AG.COM.SDM.Model.AGSDM_PROJECT_LAYER,AG.COM.SDM.Model" table="AM_PROJECT_LAYER">
+
+		<id name="ID" column="ID" type="Decimal" unsaved-value="0">
+			<generator class="sequence">
+				<param name="sequence">AGSDM_SEQ_PROJECT_LAYER</param>
+			</generator>
+		</id>
+    <property column="OWNERID" type="Decimal" name="OWNERID" />
+    <property column="OBJECTTYPE" type="String" name="OBJECTTYPE" length="10" />
+    <property column="CLASSID" type="Decimal" name="CLASSID" />
+		<property column="PROJECT_ID" type="Decimal" name="PROJECT_ID" />
+		<property column="LAYER_ID" type="Decimal" name="LAYER_ID" />
+		<property column="ALIAS" type="String" name="ALIAS" length="100" />
+		<property column="SEQUENCE" type="Decimal" name="SEQUENCE" />
+		<property column="MIN_SCALE" type="Decimal" name="MIN_SCALE" />
+		<property column="MAX_SCALE" type="Decimal" name="MAX_SCALE" />
+		<property column="MIN_LABEL_SCALE" type="Decimal" name="MIN_LABEL_SCALE" />
+		<property column="MAX_LABEL_SCALE" type="Decimal" name="MAX_LABEL_SCALE" />
+		<property column="OPERATION" type="String" name="OPERATION" length="1" />
+		<property column="SELECTEABLE" type="String" name="SELECTEABLE" length="1" />
+		<property column="DEFAULT_VISIBLE" type="String" name="DEFAULT_VISIBLE" length="1" />
+		<property column="SHOW_LABEL" type="String" name="SHOW_LABEL" length="1" />
+		<property column="HIGH_LABEL" type="String" name="HIGH_LABEL" length="1" />
+    <property column="ISEXPAND" type="String" name="ISEXPAND" length="1" />
+		<property column="ANNO_FIELD" type="String" name="ANNO_FIELD" length="50" />
+		<property column="LABEL_STYLE" type="AG.COM.SDM.ORM.OracleClobField,AG.COM.SDM.ORM" name="LABEL_STYLE" />
+		<property column="LAYER_STYLE" type="AG.COM.SDM.ORM.OracleClobField,AG.COM.SDM.ORM" name="LAYER_STYLE" />
+		<property column="REMARK" type="String" name="REMARK" length="400" />
+		<property column="GROUPFIELD" type="String" name="GROUPFIELD" length="50" />
+    <property column="DISPLAYFIELD" type="String" name="DISPLAYFIELD" length="50" />
+    <property column="TABLENAME" type="String" name="TABLENAME" length="100" />
+    <property column="LAYERTYPE" type="String" name="LAYERTYPE" length="10" />
+    <property column="DEFINITIONQUERY" type="String" name="DEFINITIONQUERY" length="10" />
+  </class>
+</hibernate-mapping>

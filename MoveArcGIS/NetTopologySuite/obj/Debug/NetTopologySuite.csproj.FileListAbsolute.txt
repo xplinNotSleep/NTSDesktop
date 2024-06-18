@@ -1,0 +1,13 @@
+D:\Code\CSharp\MoveArcGIS\NetTopologySuite\obj\Debug\NetTopologySuite.csproj.CoreCompileInputs.cache
+D:\Code\CSharp\MoveArcGIS\Debug\Bin\NetTopologySuite.dll
+D:\Code\CSharp\MoveArcGIS\Debug\Bin\NetTopologySuite.pdb
+D:\Code\CSharp\MoveArcGIS\NetTopologySuite\obj\Debug\NetTopologySuite.dll
+D:\Code\CSharp\MoveArcGIS\NetTopologySuite\obj\Debug\NetTopologySuite.pdb
+D:\Code\CSharp\MoveArcGIS\NetTopologySuite\obj\Debug\NetTopologySuite.csproj.AssemblyReference.cache
+D:\Code\CSharp\MoveArcGIS\NetTopologySuite\obj\Debug\NetTopol.BA25B211.Up2Date
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\Debug\Bin\NetTopologySuite.dll
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\Debug\Bin\NetTopologySuite.pdb
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite\obj\Debug\NetTopologySuite.csproj.CoreCompileInputs.cache
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite\obj\Debug\NetTopologySuite.csproj.CopyComplete
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite\obj\Debug\NetTopologySuite.dll
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite\obj\Debug\NetTopologySuite.pdb

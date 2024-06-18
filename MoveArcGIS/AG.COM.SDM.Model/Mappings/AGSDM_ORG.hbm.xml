@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+  <class name="AG.COM.SDM.Model.AGSDM_ORG,AG.COM.SDM.Model" table="AM_ORG">
+
+    <id name="ORG_ID" column="ORG_ID" type="Decimal" unsaved-value="0">
+      <generator class="sequence">
+        <param name="sequence">AGSDM_SEQ_ORG</param>
+      </generator>
+    </id>
+    <property column="ID" type="Decimal" name="ID" />
+    <property column="ORG_CODE" type="String" name="ORG_CODE" length="50" />
+    <property column="ORG_NAME" type="String" name="ORG_NAME" length="100" />
+    <property column="ORG_TYPE" type="String" name="ORG_TYPE" length="20" />
+    <property column="ORG_LEVEL" type="Decimal" name="ORG_LEVEL" />
+    <property column="ORG_GRADE" type="String" name="ORG_GRADE" length="20" />
+    <property column="PARENT_ORG_ID" type="Decimal" name="PARENT_ORG_ID" />
+    <property column="ORG_SEQ" type="String" name="ORG_SEQ" length="500" />
+    <property column="ORG_ADDR" type="String" name="ORG_ADDR" length="250" />
+    <property column="ZIP_CODE" type="String" name="ZIP_CODE" length="10" />
+    <property column="LINK_MAN" type="String" name="LINK_MAN" length="50" />
+    <property column="LINK_TEL" type="String" name="LINK_TEL" length="50" />
+    <property column="EMAIL" type="String" name="EMAIL" length="100" />
+    <property column="WEB_URL" type="String" name="WEB_URL" length="100" />
+    <property column="STATUS" type="String" name="STATUS" length="1" />
+    <property column="AREA" type="String" name="AREA" length="20" />
+    <property column="DESCRIPTION" type="String" name="DESCRIPTION" length="200" />
+    <property column="PRINCIPALOR" type="Decimal" name="PRINCIPALOR" />
+    <property column="OPERATOR" type="Decimal" name="OPERATOR" />
+
+  </class>
+</hibernate-mapping>

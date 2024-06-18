@@ -1,0 +1,14 @@
+D:\Code\CSharp\MoveArcGIS\NetTopologySuite.Features\obj\Debug\NetTopologySuite.Features.csproj.CoreCompileInputs.cache
+D:\Code\CSharp\MoveArcGIS\NetTopologySuite.Features\obj\Debug\NetTopologySuite.Features.csproj.AssemblyReference.cache
+D:\Code\CSharp\MoveArcGIS\Debug\Bin\NetTopologySuite.Features.dll
+D:\Code\CSharp\MoveArcGIS\Debug\Bin\NetTopologySuite.Features.pdb
+D:\Code\CSharp\MoveArcGIS\NetTopologySuite.Features\obj\Debug\NetTopologySuite.Features.dll
+D:\Code\CSharp\MoveArcGIS\NetTopologySuite.Features\obj\Debug\NetTopologySuite.Features.pdb
+D:\Code\CSharp\MoveArcGIS\NetTopologySuite.Features\obj\Debug\NetTopol.C70501F4.Up2Date
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\Debug\Bin\NetTopologySuite.Features.dll
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\Debug\Bin\NetTopologySuite.Features.pdb
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite.Features\obj\Debug\NetTopologySuite.Features.csproj.AssemblyReference.cache
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite.Features\obj\Debug\NetTopologySuite.Features.csproj.CoreCompileInputs.cache
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite.Features\obj\Debug\NetTopologySuite.Features.csproj.CopyComplete
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite.Features\obj\Debug\NetTopologySuite.Features.dll
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite.Features\obj\Debug\NetTopologySuite.Features.pdb

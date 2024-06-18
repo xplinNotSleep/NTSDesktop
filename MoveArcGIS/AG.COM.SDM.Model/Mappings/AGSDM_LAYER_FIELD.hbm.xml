@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+	<class name="AG.COM.SDM.Model.AGSDM_LAYER_FIELD,AG.COM.SDM.Model" table="AM_LAYER_FIELD">
+
+		<id name="ID" column="ID" type="Decimal" unsaved-value="0">
+			<generator class="sequence">
+				<param name="sequence">AGSDM_SEQ_LAYER_FIELD</param>
+			</generator>
+		</id>
+    <property column="OWNERID" type="Decimal" name="OWNERID" />
+    <property column="OBJECTTYPE" type="String" name="OBJECTTYPE" length="10" />
+    <property column="CLASSID" type="Decimal" name="CLASSID" />
+		<property column="PROJECT_LAYER_ID" type="Decimal" name="PROJECT_LAYER_ID" />
+		<property column="FIELD_NAME" type="String" name="FIELD_NAME" length="100" />
+		<property column="FIELD_NAME_CN" type="String" name="FIELD_NAME_CN" length="100" />
+		<property column="FIELD_TYPE" type="String" name="FIELD_TYPE" length="10" />
+		<property column="FIELD_SIZE" type="String" name="FIELD_SIZE" length="10" />
+		<property column="VIEW_IN_RESULT" type="String" name="VIEW_IN_RESULT" length="1" />
+		<property column="VIEW_IN_TITLE" type="String" name="VIEW_IN_TITLE" length="1" />
+		<property column="EDITABLE" type="String" name="EDITABLE" length="1" />
+		<property column="IS_GROUP_FIELD" type="String" name="IS_GROUP_FIELD" length="1" />
+		<property column="VIEW_IN_BLURQUERY" type="String" name="VIEW_IN_BLURQUERY" length="1" />
+		<property column="SEQUENCE" type="Decimal" name="SEQUENCE" />
+		
+	</class>
+</hibernate-mapping>

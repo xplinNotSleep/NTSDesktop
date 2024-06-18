@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+	<class name="AG.COM.SDM.Model.AGSDM_STARTITEM,AG.COM.SDM.Model" table="AM_STARTITEM">
+
+		<id name="ID" column="ID" type="Decimal" unsaved-value="0">
+			<generator class="sequence">
+				<param name="sequence">AGSDM_SEQ_STARTITEM</param>
+			</generator>
+		</id>
+		<property column="START_NAME" type="String" name="START_NAME" length="50" />
+		<property column="FILE_NAME" type="String" name="FILE_NAME" length="100" />
+		<property column="ASSEMBLY_NAME" type="String" name="ASSEMBLY_NAME" length="100" />
+		<property column="TYPE_NAME" type="String" name="TYPE_NAME" length="200" />
+		<property column="DESCRIPTION" type="String" name="DESCRIPTION" length="200" />
+		
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{924D5096-3C03-4C18-B31F-ACF59B7737A8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AG.COM.SDM.DataOperate</RootNamespace>
+    <AssemblyName>AG.COM.SDM.DataOperate</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AG.COM.SDM.Config, Version=10.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Bin\AG.COM.SDM.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="AG.COM.SDM.Framework, Version=10.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Bin\AG.COM.SDM.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="NetTopologySuite, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Bin\NetTopologySuite.dll</HintPath>
+    </Reference>
+    <Reference Include="NetTopologySuite.Features, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Bin\NetTopologySuite.Features.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.9.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dll\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Operate\Common\GeoType.cs" />
+    <Compile Include="Operate\SpatialDbOperate\ShpToDbHelperBackup.cs" />
+    <Compile Include="Operate\SpatialDbOperate\SpatialDbHelperBackup.cs" />
+    <Compile Include="Operate\SpatialDbOperate\SpatialDbHelper.cs" />
+    <Compile Include="Operate\SpatialDbOperate\ShpToDbHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\FrmShpImportToDb.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\FrmShpImportToDb.Designer.cs">
+      <DependentUpon>FrmShpImportToDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmShpUpdateToDb.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\FrmShpUpdateToDb.Designer.cs">
+      <DependentUpon>FrmShpUpdateToDb.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Operate\Datacheck\" />
+    <Folder Include="Operate\Output\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\FrmShpImportToDb.resx">
+      <DependentUpon>FrmShpImportToDb.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AG.COM.SDM.Database\AG.COM.SDM.Database.csproj">
+      <Project>{0605d315-9b62-488d-834f-ecfeb0ae7cdd}</Project>
+      <Name>AG.COM.SDM.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AG.COM.SDM.SystemUI\AG.COM.SDM.SystemUI.csproj">
+      <Project>{43e6461c-072f-408a-a9f7-62629700d3b9}</Project>
+      <Name>AG.COM.SDM.SystemUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AG.COM.SDM.Utility\AG.COM.SDM.Utility.csproj">
+      <Project>{f17a0481-9911-431c-8703-23c2b45ee3e9}</Project>
+      <Name>AG.COM.SDM.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetTopologySuite.IO.Esri.Shapefile\NetTopologySuite.IO.Esri.Shapefile.csproj">
+      <Project>{42c87dc4-aedd-4dec-8010-b6557cb02180}</Project>
+      <Name>NetTopologySuite.IO.Esri.Shapefile</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetTopologySuite.IO.Postgis\NetTopologySuite.IO.SpatialDb.csproj">
+      <Project>{2afe537a-cfa2-4e5c-8e0f-8253da1dc7e3}</Project>
+      <Name>NetTopologySuite.IO.SpatialDb</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

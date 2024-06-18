@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>ESRI.ArcGIS.GeoStatisticalAnalyst</name>
+  </assembly>
+  <members>
+    <member name="T:ESRI.ArcGIS.GeoStatisticalAnalyst.IGPGALayerType">
+      <summary>Provides access to Geoprocessing Geostatistical layer type object.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.GeoStatisticalAnalyst.GPGALayer">
+      <summary>Geoprocessing Geostatistical Layer object.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.GeoStatisticalAnalyst.GPGALayerClass">
+      <summary>Geoprocessing Geostatistical Layer object.</summary>
+    </member>
+  </members>
+</doc>

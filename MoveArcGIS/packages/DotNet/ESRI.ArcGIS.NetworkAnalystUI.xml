@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>ESRI.ArcGIS.NetworkAnalystUI</name>
+  </assembly>
+  <members>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.INAClassFieldMapCtrl">
+      <summary>Provides access to network class fieldmap control.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.INADirectionsWindow">
+      <summary>Provides access to INADirectionsWindow interface.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INADirectionsWindow.Create(ESRI.ArcGIS.Framework.IApplication)">
+      <summary>Creates a Directions Window.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INADirectionsWindow.hWnd">
+      <summary>Retrieves the Directions Window handle.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INADirectionsWindow.IsVisible">
+      <summary>Indicates whether the Directions Window is visible or not.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INADirectionsWindow.PutPosition(System.Int32,System.Int32,System.Int32,System.Int32)">
+      <summary>Modifies Directions Window position.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INADirectionsWindow.QueryPosition(System.Int32@,System.Int32@,System.Int32@,System.Int32@)">
+      <summary>Queries Directions Window position.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INADirectionsWindow.Show(System.Boolean)">
+      <summary>Shows or hides the Directions Window.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.INADirectionsWindowManager">
+      <summary>Provides access to INADirectionsWindowManager interface.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INADirectionsWindowManager.ActiveDirectionsNAContext">
+      <summary>Retieves context of active NA layer.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INADirectionsWindowManager.CanShowDirections">
+      <summary>Indicates whether it is ever possible to show directions for the analysis.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INADirectionsWindowManager.DirectionsWindow">
+      <summary>Retrieves the Directions Window.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INADirectionsWindowManager.HideDirections">
+      <summary>Hides the Directions Window.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INADirectionsWindowManager.IsResult">
+      <summary>Indicates whether the analysis has valid results for directions.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INADirectionsWindowManager.IsWindowVisible">
+      <summary>Indicates if the Directions Window is visible.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INADirectionsWindowManager.ShowActiveDirections">
+      <summary>Shows directions for active NA layer.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INADirectionsWindowManager.UpdateDirections">
+      <summary>Updates directions, existing in the Window.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.INADirectionsWindowOptions">
+      <summary>Provides access to INADirectionsWindowOptions interface.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INADirectionsWindowOptions.ColumnVisible(ESRI.ArcGIS.NetworkAnalystUI.esriNADirectionsWindowColumns)">
+      <summary>Indicates whether the specified directions window column is visible or not.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.INADirectionsWindowSetup">
+      <summary>Provides access to INADirectionsWindowSetup interface.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INADirectionsWindowSetup.ClearWindow">
+      <summary>Clears Directions Window.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INADirectionsWindowSetup.Name">
+      <summary>Retreives the Directions Window name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INADirectionsWindowSetup.OnContextUpdate(ESRI.ArcGIS.NetworkAnalyst.INALayer,System.Boolean)">
+      <summary>Message handler, called when NA context updated.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INADirectionsWindowSetup.OnLayerChange(ESRI.ArcGIS.Carto.IEnumLayer,System.Boolean)">
+      <summary>Message handler, called when NA layer changed.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INADirectionsWindowSetup.OnResultUpdate(ESRI.ArcGIS.NetworkAnalyst.INALayer,System.Boolean)">
+      <summary>Message handler, called when NA result updated.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INADirectionsWindowSetup.ShowDirections(ESRI.ArcGIS.NetworkAnalyst.INALayer,ESRI.ArcGIS.esriSystem.ISet)">
+      <summary>Shows Directions in the Window.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.INAEditOperation">
+      <summary>Provides access to network analysis edit operations.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAEditOperation.Map">
+      <summary>The map associated with the edit operation.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAEditOperation.MenuString">
+      <summary>The menu string describing the edit operation.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAEditOperation.NAContext">
+      <summary>The analysis context of the edit operation.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.INAHierarchySettingsCtrl">
+      <summary>Provides access to network hierarchy settings control.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.INALocationEditOptions">
+      <summary>Provides access to location edit options.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INALocationEditOptions.AddressLocator">
+      <summary>The address locator used for reverse geocoding network locations.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INALocationEditOptions.AddressLocatorName">
+      <summary>The name of the address locator used for reverse geocoding network locations.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INALocationEditOptions.AutoReverseGeocode">
+      <summary>Indicates if locations should be reverse geocoded.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INALocationEditOptions.AutoSnapToNetwork">
+      <summary>Indicates if the geometry should be snapped to the network.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INALocationEditOptions.ReverseGeocodeNALocationEditTypes">
+      <summary>The network location edit types that can be automatically reverse geocoded.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INALocationEditOptions.SnapNALocationEditTypes">
+      <summary>The network location edit types that can be automatically snapped.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INALocationEditOptions.SnapOffsetDistance">
+      <summary>The snap offset distance from the network.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INALocationEditOptions.SnapOffsetUnits">
+      <summary>The snap offset units.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INALocationEditOptions.UseSnapOffset">
+      <summary>Indicates if snapped points should be offset from the network.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.INASnapListCtrl">
+      <summary>Provides access to network locator snapping control.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.INASourceQueryListCtrl">
+      <summary>Provides access to network locator source query control.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.INAWindow">
+      <summary>Provides access to the network analysis window.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INAWindow.AbortOperation(ESRI.ArcGIS.NetworkAnalyst.INAContext)">
+      <summary>Cancels the operation in progress.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindow.ActiveAnalysis">
+      <summary>The current analysis shown in the window.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindow.ActiveCategory">
+      <summary>The current category shown in the window.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindow.CategoryByNAClassName(System.String)">
+      <summary>The network analysis window category by NA class name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INAWindow.DelayEvents(ESRI.ArcGIS.NetworkAnalystUI.INAWindowCategory,System.Boolean)">
+      <summary>Indicates if events should be delayed for a category.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INAWindow.DelayWindowUpdates(System.Boolean)">
+      <summary>Indicates if window updates should be delayed.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindow.hWnd">
+      <summary>The handle to the analysis window.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindow.ItemSelectionColor">
+      <summary>The color used for selected items.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindow.Message">
+      <summary>Displays a message at the bottom of the window.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindow.Selection">
+      <summary>The current selection in the window.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INAWindow.StartOperation(ESRI.ArcGIS.NetworkAnalyst.INAContext)">
+      <summary>Starts an analysis window operation.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INAWindow.StopOperation(ESRI.ArcGIS.NetworkAnalyst.INAContext,System.String)">
+      <summary>Stops an analysis window operation.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INAWindow.UpdateContent(ESRI.ArcGIS.NetworkAnalystUI.INAWindowCategory)">
+      <summary>Refresh the window contents.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.INAWindow2">
+      <summary>Provides access to the network analysis window.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindow2.ActiveCategoryGroup">
+      <summary>The current category group shown in the window.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INAWindow2.AbortOperation(ESRI.ArcGIS.NetworkAnalyst.INAContext)">
+      <summary>Cancels the operation in progress.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindow2.ActiveAnalysis">
+      <summary>The current analysis shown in the window.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindow2.ActiveCategory">
+      <summary>The current category shown in the window.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindow2.CategoryByNAClassName(System.String)">
+      <summary>The network analysis window category by NA class name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INAWindow2.DelayEvents(ESRI.ArcGIS.NetworkAnalystUI.INAWindowCategory,System.Boolean)">
+      <summary>Indicates if events should be delayed for a category.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INAWindow2.DelayWindowUpdates(System.Boolean)">
+      <summary>Indicates if window updates should be delayed.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindow2.hWnd">
+      <summary>The handle to the analysis window.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindow2.ItemSelectionColor">
+      <summary>The color used for selected items.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindow2.Message">
+      <summary>Displays a message at the bottom of the window.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindow2.Selection">
+      <summary>The current selection in the window.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INAWindow2.StartOperation(ESRI.ArcGIS.NetworkAnalyst.INAContext)">
+      <summary>Starts an analysis window operation.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INAWindow2.StopOperation(ESRI.ArcGIS.NetworkAnalyst.INAContext,System.String)">
+      <summary>Stops an analysis window operation.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INAWindow2.UpdateContent(ESRI.ArcGIS.NetworkAnalystUI.INAWindowCategory)">
+      <summary>Refresh the window contents.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.INAWindowCategory">
+      <summary>Provides access to the window category.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindowCategory.Layer">
+      <summary>The layer for the category.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindowCategory.NAClass">
+      <summary>The network analysis class for the category.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.INAWindowCategory2">
+      <summary>Provides access to the window category.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindowCategory2.DataLayer">
+      <summary>The data layer for the category.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindowCategory2.Layer">
+      <summary>The layer for the category.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindowCategory2.NAClass">
+      <summary>The network analysis class for the category.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.INAWindowCategoryGroup">
+      <summary>Provides access to the window category group.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindowCategoryGroup.Category">
+      <summary>The NAWindow category associated with this category group.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindowCategoryGroup.Group">
+      <summary>The NAWindow category group name.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.INAWindowCategoryGroup2">
+      <summary>Provides access to the window category group.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindowCategoryGroup2.GroupValue">
+      <summary>The NAWindow category group value.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindowCategoryGroup2.Category">
+      <summary>The NAWindow category associated with this category group.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindowCategoryGroup2.Group">
+      <summary>The NAWindow category group name.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.INAWindowCommand">
+      <summary>Provides access to commands supported by a network analysis layer and category.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INAWindowCommand.Applies(ESRI.ArcGIS.NetworkAnalyst.INALayer,ESRI.ArcGIS.NetworkAnalystUI.INAWindowCategory)">
+      <summary>Indicates if a network analysis layer and category is supported.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.INAWindowCommand2">
+      <summary>Provides access to commands supported by a network analysis layer and category or category group.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INAWindowCommand2.AppliesToGroup(ESRI.ArcGIS.NetworkAnalyst.INALayer,ESRI.ArcGIS.NetworkAnalystUI.INAWindowCategoryGroup)">
+      <summary>Indicates if a network analysis layer and category or category group is supported.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INAWindowCommand2.Priority">
+      <summary>The priority is used to determine the ordering of dynamic commands in the context menu. If there are multiple dynamic commands that apply to the current context, the dynamic commands in the context menu will be ordered in descending priority order from the lar</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INAWindowCommand2.Applies(ESRI.ArcGIS.NetworkAnalyst.INALayer,ESRI.ArcGIS.NetworkAnalystUI.INAWindowCategory)">
+      <summary>Indicates if a network analysis layer and category is supported.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.INAWindowEvents">
+      <summary>Provides access to events triggered by the network analysis window.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.INAWindowEvents_Event">
+      <summary>Provides access to events triggered by the network analysis window.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INAWindowEvents.OnActiveAnalysisChanged">
+      <summary>Called when the active analysis changes.</summary>
+    </member>
+    <member name="E:ESRI.ArcGIS.NetworkAnalystUI.INAWindowEvents_Event.OnActiveAnalysisChanged">
+      <summary>Called when the active analysis changes.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INAWindowEvents.OnActiveCategoryChanged">
+      <summary>Called when the active category changes.</summary>
+    </member>
+    <member name="E:ESRI.ArcGIS.NetworkAnalystUI.INAWindowEvents_Event.OnActiveCategoryChanged">
+      <summary>Called when the active category changes.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INAWindowEvents.OnActiveNAContextUpdated">
+      <summary>Called when the active context has been updated.</summary>
+    </member>
+    <member name="E:ESRI.ArcGIS.NetworkAnalystUI.INAWindowEvents_Event.OnActiveNAContextUpdated">
+      <summary>Called when the active context has been updated.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INAWindowEvents.OnActiveNAResultUpdated">
+      <summary>Called when the active result has been updated.</summary>
+    </member>
+    <member name="E:ESRI.ArcGIS.NetworkAnalystUI.INAWindowEvents_Event.OnActiveNAResultUpdated">
+      <summary>Called when the active result has been updated.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.INetworkAnalystExtension">
+      <summary>Provides access to the network analyst extension.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INetworkAnalystExtension.CurrentNetworkLayer">
+      <summary>The current network layer.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INetworkAnalystExtension.NAWindow">
+      <summary>The network analysis window.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INetworkAnalystExtension.NetworkLayer(System.Int32)">
+      <summary>The network layer by index.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INetworkAnalystExtension.NetworkLayerCount">
+      <summary>The number of network layers.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INetworkAnalystExtension.ShowAnalysisMessagesAfterSolve">
+      <summary>The types of messages that are displayed after solving.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INetworkAnalystExtension.ZoomToResultAfterSolve">
+      <summary>Indicates if the window should zoom the map to show results after solving.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.INetworkAnalystExtensionEvents">
+      <summary>Provides access to events triggered by the network analysis extension.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.INetworkAnalystExtensionEvents_Event">
+      <summary>Provides access to events triggered by the network analysis extension.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INetworkAnalystExtensionEvents.OnCurrentNetworkLayerChanged">
+      <summary>Called when the current network layer has changed.</summary>
+    </member>
+    <member name="E:ESRI.ArcGIS.NetworkAnalystUI.INetworkAnalystExtensionEvents_Event.OnCurrentNetworkLayerChanged">
+      <summary>Called when the current network layer has changed.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INetworkAnalystExtensionEvents.OnNetworkLayersChanged">
+      <summary>Called when the network layers have changed.</summary>
+    </member>
+    <member name="E:ESRI.ArcGIS.NetworkAnalystUI.INetworkAnalystExtensionEvents_Event.OnNetworkLayersChanged">
+      <summary>Called when the network layers have changed.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.INetworkIdentifyDialog">
+      <summary>Provides access to the network identify dialog.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INetworkIdentifyDialog.AddIdentifyPoint(ESRI.ArcGIS.Geometry.IPoint,System.Double,ESRI.ArcGIS.esriSystem.ITrackCancel)">
+      <summary>Add a new point to be identified.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INetworkIdentifyDialog.Clear">
+      <summary>Empty the current dialog contents.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INetworkIdentifyDialog.Display">
+      <summary>The display for the dialog.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INetworkIdentifyDialog.GetPosition(System.Int32@,System.Int32@,System.Int32@,System.Int32@)">
+      <summary>The network identify dialog position.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INetworkIdentifyDialog.Map">
+      <summary>The map for the dialog.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.NetworkAnalystUI.INetworkIdentifyDialog.NetworkLayer">
+      <summary>The network layer for the dialog.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INetworkIdentifyDialog.SetPosition(System.Int32,System.Int32,System.Int32,System.Int32)">
+      <summary>The network identify dialog position.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.INetworkIdentifyDialog.Show(System.Boolean)">
+      <summary>Display the network identify dialog.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.NAClassFieldMapCtrl">
+      <summary>Control for setting network class field mappings.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.NAClassFieldMapCtrlClass">
+      <summary>Control for setting network class field mappings.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.NAClassFieldMapCtrlClass.Initialize(ESRI.ArcGIS.GeoprocessingUI.IMdElementEditor,System.String,System.String)">
+      <summary>Initializes the state of the element control object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.NAClassFieldMapCtrlClass.IMdElementCtrl_Initialize(ESRI.ArcGIS.GeoprocessingUI.IMdElementEditor,System.String,System.String)">
+      <summary>Initializes the state of the element control object.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.NetworkAnalystUI..">
+      <summary>Control for setting network class field mappings. Constructor has no input arguments.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.NetworkAnalystUI.._">
+      <summary>Control for setting network class field mappings. Constructor has no input arguments.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.NAClassFieldMapCtrlClass.#ctor">
+      <summary>Control for setting network class field mappings. Constructor has no input arguments.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.NAClassFieldMapCtrlClass.Refresh">
+      <summary>Called when the control should update it's display with the current property value(s).</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.NAClassFieldMapCtrlClass.IMdElementCtrl_Refresh">
+      <summary>Called when the control should update it's display with the current property value(s).</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.NAClassFieldMapCtrlClass.Uninitialize">
+      <summary>Uninitializes the element control object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.NetworkAnalystUI.NAClassFieldMapCtrlClass.IMdElementCtrl_Uninitialize">
+      <summary>Uninitializes the element control object.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.NADirectionsWindow">
+      <summary>Network Analyst Directions Window Class.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.NADirectionsWindowClass">
+      <summary>Network Analyst Directions Window Class.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.esriNADirectionsWindowColumns">
+      <summary>Directions Window columns.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.NetworkAnalystUI.esriNADirectionsWindowColumns.esriDWCItemNumber">
+      <summary>Item Number column type.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.NetworkAnalystUI.esriNADirectionsWindowColumns.esriDWCEstimatedArrivalTime">
+      <summary>Estimated Arrival Time column type.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.NetworkAnalystUI.esriNADirectionsWindowColumns.esriDWCCumulativeDistance">
+      <summary>Cumulative Distance column type.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.NetworkAnalystUI.esriNADirectionsWindowColumns.esriDWCText">
+      <summary>Text column type.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.NetworkAnalystUI.esriNADirectionsWindowColumns.esriDWCTime">
+      <summary>Time column type.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.NetworkAnalystUI.esriNADirectionsWindowColumns.esriDWCDistance">
+      <summary>Distance column type.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.NetworkAnalystUI.esriNADirectionsWindowColumns.esriDWCMap">
+      <summary>Map column type.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.esriNALocationEditType">
+      <summary>Types of network analysis location edit options.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.NetworkAnalystUI.esriNALocationEditType.esriNALocationEditNone">
+      <summary>The message is not of a specific type.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.NetworkAnalystUI.esriNALocationEditType.esriNALocationEditInteractiveAdd">
+      <summary>The location is added interactively.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.NetworkAnalystUI.esriNALocationEditType.esriNALocationEditInteractiveMove">
+      <summary>The location is moved interactively.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.NetworkAnalystUI.esriNALocationEditType.esriNALocationEditBatchAddByGeometry">
+      <summary>The locations are loaded by geometry.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.NetworkAnalystUI.esriNALocationEditType.esriNALocationEditBatchAddByLocationFields">
+      <summary>The locations are loaded by location fields.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.NetworkAnalystUI.esriNALocationEditType.esriNALocationEditRecalculateByGeometry">
+      <summary>The locations are recalculated by geometry.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.NetworkAnalystUI.esriNAMessageType">
+      <summary>Types of network analysis messages.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.NetworkAnalystUI.esriNAMessageType.esriNAMessageTypeNone">
+      <summary>The message is not of a specific type.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.NetworkAnalystUI.esriNAMessageType.esriNAMessageTypeInformative">
+      <summary>The message is informational.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.NetworkAnalystUI.esriNAMessageType.esriNAMessageTypeWarning">
+      <summary>The message is a warning.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.NetworkAnalystUI.esriNAMessageType.esriNAMessageTypeError">
+      <summary>The message is an error.</summary>
+    </member>
+  </members>
+</doc>

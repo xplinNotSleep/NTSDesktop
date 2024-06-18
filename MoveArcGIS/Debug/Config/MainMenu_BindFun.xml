@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfItemCommandInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem1</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.Common.NewMapDocument</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem3</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.Common.SavaMapDocument</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem4</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.Common.SaveAsMapDocument</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem5</ControlName>
+    <PlugAssembly>AG.COM.SDM.ProjectManage.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.ProjectManage.Commands.ProjectManageCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem7</ControlName>
+    <PlugAssembly>AG.COM.SDM.ProjectManage.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.ProjectManage.Commands.Mxd2ProjectCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem35</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.Selection.LineSelectFeatures</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem36</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.Selection.PolygonSelectFeatures</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem37</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.Selection.ClearSelection</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem38</ControlName>
+    <PlugAssembly>AG.COM.SDM.DataTools.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.DataTools.DataProcess.VectorClipCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem41</ControlName>
+    <PlugAssembly>AG.COM.SDM.OutPut.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.OutPut.Template.Command.MapClipPrintCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem42</ControlName>
+    <PlugAssembly>AG.COM.SDM.OutPut.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.OutPut.Template.Command.AdministrationPrintCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem48</ControlName>
+    <PlugAssembly>AG.COM.SDM.Config.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Config.Manager.UserManageCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem49</ControlName>
+    <PlugAssembly>AG.COM.SDM.Config.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Config.Manager.RoleManageCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem50</ControlName>
+    <PlugAssembly>AG.COM.SDM.Config.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Config.Manager.DeptManageCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem52</ControlName>
+    <PlugAssembly>AG.COM.SDM.Config.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Config.Manager.LogManageCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem53</ControlName>
+    <PlugAssembly>AG.COM.SDM.Config.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Config.Options.OptionsCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem54</ControlName>
+    <PlugAssembly>AG.COM.SDM.Config.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Config.SnapConfigCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem55</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.WindView.EagleView</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem56</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.WindView.TocView</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem57</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.QueryStat.SimpleQuery</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem58</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.QueryStat.CustomQuery</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem61</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.Common.QIOSThemeLunaBlue</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem62</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.Common.QIOSThemeDefault</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem63</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.Common.QIOSThemeHighContrast</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem64</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.Common.QIOSThemeLunaSilver</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem65</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.Common.QIOSThemeVistaBlack</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem66</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.Common.QIOSThemeLunaOlive</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem47</ControlName>
+    <PlugAssembly>AG.COM.SDM.OutPut.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.OutPut.Template.TemplateEditFormCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem69</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.Common.OpenMapDocument</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem70</ControlName>
+    <PlugAssembly>AG.COM.SDM.ProjectManage.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.ProjectManage.Commands.ProjectLoadManage</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem72</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.PanZoom.ZoomIn</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem73</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.PanZoom.ZoomOut</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem74</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.PanZoom.Pan</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem80</ControlName>
+    <PlugAssembly>AG.COM.SDM.DataTools.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.DataTools.Common.SetLayersSelectable</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem87</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.PanZoom.GoLastView</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem88</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.PanZoom.GoNextView</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem90</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.Common.AddData</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem110</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.Selection.SelectFeatures</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem115</ControlName>
+    <PlugAssembly>AG.COM.SDM.DataTools.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.DataTools.Conversion.CADToFeatureCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem116</ControlName>
+    <PlugAssembly>AG.COM.SDM.DataTools.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.DataTools.Conversion.Other2ShpCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem122</ControlName>
+    <PlugAssembly>AG.COM.SDM.Config.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Config.Manager.LoginUserCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem123</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.WindView.HelpView</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem125</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.WindView.AboutBoxCommad</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem43</ControlName>
+    <PlugAssembly>AG.COM.SDM.OutPut.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.OutPut.Template.RoadPrintCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem127</ControlName>
+    <PlugAssembly>AG.COM.SDM.OutPut.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.OutPut.Template.SimplePrintCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem128</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.cmdSearchMapByCanton</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonPage11</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.cmdSearchMapByCanton</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem129</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.cmdSearchMapByMapNo</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem130</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.cmdSearchMapByRoad</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem131</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.cmdRoadCrossLocate</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem132</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.cmdSearchMapByUnit</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem133</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.cmdSearchMapByXY</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem134</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.LocatorCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem135</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.QueryAndStatistic.ApproximateQuery</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem136</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.QueryAndStatistic.CmdQueryPipeByCanton</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem137</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.QueryAndStatistic.CmdQueryPipeByCross</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem138</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.QueryAndStatistic.CmdQueryPipeByMapNo</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem139</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.QueryAndStatistic.CmdQueryPipeByRoad</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem140</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.QueryAndStatistic.CmdQueryPipeByUnit</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonPage12</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.QueryAndStatistic.TStatByPAttribute</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem147</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.SpatialAnalyze.CrossSectionAnalyze</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem148</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.SpatialAnalyze.ZPMManalyse</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem151</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.SpatialAnalyze.ToolVerticalDisAnalyze</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem152</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.SpatialAnalyze.ToolHorizontalDisAnalyze</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem153</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.SpatialAnalyze.ToolSoilSealingDisAnalyze</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem155</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.SpatialAnalyze.BufferAnalysis</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem156</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.SpatialAnalyze.LineBufferAnalysisEx</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem157</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.SpatialAnalyze.LXAnalyseNew</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem158</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.SpatialAnalyze.AccidentAnalyse</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem160</ControlName>
+    <PlugAssembly>AG.Pipe.SpatialAnalyze.dll</PlugAssembly>
+    <PlugType>AG.Pipe.SpatialAnalyze._3DAnalyse.T3DAnalyse</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem118</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.SpatialAnalyze.cheqiEX</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem164</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.CommonTools.MeasureLength</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem165</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.CommonTools.MeasureArea</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem166</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.Style.StyleManager</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem169</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Tools.CmdBatchRenderer</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem40</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Print.CmdExportImage</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem175</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.CmdZoomToCanton</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem176</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.DataManageAndUpdate.CmdTable2Spatial</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem177</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AugurITMap.Plugins.DataBase.DataCheck</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem204</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.ToolGBManage</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem39</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Print.ExportRegion</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem207</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Print.ExportFrameSet</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem162</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Tools.PLable</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem163</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Tools.PipePointLabel</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem208</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.CmdFunParaSetting</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem159</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.SpatialAnalyze.ToolConnectSourceCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem209</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.DataBase.DataBaseBulider</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem213</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Tools.CmdExportMDB</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem71</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Tools.FullExtentEx</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem77</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.IdentityImage</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem218</ControlName>
+    <PlugAssembly>AG.COM.SDM.GeoDataBase.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.GeoDataBase.DataBackup.DataBackupCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem219</ControlName>
+    <PlugAssembly>AG.COM.SDM.GeoDataBase.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.GeoDataBase.DataBackup.DataRecoveryCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem215</ControlName>
+    <PlugAssembly>AG.COM.SDM.MetaCatalogue.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.MetaCatalogue.DataResManagerCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem220</ControlName>
+    <PlugAssembly>AG.COM.SDM.OutPut.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.OutPut.Template.Command.TemplateParameterSetCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem221</ControlName>
+    <PlugAssembly>AG.Pipe.SpatialAnalyze.dll</PlugAssembly>
+    <PlugType>AG.Pipe.SpatialAnalyze.CrossSection.clsCrossSectionStyleSetting</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem222</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.DataManageAndUpdate.ToolFieldManage</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem214</ControlName>
+    <PlugAssembly>AG.Pipe.Update.DataUpdate.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Update.DataUpdate.Command.TestTaskViewCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem223</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.PanZoom.ZoomToLayer</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem226</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.PanZoom.BatchLayerScaleSet</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem227</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.PanZoom.MapScale</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem228</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.Common.DeleteAllElements</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem224</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.Common.ReLogin</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem225</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.Common.Exit</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonPage13</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.SpatialAnalyze.ToolDesignHelper</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem229</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.SpatialAnalyze.ToolDesignHelper</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem230</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.SpatialAnalyze.BufferResultCleaner</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem231</ControlName>
+    <PlugAssembly>AG.COM.SDM.DataTools.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.DataTools.Conversion.Shp2OtherCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem232</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.QueryAndStatistic.CmdQueryPipePtByCanton</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem233</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.QueryAndStatistic.CmdQueryPipePtByCross</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem234</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.QueryAndStatistic.CmdQueryPipePtByMapNo</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem235</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.QueryAndStatistic.CmdQueryPipePtByRoad</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem236</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.QueryAndStatistic.CmdQueryPipePtByUnit</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem238</ControlName>
+    <PlugAssembly>AG.COM.SDM.MetaCatalogue.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.MetaCatalogue.MetaDataManagerCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem217</ControlName>
+    <PlugAssembly>AG.COM.SDM.HistoryDBManager.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.HistoryDBManager.PlugComparisonView</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem239</ControlName>
+    <PlugAssembly>AG.COM.SDM.HistoryDBManager.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.HistoryDBManager.PlugDataCatalogManager</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem237</ControlName>
+    <PlugAssembly>AG.Pipe.Update.DataUpdate.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Update.DataUpdate.Command.CmdAlreadyDone</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem241</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.SpatialAnalyze.ToolPipeLifeAnalyse</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem242</ControlName>
+    <PlugAssembly>AG.Pipe.ZZFeature.dll</PlugAssembly>
+    <PlugType>AG.Pipe.ZZFeature.Plugins.cmdRandomPick</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem243</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Tools.VectorClip2CADCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem216</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.DataBase.VersionManagerCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonPage5</ControlName>
+    <PlugAssembly>AG.Pipe.ZZFeature.dll</PlugAssembly>
+    <PlugType>AG.Pipe.ZZFeature.Plugins.ToolFileAdd</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem244</ControlName>
+    <PlugAssembly>AG.Pipe.ZZFeature.dll</PlugAssembly>
+    <PlugType>AG.Pipe.ZZFeature.Plugins.ToolFileAdd</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem245</ControlName>
+    <PlugAssembly>AG.Pipe.ZZFeature.dll</PlugAssembly>
+    <PlugType>AG.Pipe.ZZFeature.Plugins.ToolFileRead</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem246</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.DataManageAndUpdate.cmdDataImport</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem59</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Statistic.CmdQueryByCombination</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem150</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.SpatialAnalyze.ToolAcrossDisAnalyze</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem247</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.SpatialAnalyze.ToolPSHigh</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem248</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Statistic.ToolLineStatsticByBelong</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem249</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.SpatialAnalyze.ToolBatchCrossSection</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem250</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.SpatialAnalyze.ToolExcavate</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem251</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Statistic.ToolLineStatsticByCaliber</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem252</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Statistic.ToolLineStatsticByDate</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem253</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Statistic.ToolLineStatsticByMaterial</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem254</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Statistic.ToolLineStatsticByRoad</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem255</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Statistic.ToolLineStatsticByLocation</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem257</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Statistic.ToolPtStatsticByBelong</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem258</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Statistic.ToolPtStatsticByDate</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem259</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Statistic.ToolPtStatsticByFSW</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem260</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Statistic.ToolPtStatsticByPSize</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem261</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Statistic.ToolPtStatsticByRoad</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem262</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Statistic.ToolPtStatsticByLocation</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem263</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Statistic.ToolPtStatistic</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem264</ControlName>
+    <PlugAssembly>AG.Pipe.ZZFeature.dll</PlugAssembly>
+    <PlugType>AG.Pipe.ZZFeature.Plugins.cmdOverlap</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem256</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Statistic.ToolLineStatistic</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem265</ControlName>
+    <PlugAssembly>AG.Pipe.ZZFeature.dll</PlugAssembly>
+    <PlugType>AG.Pipe.ZZFeature.Plugins.cmdWorkload</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem266</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Tools.BatchDeleteCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem124</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Tools.CMDHelp</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem267</ControlName>
+    <PlugAssembly>AG.COM.SDM.Config.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Config.Manager.PositionManageCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem268</ControlName>
+    <PlugAssembly>AG.Pipe.ZZFeature.dll</PlugAssembly>
+    <PlugType>AG.Pipe.ZZFeature.Plugins.CmdCheckPointPhoto</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem269</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Tools.CmdFileManager</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem270</ControlName>
+    <PlugAssembly>AG.COM.SDM.Plugins.dll</PlugAssembly>
+    <PlugType>AG.COM.SDM.Plugins.Common.DBSystemParaManagerCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem271</ControlName>
+    <PlugAssembly>AG.Pipe.Update.DataUpdate.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Update.DataUpdate.Command.CmdRoleUpdaterManager</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem272</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Setting.LimitDateCommand</PlugType>
+  </ItemCommandInfo>
+  <ItemCommandInfo>
+    <Caption />
+    <ControlName>QRibbonItem273</ControlName>
+    <PlugAssembly>AG.Pipe.Plugins.dll</PlugAssembly>
+    <PlugType>AG.Pipe.Plugins.Setting.ReadLimitDateCommand</PlugType>
+  </ItemCommandInfo>
+</ArrayOfItemCommandInfo>

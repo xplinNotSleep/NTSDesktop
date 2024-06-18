@@ -1,0 +1,1048 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ESRI.ArcGIS.ServerTools</name>
+    </assembly>
+    <members>
+        <member name="T:ESRI.ArcGIS.ServerTools.DeleteGlobeServerCache">
+            <summary>Deletes a layer or layers of an existing globe service cache and all tiles in them.</summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ServerTools.DeleteGlobeServerCache.#ctor(System.Object,System.Object)">
+            <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+            <param name="service">The globe service whose layer caches you want to delete.  (In, Required)</param>
+            <param name="Layer">The layers in the globe service whose caches will be deleted. All layers of the service are included by default. If a layer is excluded the layer's cache will not be deleted. (In, Required)</param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.DeleteGlobeServerCache.service">
+            <summary>The globe service whose layer caches you want to delete.  (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.DeleteGlobeServerCache.Layer">
+            <summary>The layers in the globe service whose caches will be deleted. All layers of the service are included by default. If a layer is excluded the layer's cache will not be deleted. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.DeleteGlobeServerCache.out_service_url">
+            <summary>Output Service URL (out, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.DeleteGlobeServerCache.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.DeleteGlobeServerCache.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.DeleteGlobeServerCache.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.DeleteGlobeServerCache.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.DeleteGlobeServerCache.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ServerTools.ManageGlobeServerCacheTiles">
+            <summary>Creates and updates tiles in an existing globe service cache. This tool is used to create new tiles or to replace missing tiles, overwrite outdated tiles, or add new tiles.  All these actions can be defined by rectangular extents or by a polygon feature class. When creating new tiles, you can choose whether to create only empty tiles or re-create all tiles.</summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ServerTools.ManageGlobeServerCacheTiles.#ctor(System.Object,System.Object,System.String)">
+            <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+            <param name="service">The globe service whose cache tiles you want to update.  (In, Required)</param>
+            <param name="in_layers">The layers to include in the cache. (In, Required)</param>
+            <param name="update_mode">Choose a mode for updating the cache. The two modes are: (In, Required)</param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageGlobeServerCacheTiles.service">
+            <summary>The globe service whose cache tiles you want to update.  (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageGlobeServerCacheTiles.in_layers">
+            <summary>The layers to include in the cache. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageGlobeServerCacheTiles.update_mode">
+            <summary>Choose a mode for updating the cache. The two modes are: (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageGlobeServerCacheTiles.num_of_caching_service_instances">
+            <summary>The total number of instances of the System/CachingTools service that you want to dedicate toward running this tool. You can increase the  maximum number of instances per machine of the System/CachingTools service using the Service Editor window available through an administrative connection to ArcGIS Server. Ensure your server machines can support the chosen number of instances.  (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageGlobeServerCacheTiles.area_of_interest">
+            <summary>Defines an area of interest to constrain where tiles will be created or deleted. This can be a feature class, or it can be a feature that you interactively define in ArcMap. This parameter is useful if you want to manage tiles for irregularly shaped areas. It's also useful in situations where you want to precache some areas and leave less-visited areas uncached. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageGlobeServerCacheTiles.ignore_status">
+            <summary>This parameter allows you to track the status of your caching if you are creating tiles based on feature class boundaries (see the update_feature_class parameter).
+            (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageGlobeServerCacheTiles.update_extent">
+            <summary>Rectangular extent at which tiles should be created or deleted, depending on the value of the update_mode parameter. You can type the extent values or choose an extent from an existing data source. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageGlobeServerCacheTiles.out_service_url">
+            <summary>Output Service URL (out, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageGlobeServerCacheTiles.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageGlobeServerCacheTiles.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageGlobeServerCacheTiles.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageGlobeServerCacheTiles.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageGlobeServerCacheTiles.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ServerTools.SendEmailWithZipFileAttachment">
+            <summary></summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ServerTools.SendEmailWithZipFileAttachment.#ctor(System.String,System.String,System.String,System.String,System.Object,System.Int32,System.String)">
+            <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+            <param name="To">To (in)</param>
+            <param name="From">From (in)</param>
+            <param name="Subject">Subject (in)</param>
+            <param name="Text">Text (in)</param>
+            <param name="Zip_File">Zip File (in)</param>
+            <param name="Max_File_Size__MB_">Max File Size (MB) (in)</param>
+            <param name="SMTP_Email_Server">SMTP Email Server (in)</param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SendEmailWithZipFileAttachment.To">
+            <summary>To (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SendEmailWithZipFileAttachment.From">
+            <summary>From (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SendEmailWithZipFileAttachment.Subject">
+            <summary>Subject (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SendEmailWithZipFileAttachment.Text">
+            <summary>Text (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SendEmailWithZipFileAttachment.Zip_File">
+            <summary>Zip File (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SendEmailWithZipFileAttachment.Max_File_Size__MB_">
+            <summary>Max File Size (MB) (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SendEmailWithZipFileAttachment.SMTP_Email_Server">
+            <summary>SMTP Email Server (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SendEmailWithZipFileAttachment.User">
+            <summary>User (in, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SendEmailWithZipFileAttachment.Password">
+            <summary>Password (in, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SendEmailWithZipFileAttachment.Sent">
+            <summary>Sent (out, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SendEmailWithZipFileAttachment.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SendEmailWithZipFileAttachment.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SendEmailWithZipFileAttachment.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SendEmailWithZipFileAttachment.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SendEmailWithZipFileAttachment.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ServerTools.ExtractDataTask">
+            <summary></summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ServerTools.ExtractDataTask.#ctor(System.Object,System.Object,System.String,System.String,System.Object)">
+            <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+            <param name="Layers_to_Clip">Layers to Clip (in)</param>
+            <param name="Area_of_Interest">Area of Interest (in)</param>
+            <param name="Feature_Format">Feature Format (in)</param>
+            <param name="Raster_Format">Raster Format (in)</param>
+            <param name="Output_Zip_File">Output Zip File (out)</param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractDataTask.Layers_to_Clip">
+            <summary>Layers to Clip (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractDataTask.Area_of_Interest">
+            <summary>Area of Interest (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractDataTask.Feature_Format">
+            <summary>Feature Format (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractDataTask.Raster_Format">
+            <summary>Raster Format (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractDataTask.Output_Zip_File">
+            <summary>Output Zip File (out)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractDataTask.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractDataTask.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractDataTask.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractDataTask.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractDataTask.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ServerTools.ExtractDataAndEmailTask">
+            <summary></summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ServerTools.ExtractDataAndEmailTask.#ctor(System.Object,System.Object,System.String,System.String,System.String)">
+            <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+            <param name="Layers_to_Clip">Layers to Clip (in)</param>
+            <param name="Area_of_Interest">Area of Interest (in)</param>
+            <param name="Feature_Format">Feature Format (in)</param>
+            <param name="Raster_Format">Raster Format (in)</param>
+            <param name="To">To (in)</param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractDataAndEmailTask.Layers_to_Clip">
+            <summary>Layers to Clip (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractDataAndEmailTask.Area_of_Interest">
+            <summary>Area of Interest (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractDataAndEmailTask.Feature_Format">
+            <summary>Feature Format (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractDataAndEmailTask.Raster_Format">
+            <summary>Raster Format (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractDataAndEmailTask.To">
+            <summary>To (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractDataAndEmailTask.Sent">
+            <summary>Sent (out, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractDataAndEmailTask.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractDataAndEmailTask.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractDataAndEmailTask.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractDataAndEmailTask.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractDataAndEmailTask.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ServerTools.ExtractData">
+            <summary></summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ServerTools.ExtractData.#ctor(System.Object,System.Object,System.String,System.String,System.String,System.Object)">
+            <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+            <param name="Layers_to_Clip">Layers to Clip (in)</param>
+            <param name="Area_of_Interest">Area of Interest (in)</param>
+            <param name="Feature_Format">Feature Format (in)</param>
+            <param name="Raster_Format">Raster Format (in)</param>
+            <param name="Spatial_Reference">Spatial Reference (in)</param>
+            <param name="Output_Zip_File">Output Zip File (out)</param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractData.Layers_to_Clip">
+            <summary>Layers to Clip (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractData.Area_of_Interest">
+            <summary>Area of Interest (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractData.Feature_Format">
+            <summary>Feature Format (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractData.Raster_Format">
+            <summary>Raster Format (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractData.Spatial_Reference">
+            <summary>Spatial Reference (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractData.Custom_Spatial_Reference_Folder">
+            <summary>Custom Spatial Reference Folder (in, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractData.Output_Zip_File">
+            <summary>Output Zip File (out)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractData.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractData.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractData.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractData.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExtractData.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ServerTools.UploadServiceDefinition">
+             <summary>
+            
+            Uploads and publishes a GIS service to a specified GIS server based on a staged service definition file (.sd).</summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ServerTools.UploadServiceDefinition.#ctor(System.Object,System.Object)">
+             <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+             <param name="in_sd_file"><summary>
+            The service definition file (.sd) that contains all the information needed to publish a GIS service. (In, Required)</summary></param>
+             <param name="in_server">The server connection. You can use the ArcGIS Server connections listed under the GIS Servers node in the Catalog window, or you can browse to a folder where you store server connection files. (In, Required)</param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UploadServiceDefinition.in_sd_file">
+             <summary>
+            The service definition file (.sd) that contains all the information needed to publish a GIS service. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UploadServiceDefinition.in_server">
+            <summary>The server connection. You can use the ArcGIS Server connections listed under the GIS Servers node in the Catalog window, or you can browse to a folder where you store server connection files. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UploadServiceDefinition.in_service_name">
+             <summary>
+            Overrides the service name 
+            currently specified in the service definition with a new name. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UploadServiceDefinition.in_cluster">
+            <summary>Changes the cluster to which the service has been assigned. You must choose from clusters that are available on the specified server.
+            (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UploadServiceDefinition.in_folder_type">
+            <summary>Specifies the source for the folder. The default is a folder from the service definition. You can also choose a folder already existing on the specified server or a new folder to be created once you publish this service. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UploadServiceDefinition.in_folder">
+            <summary>The folder for the service. The default is the folder specified in the service definition. If you chose NEW for the folder type, provide a new folder name. If you chose EXISTING  for the folder type, choose an existing folder on the server.  (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UploadServiceDefinition.in_startupType">
+            <summary>Specifies the start state of the service immediately after publishing.
+            (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UploadServiceDefinition.in_override">
+            <summary>Specifies whether the sharing properties set in the service definition will be overridden. These properties define if, and how, you are sharing your service with ArcGIS Online. Sharing your service with ArcGIS Online exposes it for others to use.
+            (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UploadServiceDefinition.in_my_contents">
+            <summary>Specifies whether the service will be shared on ArcGIS Online. All shared services are available through My Contents. Even if you only want to share with a specific group in your organization, the service will also be shared through My Contents.
+            (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UploadServiceDefinition.in_public">
+            <summary>Specifies whether the service will be available to the public.
+            (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UploadServiceDefinition.in_organization">
+            <summary>Specifies whether the service will be shared with your organization.
+            (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UploadServiceDefinition.in_groups">
+            <summary>A list of group names with which the service will be shared. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UploadServiceDefinition.out_soap_svc_url">
+            <summary>SOAP Service URL (out, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UploadServiceDefinition.out_rest_svc_url">
+            <summary>REST Service URL (out, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UploadServiceDefinition.out_mapServiceItemID">
+            <summary>Hosted Map Service Item ID (out, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UploadServiceDefinition.out_featServiceItemID">
+            <summary>Hosted Feature Service Item ID (out, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UploadServiceDefinition.out_cached_service">
+            <summary>Cached Service (out, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UploadServiceDefinition.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UploadServiceDefinition.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UploadServiceDefinition.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UploadServiceDefinition.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UploadServiceDefinition.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ServerTools.StageService">
+             <summary>
+            
+            Stages a service definition.  A staged service definition (.sd) file contains all the necessary information needed to publish a GIS service, including data that must be copied to the server because it does not appear in the server's data store.</summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ServerTools.StageService.#ctor(System.Object,System.Object)">
+            <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+            <param name="in_service_definition_draft">The input draft service definition. Service definition drafts can be  created using ArcGIS Desktop.  See About draft services for more information. You can also use the arcpy.mapping function CreateMapSDDraft to create draft service definitions.  (In, Required)</param>
+            <param name="out_service_definition">The resulting service definition. The default is to write the service definition to the same directory as the draft service definition. (Out, Required)</param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.StageService.in_service_definition_draft">
+            <summary>The input draft service definition. Service definition drafts can be  created using ArcGIS Desktop.  See About draft services for more information. You can also use the arcpy.mapping function CreateMapSDDraft to create draft service definitions.  (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.StageService.out_service_definition">
+            <summary>The resulting service definition. The default is to write the service definition to the same directory as the draft service definition. (Out, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.StageService.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.StageService.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.StageService.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.StageService.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.StageService.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ServerTools.SignInToPortal">
+             <summary>
+            Allows you to sign in to portals. If you are publishing to an ArcGIS Online portal you need to be signed in to ArcGIS Online in order to publish. For those organizations that would like to use ArcGIS Online behind the firewall or in their own private cloud, there is a version that you can install and use on your own computer networks. It is called Portal for ArcGIS.</summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ServerTools.SignInToPortal.#ctor(System.String,System.Object,System.String)">
+            <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+            <param name="username"> Portal for ArcGIS username. This parameter is optional for portals with Integrated Windows Authentication. (In, Required)</param>
+            <param name="password"><summary>
+            Portal for ArcGIS password. This parameter is optional for portals with Integrated Windows Authentication. (In, Required)</summary></param>
+            <param name="portal_url"> The Sign In To Portal tool reads the URL set in Desktop Administrator. Any user entered value is ignored. The default value is URL for the ArcGIS portal currently chosen by the user in Desktop Administrator. (In, Required)</param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SignInToPortal.username">
+            <summary> Portal for ArcGIS username. This parameter is optional for portals with Integrated Windows Authentication. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SignInToPortal.password">
+            <summary>
+            Portal for ArcGIS password. This parameter is optional for portals with Integrated Windows Authentication. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SignInToPortal.portal_url">
+            <summary> The Sign In To Portal tool reads the URL set in Desktop Administrator. Any user entered value is ignored. The default value is URL for the ArcGIS portal currently chosen by the user in Desktop Administrator. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SignInToPortal.out_results">
+            <summary>Tool Succeeded (out, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SignInToPortal.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SignInToPortal.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SignInToPortal.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SignInToPortal.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SignInToPortal.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ServerTools.SignOutFromPortal">
+             <summary>
+            Signs out from the portal that you are currently signed in to. For those organizations that would like to use ArcGIS Online behind the firewall or in their own private cloud, there is a version that you can install and use on your own computer networks. It is called Portal for ArcGIS.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SignOutFromPortal.out_results">
+            <summary>Tool Succeeded (out, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SignOutFromPortal.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SignOutFromPortal.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SignOutFromPortal.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SignOutFromPortal.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.SignOutFromPortal.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ServerTools.ExportWebMap">
+            <summary>Geoprocessing tool that facilitates printing from web applications.</summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ServerTools.ExportWebMap.#ctor(System.String,System.Object)">
+            <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+            <param name="Web_Map_as_JSON">Web Map as JSON (in)</param>
+            <param name="Output_File">Output File (out)</param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportWebMap.Web_Map_as_JSON">
+            <summary>Web Map as JSON (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportWebMap.Output_File">
+            <summary>Output File (out)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportWebMap.Format">
+            <summary>Format (in, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportWebMap.Layout_Templates_Folder">
+            <summary>Layout Templates Folder (in, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportWebMap.Layout_Template">
+            <summary>Layout Template (in, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportWebMap.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportWebMap.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportWebMap.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportWebMap.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportWebMap.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ServerTools.ConvertMapServerCacheStorageFormat">
+            <summary> Converts the storage of a map or image service cache between the exploded format and the compact format. The tool converts the format in place, meaning it does not make a copy of the existing format of the cache. Instead, it creates the new format of the cache in the same cache folder and deletes the old format.</summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ServerTools.ConvertMapServerCacheStorageFormat.#ctor(System.Object)">
+            <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+            <param name="input_service">The map or image service whose cache format you want to convert.  (In, Required)</param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ConvertMapServerCacheStorageFormat.input_service">
+            <summary>The map or image service whose cache format you want to convert.  (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ConvertMapServerCacheStorageFormat.num_of_caching_service_instances">
+            <summary>The total number of instances of the System/CachingTools service that you want to dedicate toward running this tool. You can increase the  maximum number of instances per machine of the System/CachingTools service using the Service Editor window available through an administrative connection to ArcGIS Server. Ensure your server machines can support the chosen number of instances.  (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ConvertMapServerCacheStorageFormat.out_job_url">
+            <summary>Output Map Service URL (out, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ConvertMapServerCacheStorageFormat.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ConvertMapServerCacheStorageFormat.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ConvertMapServerCacheStorageFormat.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ConvertMapServerCacheStorageFormat.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ConvertMapServerCacheStorageFormat.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ServerTools.CreateMapServerCache">
+            <summary>Creates the tiling scheme and preparatory folders for a map or image service cache. After running this tool, use the Manage Map Server Cache Tiles tool to add tiles to the cache.</summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ServerTools.CreateMapServerCache.#ctor(System.Object,System.String,System.String,System.String,System.Int32,System.Int32,System.String)">
+            <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+            <param name="input_service">The map or image service to be cached.  (In, Required)</param>
+            <param name="service_cache_directory">The parent directory for the cache. This must be a registered ArcGIS Server cache directory. (In, Required)</param>
+            <param name="tiling_scheme_type">Specifies how the tiling scheme will be defined. You can define a new tiling scheme with this tool or browse to a predefined tiling scheme file (.xml). A predefined scheme can be created by running the Generate Map Server Cache Tiling Scheme tool. (In, Required)</param>
+            <param name="scales_type">Specifies how the tiles will be scaled. (In, Required)</param>
+            <param name="num_of_scales">The number of scale levels to create in the cache. This option is disabled if you create a custom list of scales. (In, Required)</param>
+            <param name="dots_per_inch">The dots per inch (DPI) of the intended output device. If a DPI is chosen that does not match the resolution of the output device, the scale of the map tile will appear incorrect. The default value is 96. (In, Required)</param>
+            <param name="tile_size">Specifies the width and height of the cache tiles in pixels. For the best balance between performance and manageability, avoid deviating from standard widths of 256 by 256 or 512 by 512. (In, Required)</param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.CreateMapServerCache.input_service">
+            <summary>The map or image service to be cached.  (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.CreateMapServerCache.service_cache_directory">
+            <summary>The parent directory for the cache. This must be a registered ArcGIS Server cache directory. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.CreateMapServerCache.tiling_scheme_type">
+            <summary>Specifies how the tiling scheme will be defined. You can define a new tiling scheme with this tool or browse to a predefined tiling scheme file (.xml). A predefined scheme can be created by running the Generate Map Server Cache Tiling Scheme tool. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.CreateMapServerCache.scales_type">
+            <summary>Specifies how the tiles will be scaled. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.CreateMapServerCache.num_of_scales">
+            <summary>The number of scale levels to create in the cache. This option is disabled if you create a custom list of scales. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.CreateMapServerCache.dots_per_inch">
+            <summary>The dots per inch (DPI) of the intended output device. If a DPI is chosen that does not match the resolution of the output device, the scale of the map tile will appear incorrect. The default value is 96. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.CreateMapServerCache.tile_size">
+            <summary>Specifies the width and height of the cache tiles in pixels. For the best balance between performance and manageability, avoid deviating from standard widths of 256 by 256 or 512 by 512. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.CreateMapServerCache.predefined_tiling_scheme">
+            <summary>The path to a predefined tiling scheme file (usually named conf.xml). (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.CreateMapServerCache.tile_origin">
+            <summary>The origin (upper left corner) of the tiling scheme in the coordinates of the spatial reference of the source map document. The extent of the source map document must be within (but does not need to coincide with) this region. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.CreateMapServerCache.scales">
+            <summary>The scale levels available for the cache. These are not represented as fractions. Instead, use 500 to represent a scale of 1:500, for example. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.CreateMapServerCache.cache_tile_format">
+            <summary>Specifies the cache tile format. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.CreateMapServerCache.tile_compression_quality">
+            <summary>The JPEG compression quality (1–100). The default value is 75 for the JPEG tile format and 0 for other formats. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.CreateMapServerCache.storage_format">
+            <summary>Specifies the storage format of tiles. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.CreateMapServerCache.out_service_url">
+            <summary>Output Map Service URL (out, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.CreateMapServerCache.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.CreateMapServerCache.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.CreateMapServerCache.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.CreateMapServerCache.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.CreateMapServerCache.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ServerTools.DeleteMapServerCache">
+            <summary>Deletes an existing map or image service cache, including all associated files on disk.</summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ServerTools.DeleteMapServerCache.#ctor(System.Object)">
+            <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+            <param name="input_service">The map or image service whose cache will be deleted. (In, Required)</param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.DeleteMapServerCache.input_service">
+            <summary>The map or image service whose cache will be deleted. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.DeleteMapServerCache.num_of_caching_service_instances">
+            <summary>The total number of instances of the System/CachingTools service that you want to dedicate toward running this tool. You can increase the  maximum number of instances per machine of the System/CachingTools service using the Service Editor window available through an administrative connection to ArcGIS Server. Ensure your server machines can support the chosen number of instances.  (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.DeleteMapServerCache.out_job_url">
+            <summary>Output Map Service URL (out, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.DeleteMapServerCache.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.DeleteMapServerCache.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.DeleteMapServerCache.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.DeleteMapServerCache.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.DeleteMapServerCache.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ServerTools.ExportMapServerCache">
+            <summary> Exports tiles from a map or an image service cache as a cache dataset or tile package to a folder on disk. The tiles can be imported into other caches, or they can be accessed from ArcGIS Desktop or mobile devices as a raster dataset, independent from their parent service.</summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ServerTools.ExportMapServerCache.#ctor(System.Object,System.Object,System.String,System.String,System.String,System.Object)">
+            <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+            <param name="input_service">The map or image service with the cache tiles to be exported.  (In, Required)</param>
+            <param name="target_cache_path"> The folder into which the cache will be exported. This folder does not have to be a registered server cache directory. The ArcGIS Server account must have write access to the target cache folder. If the server account  cannot be granted write access to the destination folder but the ArcGIS Desktop or ArcGIS Pro client has write access to it,   choose the Copy data from server parameter. (In, Required)</param>
+            <param name="export_cache_type">Exports a cache as a cache dataset or  a tile package. Tile packages are suitable for ArcGIS Runtime and ArcGIS Mobile  deployments. (In, Required)</param>
+            <param name="copy_data_from_server"><summary>Set this parameter to COPY_DATA if the ArcGIS Server account cannot be granted write access to the target folder and the ArcGIS Desktop or ArcGIS Pro client has write access to it. The software exports  the tiles in the server output directory before moving them to the target folder.
+            (In, Required)</summary></param>
+            <param name="storage_format_type">The storage format of the exported cache. (In, Required)</param>
+            <param name="scales"> A list of scale levels at which tiles will be exported. (In, Required)</param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportMapServerCache.input_service">
+            <summary>The map or image service with the cache tiles to be exported.  (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportMapServerCache.target_cache_path">
+            <summary> The folder into which the cache will be exported. This folder does not have to be a registered server cache directory. The ArcGIS Server account must have write access to the target cache folder. If the server account  cannot be granted write access to the destination folder but the ArcGIS Desktop or ArcGIS Pro client has write access to it,   choose the Copy data from server parameter. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportMapServerCache.export_cache_type">
+            <summary>Exports a cache as a cache dataset or  a tile package. Tile packages are suitable for ArcGIS Runtime and ArcGIS Mobile  deployments. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportMapServerCache.copy_data_from_server">
+            <summary>Set this parameter to COPY_DATA if the ArcGIS Server account cannot be granted write access to the target folder and the ArcGIS Desktop or ArcGIS Pro client has write access to it. The software exports  the tiles in the server output directory before moving them to the target folder.
+            (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportMapServerCache.storage_format_type">
+            <summary>The storage format of the exported cache. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportMapServerCache.scales">
+            <summary> A list of scale levels at which tiles will be exported. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportMapServerCache.num_of_caching_service_instances">
+            <summary>The total number of instances of the System/CachingTools service that you want to dedicate toward running this tool. You can increase the  maximum number of instances per machine of the System/CachingTools service using the Service Editor window available through an administrative connection to ArcGIS Server. Ensure your server machines can support the chosen number of instances.  (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportMapServerCache.area_of_interest">
+            <summary> An area of interest that spatially constrains where tiles are exported from the cache. This parameter is useful if you want to export irregularly shaped areas, as the tool clips the cache dataset at pixel resolution. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportMapServerCache.export_extent">
+            <summary> A rectangular extent defining the tiles to be exported. By default, the extent is set to the full extent of the map service into which you are importing. Note that the optional parameter on this tool, Area Of Interest, allows you to alternatively import using a polygon. It is recommended that you not provide values for both parameters for a job. If values are provided for both parameters, the Area Of Interest parameter takes precedence over Import Extent. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportMapServerCache.overwrite">
+            <summary>Overwrite Tiles (in, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportMapServerCache.output_cache_path">
+            <summary>Output Cache Path (out, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportMapServerCache.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportMapServerCache.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportMapServerCache.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportMapServerCache.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ExportMapServerCache.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ServerTools.GenerateMapServerCacheTilingScheme">
+            <summary>Generates an XML tiling scheme file that defines the scale levels, tile dimensions, and other properties for a map service cache. This tool is useful when creating a tiling scheme to use in multiple caches. You can load the tiling scheme file when you create a cache in ArcGIS Desktop or ArcGIS Server Manager, or you can run Create Map Server Cache and pass in the tiling scheme file as a parameter.</summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ServerTools.GenerateMapServerCacheTilingScheme.#ctor(System.Object,System.String,System.Object,System.Object,System.Int32,System.Object,System.Int32,System.String)">
+            <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+            <param name="map_document">The source map document to be used for the tiling scheme. (In, Required)</param>
+            <param name="data_frame">The data frame to be used for the tiling scheme. (In, Required)</param>
+            <param name="tile_origin">The upper left corner of the tiling scheme, in coordinates of the spatial reference of the source data frame. (In, Required)</param>
+            <param name="output_tiling_scheme">Path and file name of the tiling scheme file to create. (Out, Required)</param>
+            <param name="num_of_scales">Number of scale levels in the tiling scheme. (In, Required)</param>
+            <param name="scales">Scale levels to include in the tiling scheme. These are not represented as fractions. Instead, use 500 to represent a scale of 1:500, and so on. (In, Required)</param>
+            <param name="dots_per_inch">The dots per inch of the intended output device. If a DPI is chosen that does not match the resolution of the output device, the scale of the map tile will appear incorrect. The default value is 96. (In, Required)</param>
+            <param name="tile_size">The width and height of the cache tiles in pixels. The default is 256 by 256. For the best balance between performance and manageability, avoid deviating from standard dimensions of 256 by 256 or 512 by 512. (In, Required)</param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.GenerateMapServerCacheTilingScheme.map_document">
+            <summary>The source map document to be used for the tiling scheme. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.GenerateMapServerCacheTilingScheme.data_frame">
+            <summary>The data frame to be used for the tiling scheme. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.GenerateMapServerCacheTilingScheme.tile_origin">
+            <summary>The upper left corner of the tiling scheme, in coordinates of the spatial reference of the source data frame. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.GenerateMapServerCacheTilingScheme.output_tiling_scheme">
+            <summary>Path and file name of the tiling scheme file to create. (Out, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.GenerateMapServerCacheTilingScheme.num_of_scales">
+            <summary>Number of scale levels in the tiling scheme. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.GenerateMapServerCacheTilingScheme.scales">
+            <summary>Scale levels to include in the tiling scheme. These are not represented as fractions. Instead, use 500 to represent a scale of 1:500, and so on. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.GenerateMapServerCacheTilingScheme.dots_per_inch">
+            <summary>The dots per inch of the intended output device. If a DPI is chosen that does not match the resolution of the output device, the scale of the map tile will appear incorrect. The default value is 96. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.GenerateMapServerCacheTilingScheme.tile_size">
+            <summary>The width and height of the cache tiles in pixels. The default is 256 by 256. For the best balance between performance and manageability, avoid deviating from standard dimensions of 256 by 256 or 512 by 512. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.GenerateMapServerCacheTilingScheme.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.GenerateMapServerCacheTilingScheme.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.GenerateMapServerCacheTilingScheme.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.GenerateMapServerCacheTilingScheme.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.GenerateMapServerCacheTilingScheme.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ServerTools.ImportMapServerCache">
+            <summary> Imports tiles from a folder on disk into a map or an image service cache.</summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ServerTools.ImportMapServerCache.#ctor(System.Object,System.String)">
+            <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+            <param name="input_service">The map or image service into which tiles will be imported.  (In, Required)</param>
+            <param name="source_cache_type">Imports a cache from a cache dataset or  tile package to a cached map or image service running on the server. (In, Required)</param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ImportMapServerCache.input_service">
+            <summary>The map or image service into which tiles will be imported.  (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ImportMapServerCache.source_cache_type">
+            <summary>Imports a cache from a cache dataset or  tile package to a cached map or image service running on the server. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ImportMapServerCache.source_cache_dataset">
+            <summary>The path to the cache folder matching the data frame name. You do not have to specify a registered server cache directory; most of the time you'll specify a location on disk where tiles have been previously exported. This location should be accessible to the ArcGIS Server account. If the ArcGIS Server account cannot be granted access to this location, set the upload_data_to_server parameter to UPLOAD_DATA. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ImportMapServerCache.source_tile_package">
+            <summary> The path to the tile package (.tpk) that will be imported. This location should be accessible to the ArcGIS Server account. When importing a tile package file  to a cached map or image service, the upload_data_to_server parameter is ignored as it is automatically set to UPLOAD_DATA. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ImportMapServerCache.upload_data_to_server">
+            <summary>Set this parameter to UPLOAD_DATA if the ArcGIS Server account does not have read access to the source cache. The tool will upload the source cache to the ArcGIS Server uploads directory before moving it to the  ArcGIS Server cache directory.
+            (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ImportMapServerCache.scales">
+            <summary> A list of scale levels at which tiles will be imported. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ImportMapServerCache.num_of_caching_service_instances">
+            <summary>The total number of instances of the System/CachingTools service that you want to dedicate toward running this tool. You can increase the  maximum number of instances per machine of the System/CachingTools service using the Service Editor window available through an administrative connection to ArcGIS Server. Ensure your server machines can support the chosen number of instances.  (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ImportMapServerCache.area_of_interest">
+            <summary> An area of interest polygon that spatially constrains where tiles are imported into the cache. This parameter is useful if you want to import tiles for irregularly shaped areas, as the tool clips the cache dataset, which intersects the polygon at pixel resolution and imports it to the service cache directory. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ImportMapServerCache.import_extent">
+            <summary> A rectangular extent defining the tiles to be imported into the cache. By default, the extent is set to the full extent of the map service into which you are importing. Note that the optional parameter on this tool, Area Of Interest, allows you to spatially constrain the imported tiles using an irregular shape. If values are provided for both parameters, the Area Of Interest parameter takes precedence over Import Extent. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ImportMapServerCache.overwrite">
+            <summary>Overwrite Tiles (in, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ImportMapServerCache.out_job_url">
+            <summary>Output Map Service URL (out, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ImportMapServerCache.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ImportMapServerCache.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ImportMapServerCache.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ImportMapServerCache.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ImportMapServerCache.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ServerTools.ManageMapServerCacheScales">
+            <summary>Updates the scale levels in an existing cached map or image service. Use this tool to add new scales or delete existing scales from a cache.</summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ServerTools.ManageMapServerCacheScales.#ctor(System.Object,System.Object)">
+            <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+            <param name="input_service">The map or image service for which you want to add or remove cache scales.  (In, Required)</param>
+            <param name="scales">The scale values to be included in the updated tiling scheme. (In, Required)</param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheScales.input_service">
+            <summary>The map or image service for which you want to add or remove cache scales.  (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheScales.scales">
+            <summary>The scale values to be included in the updated tiling scheme. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheScales.out_job_url">
+            <summary>Output Map Service URL (out, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheScales.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheScales.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheScales.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheScales.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheScales.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ServerTools.ManageMapServerCacheTiles">
+            <summary>Creates and updates tiles in an existing web tile layer cache. This tool is used to create new tiles, replace missing tiles, overwrite outdated tiles, and delete tiles.</summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ServerTools.ManageMapServerCacheTiles.#ctor(System.Object,System.Object,System.String)">
+            <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+            <param name="input_service">The web tile layer  or map image layer whose cache tiles you want to update. (In, Required)</param>
+            <param name="scales">The scale levels at which you will create or delete tiles when running this tool, depending on the update_mode. (In, Required)</param>
+            <param name="update_mode">The  mode for updating the cache.  (In, Required)</param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheTiles.input_service">
+            <summary>The web tile layer  or map image layer whose cache tiles you want to update. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheTiles.scales">
+            <summary>The scale levels at which you will create or delete tiles when running this tool, depending on the update_mode. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheTiles.update_mode">
+            <summary>The  mode for updating the cache.  (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheTiles.num_of_caching_service_instances">
+            <summary>Defines the number of instances that will be used to update/generate the tiles. The value for this parameter is set to unlimited (-1) and cannot be modified. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheTiles.area_of_interest">
+            <summary>Defines an area of interest to constrain where tiles will be created or deleted. This parameter is useful if you want to manage tiles for irregularly shaped areas. It's also useful in situations where you want to pre-cache some areas and leave less-visited areas uncached. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheTiles.update_extent">
+            <summary>Rectangular extent at which to create or delete tiles, depending on the value of the update_mode parameter. It is not recommended you provide values for both update_extent and area_of_interest. If values for both parameters are provided, the value of area_of_interest will be used. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheTiles.wait_for_job_completion">
+            <summary>This parameter allows you to watch the progress of the cache job running on the Portal.   
+            (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheTiles.out_job_url">
+            <summary>Output Map Service URL (out, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheTiles.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheTiles.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheTiles.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheTiles.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheTiles.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ServerTools.ManageMapServerCacheStatus">
+            <summary>Manages internal data kept by the server about the built tiles in a map or image service cache.</summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ServerTools.ManageMapServerCacheStatus.#ctor(System.Object,System.String)">
+            <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+            <param name="input_service">The map or image service for which the status will be modified. (In, Required)</param>
+            <param name="manage_mode">Manage Mode (in)</param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheStatus.input_service">
+            <summary>The map or image service for which the status will be modified. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheStatus.manage_mode">
+            <summary>Manage Mode (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheStatus.scales">
+            <summary> The scale levels for which the status will be modified. This parameter is only applicable when building a custom status using the REPORT_BUNDLE_STATUS option for the manage_mode parameter. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheStatus.num_of_caching_service_instances">
+            <summary>The total number of instances of the System/CachingTools service that you want to dedicate toward running this tool. You can increase the  maximum number of instances per machine of the System/CachingTools service using the Service Editor window available through an administrative connection to ArcGIS Server. Ensure your server machines can support the chosen number of instances.  (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheStatus.report_folder">
+            <summary>Output folder for the Status.gdb. This parameter is only applicable when building a custom status using the  REPORT_BUNDLE_STATUS option.  (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheStatus.area_of_interest">
+            <summary>An area of interest (polygon) that determines what geography the status report will cover. This parameter is only applicable when building a custom status using the  REPORT_BUNDLE_STATUS option. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheStatus.report_extent">
+            <summary>A rectangular extent defining the area for which the status will be built. This parameter is only applicable when building a custom status using the REPORT_BUNDLE_STATUS option. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheStatus.output_folder">
+            <summary>Output Folder (out, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheStatus.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheStatus.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheStatus.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheStatus.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.ManageMapServerCacheStatus.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ServerTools.MXDToWebMap">
+            <summary></summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ServerTools.MXDToWebMap.#ctor(System.Object,System.String,System.String,System.String,System.String)">
+            <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+            <param name="Input_map_document">Input map document (in)</param>
+            <param name="Web_map_name">Web map name (in)</param>
+            <param name="Summary">Summary (in)</param>
+            <param name="Tags">Tags (in)</param>
+            <param name="Basemap">Basemap (in)</param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.MXDToWebMap.Input_map_document">
+            <summary>Input map document (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.MXDToWebMap.Web_map_name">
+            <summary>Web map name (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.MXDToWebMap.Summary">
+            <summary>Summary (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.MXDToWebMap.Tags">
+            <summary>Tags (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.MXDToWebMap.Layers_to_be_published">
+            <summary>Layers to be published (in, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.MXDToWebMap.Basemap">
+            <summary>Basemap (in)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.MXDToWebMap.Online_folder_name">
+            <summary>Online folder name (in, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.MXDToWebMap.Web_map_URL">
+            <summary>Web map URL (out, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.MXDToWebMap.Within_Organization">
+            <summary>Within Organization (in, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.MXDToWebMap.Everyone">
+            <summary>Everyone (in, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.MXDToWebMap.Groups">
+            <summary>Groups (in, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.MXDToWebMap.Username">
+            <summary>Username (in, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.MXDToWebMap.Password">
+            <summary>Password (in, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.MXDToWebMap.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.MXDToWebMap.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.MXDToWebMap.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.MXDToWebMap.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.MXDToWebMap.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ServerTools.GetLayoutTemplatesInfo">
+            <summary>Geoprocessing tool that returns layout contents for the associated printing service.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.GetLayoutTemplatesInfo.Layout_Templates_Folder">
+            <summary>Layout Templates Folder (in, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.GetLayoutTemplatesInfo.Output_JSON">
+            <summary>Output JSON (out, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.GetLayoutTemplatesInfo.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.GetLayoutTemplatesInfo.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.GetLayoutTemplatesInfo.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.GetLayoutTemplatesInfo.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.GetLayoutTemplatesInfo.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+        <member name="T:ESRI.ArcGIS.ServerTools.UpgradeMapServerCacheStorageFormat">
+            <summary>Upgrades the  compact cache storage format of a map or image service (created at 10.2.2 and earlier versions) to take advantage of performance improvements available at 10.3 and later versions.</summary>
+        </member>
+        <member name="M:ESRI.ArcGIS.ServerTools.UpgradeMapServerCacheStorageFormat.#ctor(System.Object)">
+            <summary>Constructor that takes all required parameters for geoprocessor execution.</summary>
+            <param name="input_service">The map or image service cache you want to upgrade. (In, Required)</param>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UpgradeMapServerCacheStorageFormat.input_service">
+            <summary>The map or image service cache you want to upgrade. (In, Required)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UpgradeMapServerCacheStorageFormat.num_of_caching_service_instances">
+            <summary>The total number of instances of the System/CachingTools service that you want to dedicate toward running this tool. You can increase the  maximum number of instances per machine of the System/CachingTools service using the Service Editor window available through an administrative connection to ArcGIS Server. Ensure your server machines can support the chosen number of instances. (In, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UpgradeMapServerCacheStorageFormat.out_job_url">
+            <summary>Output Map Service URL (out, Optional)</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UpgradeMapServerCacheStorageFormat.ToolboxDirectory">
+            <summary>The directory of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UpgradeMapServerCacheStorageFormat.ToolboxName">
+            <summary>The name of this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UpgradeMapServerCacheStorageFormat.ToolName">
+            <summary>The name of this tool.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UpgradeMapServerCacheStorageFormat.Alias">
+            <summary>The alias for this tool's toolbox.</summary>
+        </member>
+        <member name="P:ESRI.ArcGIS.ServerTools.UpgradeMapServerCacheStorageFormat.ParameterInfo">
+            <summary>The parameters used by this tool. For internal use only.</summary>
+        </member>
+    </members>
+</doc>

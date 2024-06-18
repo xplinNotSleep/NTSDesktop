@@ -1,0 +1,2891 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfAGSDM_UIMENU xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>menu</GUID>
+    <PARENTCODE>0</PARENTCODE>
+    <CAPTION>菜单</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>Menu</MENUTYPE>
+    <EXT1 />
+    <EXT2 />
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>79432fad-e3aa-468a-9428-a7e99235eafd</GUID>
+    <PARENTCODE>menu</PARENTCODE>
+    <CAPTION>地图管理</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPage</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>36b8c093-f4d8-4be6-867e-c54b860e3714</GUID>
+    <PARENTCODE>79432fad-e3aa-468a-9428-a7e99235eafd</PARENTCODE>
+    <CAPTION>地图文档</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>64947392-4b1d-4233-a896-c103d2eed256</GUID>
+    <PARENTCODE>36b8c093-f4d8-4be6-867e-c54b860e3714</PARENTCODE>
+    <CAPTION>打开</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.Common.OpenMapDocument</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>174ed753-c851-48d6-a3dd-b4d579724348</GUID>
+    <PARENTCODE>36b8c093-f4d8-4be6-867e-c54b860e3714</PARENTCODE>
+    <CAPTION>新建</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.Common.NewMapDocument</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>6c4a1d93-907f-45ac-bef9-5808c1147aa3</GUID>
+    <PARENTCODE>36b8c093-f4d8-4be6-867e-c54b860e3714</PARENTCODE>
+    <CAPTION>保存</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.Common.SavaMapDocument</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>2</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>57202726-62d6-436e-86ae-0487c360d8fd</GUID>
+    <PARENTCODE>36b8c093-f4d8-4be6-867e-c54b860e3714</PARENTCODE>
+    <CAPTION>另存为</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.Common.SaveAsMapDocument</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>3</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>019c21f7-b148-45fe-986c-77fd96f210b0</GUID>
+    <PARENTCODE>79432fad-e3aa-468a-9428-a7e99235eafd</PARENTCODE>
+    <CAPTION>地图工程管理</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>99cdcea7-d2e4-4795-b525-07fda8ec4434</GUID>
+    <PARENTCODE>019c21f7-b148-45fe-986c-77fd96f210b0</PARENTCODE>
+    <CAPTION>管理</CAPTION>
+    <DLLFILE>AG.COM.SDM.ProjectManage.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.ProjectManage.Commands.MapDocManageCommand</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>4a194306-6129-40bb-9aab-a47378252859</GUID>
+    <PARENTCODE>019c21f7-b148-45fe-986c-77fd96f210b0</PARENTCODE>
+    <CAPTION>转换</CAPTION>
+    <DLLFILE>AG.COM.SDM.ProjectManage.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.ProjectManage.Commands.Mxd2MapDocCommand</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>8a1b8e60-6077-4665-89c0-b4c08aac9c34</GUID>
+    <PARENTCODE>019c21f7-b148-45fe-986c-77fd96f210b0</PARENTCODE>
+    <CAPTION>保存</CAPTION>
+    <DLLFILE>AG.COM.SDM.ProjectManage.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.ProjectManage.Commands.SaveMap2MapDocCommand</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>2</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>f9ba46c8-8123-4641-948b-d67a7cffcab7</GUID>
+    <PARENTCODE>019c21f7-b148-45fe-986c-77fd96f210b0</PARENTCODE>
+    <CAPTION>加载</CAPTION>
+    <DLLFILE>AG.COM.SDM.ProjectManage.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.ProjectManage.Commands.LoadMapDocCommand</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>3</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>89d611e0-0286-4a2c-8abe-a4e478af3674</GUID>
+    <PARENTCODE>79432fad-e3aa-468a-9428-a7e99235eafd</PARENTCODE>
+    <CAPTION>地图操作</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>2</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>f750301e-912d-4327-af15-698825d9dcf7</GUID>
+    <PARENTCODE>89d611e0-0286-4a2c-8abe-a4e478af3674</PARENTCODE>
+    <CAPTION>全图</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.PanZoom.FullExtent</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>bfa478c8-2851-456a-b802-9bf3a6826249</GUID>
+    <PARENTCODE>89d611e0-0286-4a2c-8abe-a4e478af3674</PARENTCODE>
+    <CAPTION>放大</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.PanZoom.ZoomIn</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>bec13a90-c878-469c-8bd4-efd8a5c0aa66</GUID>
+    <PARENTCODE>89d611e0-0286-4a2c-8abe-a4e478af3674</PARENTCODE>
+    <CAPTION>缩小</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.PanZoom.ZoomOut</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>2</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>9874698c-7abb-4fee-9ece-801173c706e7</GUID>
+    <PARENTCODE>89d611e0-0286-4a2c-8abe-a4e478af3674</PARENTCODE>
+    <CAPTION>平移</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.PanZoom.Pan</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>3</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>ef2e926f-1796-4591-8cd2-ab8709552298</GUID>
+    <PARENTCODE>89d611e0-0286-4a2c-8abe-a4e478af3674</PARENTCODE>
+    <CAPTION>前一视图</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.PanZoom.GoLastView</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>4</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>f30cded4-fbd1-4021-89b5-b7fea09e452c</GUID>
+    <PARENTCODE>89d611e0-0286-4a2c-8abe-a4e478af3674</PARENTCODE>
+    <CAPTION>后一视图</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.PanZoom.GoNextView</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>5</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>50e9fe89-c21c-48c0-8b7f-d66ccef2259e</GUID>
+    <PARENTCODE>89d611e0-0286-4a2c-8abe-a4e478af3674</PARENTCODE>
+    <CAPTION>缩放到当前层</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.PanZoom.ZoomToLayer</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>6</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>a2fb8190-e686-4a69-af4f-a09edd29c920</GUID>
+    <PARENTCODE>79432fad-e3aa-468a-9428-a7e99235eafd</PARENTCODE>
+    <CAPTION>其他操作</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>3</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>62217220-2314-43ad-9c01-8ea3c47b9b12</GUID>
+    <PARENTCODE>a2fb8190-e686-4a69-af4f-a09edd29c920</PARENTCODE>
+    <CAPTION>加载数据</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.Common.AddData</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>1fbe6de5-e9a4-45d4-b4c9-ec0a0834fc5f</GUID>
+    <PARENTCODE>a2fb8190-e686-4a69-af4f-a09edd29c920</PARENTCODE>
+    <CAPTION>查看属性要素</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.IdentityImage</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>81e18c88-963b-42a9-96da-9d8fa161716a</GUID>
+    <PARENTCODE>a2fb8190-e686-4a69-af4f-a09edd29c920</PARENTCODE>
+    <CAPTION>清空临时要素</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.Common.DeleteAllElements</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>2</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>ea1877b9-06f2-4130-bf68-933f88d1b187</GUID>
+    <PARENTCODE>a2fb8190-e686-4a69-af4f-a09edd29c920</PARENTCODE>
+    <CAPTION>设置可选图层</CAPTION>
+    <DLLFILE>AG.COM.SDM.DataTools.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.DataTools.Common.SetLayersSelectable</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>3</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>d320c662-bc2e-4267-ba28-190069c3462c</GUID>
+    <PARENTCODE>a2fb8190-e686-4a69-af4f-a09edd29c920</PARENTCODE>
+    <CAPTION>设置图层比例尺</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.PanZoom.BatchLayerScaleSet</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>4</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>1e3e62de-df86-45ff-8bbb-95283ea0efae</GUID>
+    <PARENTCODE>a2fb8190-e686-4a69-af4f-a09edd29c920</PARENTCODE>
+    <CAPTION>比例尺 1:</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.PanZoom.MapScale</CLASSNAME>
+    <MENUTYPE>ComboBox</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>5</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>2903c0ea-8bce-48e3-a459-8f343da184f8</GUID>
+    <PARENTCODE>79432fad-e3aa-468a-9428-a7e99235eafd</PARENTCODE>
+    <CAPTION>三维模型</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <SORT>4</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>11665bf7-a81e-40c6-ab58-3c2a60de5a4f</GUID>
+    <PARENTCODE>2903c0ea-8bce-48e3-a459-8f343da184f8</PARENTCODE>
+    <CAPTION>自动建模</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.Analyst3D.CmdAnalyst3D</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>4fd9efc9-e4d4-4fd7-9114-5bc7a81f6713</GUID>
+    <PARENTCODE>2903c0ea-8bce-48e3-a459-8f343da184f8</PARENTCODE>
+    <CAPTION>三维模型入库</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.Analyst3D.Cmd3DManager</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>9ee29364-bbad-43c1-9b23-a63b95b17b24</GUID>
+    <PARENTCODE>79432fad-e3aa-468a-9428-a7e99235eafd</PARENTCODE>
+    <CAPTION>系统操作</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>5</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>803894f5-4e33-4f4d-afb5-7048f64a9fe2</GUID>
+    <PARENTCODE>9ee29364-bbad-43c1-9b23-a63b95b17b24</PARENTCODE>
+    <CAPTION>注销</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.Common.ReLogin</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>887f36f6-3218-4c05-bc1a-ef3443f5565c</GUID>
+    <PARENTCODE>9ee29364-bbad-43c1-9b23-a63b95b17b24</PARENTCODE>
+    <CAPTION>退出</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.Common.Exit</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>53612929-1440-4966-b6f9-1f1c2800eb7e</GUID>
+    <PARENTCODE>menu</PARENTCODE>
+    <CAPTION>地图定位</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPage</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>74a28d86-898f-4582-9dd7-fb95e2cc1921</GUID>
+    <PARENTCODE>53612929-1440-4966-b6f9-1f1c2800eb7e</PARENTCODE>
+    <CAPTION>地图定位</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>b133d1fb-1b7f-47b8-a902-3429b6a566bc</GUID>
+    <PARENTCODE>74a28d86-898f-4582-9dd7-fb95e2cc1921</PARENTCODE>
+    <CAPTION>行政区定位</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.cmdSearchMapByCanton</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>582363ea-ae25-4569-98d6-a5a49032666a</GUID>
+    <PARENTCODE>74a28d86-898f-4582-9dd7-fb95e2cc1921</PARENTCODE>
+    <CAPTION>道路定位</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.cmdSearchMapByRoad</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>bbb0579a-f4d9-4aa0-bb58-5a1621a9eef0</GUID>
+    <PARENTCODE>74a28d86-898f-4582-9dd7-fb95e2cc1921</PARENTCODE>
+    <CAPTION>坐标定位</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.cmdSearchMapByXY</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>2</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>78b694aa-05bb-40f5-9250-4542aeb291e5</GUID>
+    <PARENTCODE>53612929-1440-4966-b6f9-1f1c2800eb7e</PARENTCODE>
+    <CAPTION>自定义视图</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>303210c9-ee09-4fb9-a2bc-34d01e80c51b</GUID>
+    <PARENTCODE>78b694aa-05bb-40f5-9250-4542aeb291e5</PARENTCODE>
+    <CAPTION>自定义视图</CAPTION>
+    <DLLFILE>AG.COM.SDM.ProjectManage.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.ProjectManage.Commands.AddActiveViewCommand</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>b5f8a784-bf8d-44f1-bd92-64b9c52a0276</GUID>
+    <PARENTCODE>menu</PARENTCODE>
+    <CAPTION>管网查询</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPage</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>2</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>d550fa6f-0a5a-4b49-8c8d-d23c13c28f5e</GUID>
+    <PARENTCODE>b5f8a784-bf8d-44f1-bd92-64b9c52a0276</PARENTCODE>
+    <CAPTION>地图选择</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>5b8f70a8-2944-4a97-a6ea-59a9eeed9e4e</GUID>
+    <PARENTCODE>d550fa6f-0a5a-4b49-8c8d-d23c13c28f5e</PARENTCODE>
+    <CAPTION>矩形选择</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.Selection.SelectFeatures</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>3ee87cc8-2dfe-44e1-9e1b-3a9de1ffe2b4</GUID>
+    <PARENTCODE>d550fa6f-0a5a-4b49-8c8d-d23c13c28f5e</PARENTCODE>
+    <CAPTION>线性选择</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.Selection.LineSelectFeatures</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>524ff91d-60a7-4655-a7fc-dc6ff2d6d65a</GUID>
+    <PARENTCODE>d550fa6f-0a5a-4b49-8c8d-d23c13c28f5e</PARENTCODE>
+    <CAPTION>多边形选择</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.Selection.PolygonSelectFeatures</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>2</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>65b2244b-6d8c-40f1-882a-24b5475e73c1</GUID>
+    <PARENTCODE>d550fa6f-0a5a-4b49-8c8d-d23c13c28f5e</PARENTCODE>
+    <CAPTION>清除选择</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.SpatialAnalyze.BufferResultCleaner</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>3</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>bac7a9e8-52b8-4757-b109-de5661f9b596</GUID>
+    <PARENTCODE>b5f8a784-bf8d-44f1-bd92-64b9c52a0276</PARENTCODE>
+    <CAPTION>一般查询</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>d4a27845-a228-4795-b8be-0e60e02606f9</GUID>
+    <PARENTCODE>bac7a9e8-52b8-4757-b109-de5661f9b596</PARENTCODE>
+    <CAPTION>简单查询</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.QueryStat.SimpleQuery</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>e9fac455-b45e-48ab-9ae9-33a571f8e8d6</GUID>
+    <PARENTCODE>bac7a9e8-52b8-4757-b109-de5661f9b596</PARENTCODE>
+    <CAPTION>属性查询</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.QueryStat.CustomQuery</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>4e685342-84b9-49b8-93f3-f6b63e40554b</GUID>
+    <PARENTCODE>bac7a9e8-52b8-4757-b109-de5661f9b596</PARENTCODE>
+    <CAPTION>管网组合查询</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.Statistic.CmdQueryByCombination</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>2</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>d1153b33-e4d8-4c78-bba4-5a44d3044a80</GUID>
+    <PARENTCODE>b5f8a784-bf8d-44f1-bd92-64b9c52a0276</PARENTCODE>
+    <CAPTION>管线查询</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>2</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>dca7f15e-4828-4c27-9c7d-b5fa8b1dc1ac</GUID>
+    <PARENTCODE>d1153b33-e4d8-4c78-bba4-5a44d3044a80</PARENTCODE>
+    <CAPTION>按行政区</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.QueryAndStatistic.CmdQueryPipeByCanton</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>e052c697-7ba0-4136-8a71-5fb962074389</GUID>
+    <PARENTCODE>d1153b33-e4d8-4c78-bba4-5a44d3044a80</PARENTCODE>
+    <CAPTION>按道路</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.QueryAndStatistic.CmdQueryPipeByRoad</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>1ebfaa89-411d-4a8a-9049-33a86a70dca7</GUID>
+    <PARENTCODE>b5f8a784-bf8d-44f1-bd92-64b9c52a0276</PARENTCODE>
+    <CAPTION>管点查询</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>3</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>24bd07fb-15a0-4cff-81c9-037773122f0c</GUID>
+    <PARENTCODE>1ebfaa89-411d-4a8a-9049-33a86a70dca7</PARENTCODE>
+    <CAPTION>按行政区</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.QueryAndStatistic.CmdQueryPipePtByCanton</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>2b4c61e5-e08a-416e-9134-5a0fcb968537</GUID>
+    <PARENTCODE>1ebfaa89-411d-4a8a-9049-33a86a70dca7</PARENTCODE>
+    <CAPTION>按道路</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.QueryAndStatistic.CmdQueryPipePtByRoad</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>3addef0f-a8b7-44ee-84b0-82dfa0d72b55</GUID>
+    <PARENTCODE>menu</PARENTCODE>
+    <CAPTION>管网统计</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPage</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>3</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>0bb47fae-6eb3-4375-b5f5-339a90c43bb2</GUID>
+    <PARENTCODE>3addef0f-a8b7-44ee-84b0-82dfa0d72b55</PARENTCODE>
+    <CAPTION>管网统计</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>bbcdaef8-b4e5-48e5-855e-2095d31c5711</GUID>
+    <PARENTCODE>0bb47fae-6eb3-4375-b5f5-339a90c43bb2</PARENTCODE>
+    <CAPTION>附属物统计</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.Statistic.ToolPtStatsticByFSW</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>9cfba32f-1094-42de-bb1a-2d8b6f7bc3da</GUID>
+    <PARENTCODE>0bb47fae-6eb3-4375-b5f5-339a90c43bb2</PARENTCODE>
+    <CAPTION>管网统计</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.Statistic.ToolPipeStatistic</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>25f14a13-4bd2-4897-bb2a-29d985cc1ef6</GUID>
+    <PARENTCODE>menu</PARENTCODE>
+    <CAPTION>管线维护</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPage</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>4</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>db33c9cb-1738-4e66-b72d-55e1f555f656</GUID>
+    <PARENTCODE>25f14a13-4bd2-4897-bb2a-29d985cc1ef6</PARENTCODE>
+    <CAPTION>数据转换</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>45b08c2c-7152-4766-8ed9-be49b39b020b</GUID>
+    <PARENTCODE>db33c9cb-1738-4e66-b72d-55e1f555f656</PARENTCODE>
+    <CAPTION>数据图形化</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.DataManageAndUpdate.CmdTable2Spatial</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>09e0cf5b-df4a-4d10-9aeb-6d2a52b6b8a3</GUID>
+    <PARENTCODE>db33c9cb-1738-4e66-b72d-55e1f555f656</PARENTCODE>
+    <CAPTION>数据检查</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.DataManageAndUpdate.DataCheck</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>c38df426-9015-45e8-a67d-fbfeee447a66</GUID>
+    <PARENTCODE>25f14a13-4bd2-4897-bb2a-29d985cc1ef6</PARENTCODE>
+    <CAPTION>管线入库</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>ba06c1a7-7bf3-433d-8b3d-8b4604084ea7</GUID>
+    <PARENTCODE>c38df426-9015-45e8-a67d-fbfeee447a66</PARENTCODE>
+    <CAPTION>入库方案</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.DataManageAndUpdate.cmdDataImportScheme</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>44f7dd6f-c13c-4a66-9b44-8d7bf17c6d98</GUID>
+    <PARENTCODE>c38df426-9015-45e8-a67d-fbfeee447a66</PARENTCODE>
+    <CAPTION>普查入库</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.DataManageAndUpdate.cmdDataImport</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>e541457f-7567-48ee-be91-b4be2f8eaccc</GUID>
+    <PARENTCODE>c38df426-9015-45e8-a67d-fbfeee447a66</PARENTCODE>
+    <CAPTION>竣工更新</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.DataManageAndUpdate.CmdUpdateData</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>2</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>391b5fef-5550-4ded-ba4d-2392fcc9da85</GUID>
+    <PARENTCODE>25f14a13-4bd2-4897-bb2a-29d985cc1ef6</PARENTCODE>
+    <CAPTION>数据管理</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>2</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>ba85f2bf-9594-4525-927e-b4d835059846</GUID>
+    <PARENTCODE>391b5fef-5550-4ded-ba4d-2392fcc9da85</PARENTCODE>
+    <CAPTION>数据源管理</CAPTION>
+    <DLLFILE>AG.COM.SDM.MetaCatalogue.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.MetaCatalogue.DataResManagerCommand</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>7e4b31f3-7b7e-4579-aef4-84dab4a0382d</GUID>
+    <PARENTCODE>391b5fef-5550-4ded-ba4d-2392fcc9da85</PARENTCODE>
+    <CAPTION>版本管理</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.DataBase.VersionManagerCommand</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>411903b9-aaaa-4216-b0f3-7bb389b98657</GUID>
+    <PARENTCODE>391b5fef-5550-4ded-ba4d-2392fcc9da85</PARENTCODE>
+    <CAPTION>历史状态对比</CAPTION>
+    <DLLFILE>AG.COM.SDM.HistoryDBManager.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.HistoryDBManager.PlugComparisonView</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>2</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>455cb420-403f-495e-b177-93995065673a</GUID>
+    <PARENTCODE>391b5fef-5550-4ded-ba4d-2392fcc9da85</PARENTCODE>
+    <CAPTION>元数据管理</CAPTION>
+    <DLLFILE>AG.COM.SDM.MetaCatalogue.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.MetaCatalogue.MetaDataManagerCommand</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>3</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>50bdc8ed-6e31-4b3c-aa21-fa3fe75b1fbc</GUID>
+    <PARENTCODE>391b5fef-5550-4ded-ba4d-2392fcc9da85</PARENTCODE>
+    <CAPTION>历史回溯</CAPTION>
+    <DLLFILE>AG.Pipe.HistoryOperate.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.HistoryOperate.HistoryRecall.HistoryRecallCommand</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>4</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>3bb0b18f-8475-4364-b095-8d0825cedc6e</GUID>
+    <PARENTCODE>391b5fef-5550-4ded-ba4d-2392fcc9da85</PARENTCODE>
+    <CAPTION>历史标记</CAPTION>
+    <DLLFILE>AG.COM.SDM.HistoryDBManager.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.HistoryDBManager.PlugHistoryMarks</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>5</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>dc6893ce-d775-4b17-94ef-9a2af005c58f</GUID>
+    <PARENTCODE>25f14a13-4bd2-4897-bb2a-29d985cc1ef6</PARENTCODE>
+    <CAPTION>数据备份/恢复</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>3</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>bbe4cc36-e910-4b1b-aa1e-b60670977562</GUID>
+    <PARENTCODE>dc6893ce-d775-4b17-94ef-9a2af005c58f</PARENTCODE>
+    <CAPTION>数据备份</CAPTION>
+    <DLLFILE>AG.COM.SDM.GeoDataBase.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.GeoDataBase.DataBackup.DataBackupCommand</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>f00f86f2-54f2-447a-8383-d09217b6d3d7</GUID>
+    <PARENTCODE>dc6893ce-d775-4b17-94ef-9a2af005c58f</PARENTCODE>
+    <CAPTION>数据恢复</CAPTION>
+    <DLLFILE>AG.COM.SDM.GeoDataBase.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.GeoDataBase.DataBackup.DataRecoveryCommand</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>774690d8-8b36-4e1b-bdec-c0e7dcdaf02c</GUID>
+    <PARENTCODE>menu</PARENTCODE>
+    <CAPTION>数据编辑</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPage</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>5</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>9c7767f8-7450-4883-8796-9ebed03bb645</GUID>
+    <PARENTCODE>774690d8-8b36-4e1b-bdec-c0e7dcdaf02c</PARENTCODE>
+    <CAPTION>启动停止编辑</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>05fd3470-2167-4360-9048-4ee83885f9d5</GUID>
+    <PARENTCODE>9c7767f8-7450-4883-8796-9ebed03bb645</PARENTCODE>
+    <CAPTION>启动编辑</CAPTION>
+    <DLLFILE>AG.COM.SDM.Editor.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Editor.StartEdit</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>dfc4b41c-a80e-4cea-be6e-4b0b91de0008</GUID>
+    <PARENTCODE>9c7767f8-7450-4883-8796-9ebed03bb645</PARENTCODE>
+    <CAPTION>保存编辑</CAPTION>
+    <DLLFILE>AG.COM.SDM.Editor.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Editor.SaveEdit</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>7d0eea9c-ba2a-476c-bfec-80aea72576d6</GUID>
+    <PARENTCODE>9c7767f8-7450-4883-8796-9ebed03bb645</PARENTCODE>
+    <CAPTION>退出编辑</CAPTION>
+    <DLLFILE>AG.COM.SDM.Editor.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Editor.StopEdit</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>2</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>823e80b0-f1c1-4a72-9a8e-a65e8388f578</GUID>
+    <PARENTCODE>774690d8-8b36-4e1b-bdec-c0e7dcdaf02c</PARENTCODE>
+    <CAPTION>要素编辑</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>7a0717f7-6b01-4028-b592-80d5f5a1c7e6</GUID>
+    <PARENTCODE>823e80b0-f1c1-4a72-9a8e-a65e8388f578</PARENTCODE>
+    <CAPTION>选择编辑图层</CAPTION>
+    <DLLFILE>AG.COM.SDM.Editor.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Editor.SelectEditLayer</CLASSNAME>
+    <MENUTYPE>ComboBoxTreeView</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>4cb43522-516d-47de-b3c2-2b7e6b7d13ba</GUID>
+    <PARENTCODE>823e80b0-f1c1-4a72-9a8e-a65e8388f578</PARENTCODE>
+    <CAPTION>编辑工具</CAPTION>
+    <DLLFILE>AG.COM.SDM.Editor.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Editor.Edit</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>True</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>033752f6-bafb-4b4d-8b84-8c959087798f</GUID>
+    <PARENTCODE>823e80b0-f1c1-4a72-9a8e-a65e8388f578</PARENTCODE>
+    <CAPTION>移动</CAPTION>
+    <DLLFILE>AG.COM.SDM.Editor.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Editor.Move</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>2</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>578c0c14-16a8-4b85-9646-0fde148a83f9</GUID>
+    <PARENTCODE>823e80b0-f1c1-4a72-9a8e-a65e8388f578</PARENTCODE>
+    <CAPTION>合并</CAPTION>
+    <DLLFILE>AG.COM.SDM.Editor.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Editor.UnionCommand</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>3</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>4a7cab55-e7e2-4864-a778-d02541b5f2fc</GUID>
+    <PARENTCODE>823e80b0-f1c1-4a72-9a8e-a65e8388f578</PARENTCODE>
+    <CAPTION>打断工具</CAPTION>
+    <DLLFILE>AG.COM.SDM.Editor.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Editor.SplitTool</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>4</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>d7969eb1-97aa-4651-857d-30045abf0073</GUID>
+    <PARENTCODE>823e80b0-f1c1-4a72-9a8e-a65e8388f578</PARENTCODE>
+    <CAPTION>要素切割</CAPTION>
+    <DLLFILE>AG.COM.SDM.Editor.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Editor.FeatureClip</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>5</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>e30ce224-fcd5-4e0a-b14d-de483657b3ba</GUID>
+    <PARENTCODE>823e80b0-f1c1-4a72-9a8e-a65e8388f578</PARENTCODE>
+    <CAPTION>线性简单化</CAPTION>
+    <DLLFILE>AG.COM.SDM.Editor.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Editor.LineSimplify</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>6</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>cfe13994-fbf8-4373-afed-8cd5f692117a</GUID>
+    <PARENTCODE>823e80b0-f1c1-4a72-9a8e-a65e8388f578</PARENTCODE>
+    <CAPTION>线平滑</CAPTION>
+    <DLLFILE>AG.COM.SDM.Editor.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Editor.LineSmooth</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>7</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>ab13c060-aa81-4786-82cb-3cd7a2efc2ba</GUID>
+    <PARENTCODE>823e80b0-f1c1-4a72-9a8e-a65e8388f578</PARENTCODE>
+    <CAPTION>拷贝到</CAPTION>
+    <DLLFILE>AG.COM.SDM.Editor.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Editor.CopyTo</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>8</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>0160faf2-8a19-442c-81d7-d06f18b4661f</GUID>
+    <PARENTCODE>823e80b0-f1c1-4a72-9a8e-a65e8388f578</PARENTCODE>
+    <CAPTION>新建圆</CAPTION>
+    <DLLFILE>AG.COM.SDM.Editor.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Editor.NewCircle</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>9</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>681d7f94-bcc5-4fed-9c70-a1a10227a9fe</GUID>
+    <PARENTCODE>823e80b0-f1c1-4a72-9a8e-a65e8388f578</PARENTCODE>
+    <CAPTION>删除</CAPTION>
+    <DLLFILE>AG.COM.SDM.Editor.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Editor.Delete</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>10</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>f58cfc0a-ab92-4ae3-84ad-0a6158f390e7</GUID>
+    <PARENTCODE>823e80b0-f1c1-4a72-9a8e-a65e8388f578</PARENTCODE>
+    <CAPTION>新增</CAPTION>
+    <DLLFILE>AG.COM.SDM.Editor.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Editor.Sketch</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>True</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>11</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>c6d0ca20-03f6-49e8-a2a3-59a37f8da905</GUID>
+    <PARENTCODE>823e80b0-f1c1-4a72-9a8e-a65e8388f578</PARENTCODE>
+    <CAPTION>属性编辑</CAPTION>
+    <DLLFILE>AG.COM.SDM.Editor.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Editor.AttributeEdit</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>12</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>4da898bd-9864-4f5f-b415-f58baa79fbc0</GUID>
+    <PARENTCODE>823e80b0-f1c1-4a72-9a8e-a65e8388f578</PARENTCODE>
+    <CAPTION>撤销</CAPTION>
+    <DLLFILE>AG.COM.SDM.Editor.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Editor.Undo</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>13</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>84bcf790-1c8e-401b-b216-517ff4ad6417</GUID>
+    <PARENTCODE>823e80b0-f1c1-4a72-9a8e-a65e8388f578</PARENTCODE>
+    <CAPTION>重做</CAPTION>
+    <DLLFILE>AG.COM.SDM.Editor.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Editor.Redo</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>14</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>8178bde8-3ccf-4215-be46-d9588c4beb3d</GUID>
+    <PARENTCODE>menu</PARENTCODE>
+    <CAPTION>打印输出</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPage</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>6</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>30be7aa9-83eb-47d6-afd0-eb54df6bc5f8</GUID>
+    <PARENTCODE>8178bde8-3ccf-4215-be46-d9588c4beb3d</PARENTCODE>
+    <CAPTION>分类导出</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>e5030c2a-ab3d-4b60-9ebc-d4e144c9ae8b</GUID>
+    <PARENTCODE>30be7aa9-83eb-47d6-afd0-eb54df6bc5f8</PARENTCODE>
+    <CAPTION>自定义导出</CAPTION>
+    <DLLFILE>AG.COM.SDM.DataTools.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.DataTools.DataProcess.VectorClipCommand</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>1d83ef24-951e-41bd-901a-d5515714ddc7</GUID>
+    <PARENTCODE>30be7aa9-83eb-47d6-afd0-eb54df6bc5f8</PARENTCODE>
+    <CAPTION>按行政区导出</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.Print.ExportRegion</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>6fd02f4e-52bc-44d4-a7f1-95a12dca7eab</GUID>
+    <PARENTCODE>8178bde8-3ccf-4215-be46-d9588c4beb3d</PARENTCODE>
+    <CAPTION>数据输出</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>7a698e0e-d665-4406-aae9-b765d42706c4</GUID>
+    <PARENTCODE>6fd02f4e-52bc-44d4-a7f1-95a12dca7eab</PARENTCODE>
+    <CAPTION>输出图片文件</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.Print.CmdExportImage</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>41772e28-80c4-427d-9543-a1609d97a56c</GUID>
+    <PARENTCODE>6fd02f4e-52bc-44d4-a7f1-95a12dca7eab</PARENTCODE>
+    <CAPTION>导出到MDB</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.Tools.CmdExportMDB</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>30f6a275-adc1-46ed-97d3-c7fd1c0987f4</GUID>
+    <PARENTCODE>6fd02f4e-52bc-44d4-a7f1-95a12dca7eab</PARENTCODE>
+    <CAPTION>导出到gdb</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.Tools.CmdExportGdb</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <SORT>2</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>5d0d4c74-24e8-435d-a4a5-e8fa01b01d84</GUID>
+    <PARENTCODE>6fd02f4e-52bc-44d4-a7f1-95a12dca7eab</PARENTCODE>
+    <CAPTION>导出CAD文件</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.Tools.VectorClip2CADCommand</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <SORT>3</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>0e82e102-08b1-4321-b9b7-46eb7551da86</GUID>
+    <PARENTCODE>6fd02f4e-52bc-44d4-a7f1-95a12dca7eab</PARENTCODE>
+    <CAPTION>导出到Shp</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.Tools.CmdExportShp</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <SORT>4</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>3a95e0a9-cac3-4f20-bfc6-db1f39a606a9</GUID>
+    <PARENTCODE>menu</PARENTCODE>
+    <CAPTION>辅助工具</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPage</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>7</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>502b8c80-fe62-4243-85ab-bba13752c5de</GUID>
+    <PARENTCODE>3a95e0a9-cac3-4f20-bfc6-db1f39a606a9</PARENTCODE>
+    <CAPTION>量算</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>893de9b9-3d02-40c8-99cf-ab39d8ff1b0e</GUID>
+    <PARENTCODE>502b8c80-fe62-4243-85ab-bba13752c5de</PARENTCODE>
+    <CAPTION>距离量算</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.CommonTools.MeasureLength</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>0699b62a-34fc-465c-8923-dbfc2dd5b0a5</GUID>
+    <PARENTCODE>502b8c80-fe62-4243-85ab-bba13752c5de</PARENTCODE>
+    <CAPTION>面积量算</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.CommonTools.MeasureArea</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>283a6b2d-7f4f-427b-949d-2d3321e8ae98</GUID>
+    <PARENTCODE>502b8c80-fe62-4243-85ab-bba13752c5de</PARENTCODE>
+    <CAPTION>长度量算</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.SpatialAnalyze.CCalaLength</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>2</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>1d1864d0-6560-4657-bc6f-efa87fe2051f</GUID>
+    <PARENTCODE>3a95e0a9-cac3-4f20-bfc6-db1f39a606a9</PARENTCODE>
+    <CAPTION>其他</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>11014ae6-07e1-4f85-b96d-01bb8c4c2e97</GUID>
+    <PARENTCODE>1d1864d0-6560-4657-bc6f-efa87fe2051f</PARENTCODE>
+    <CAPTION>符号管理器</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.Style.StyleManager</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>8c2fae16-29c2-4358-ab51-38912251cdfe</GUID>
+    <PARENTCODE>menu</PARENTCODE>
+    <CAPTION>档案管理</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPage</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <SORT>8</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>0deef281-7a3f-4822-9535-db9013fa571f</GUID>
+    <PARENTCODE>8c2fae16-29c2-4358-ab51-38912251cdfe</PARENTCODE>
+    <CAPTION>工程档案</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>414a3cc8-e58f-4dc6-8f54-144285cf1ac1</GUID>
+    <PARENTCODE>0deef281-7a3f-4822-9535-db9013fa571f</PARENTCODE>
+    <CAPTION>工程档案管理</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.ProjectFile.CmdFileManager</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>bccc7d02-dad6-4283-b703-5592f147f6a6</GUID>
+    <PARENTCODE>menu</PARENTCODE>
+    <CAPTION>系统设置</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPage</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>9</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>d8ee775c-0ef2-4193-87ca-abbc8f8a82b2</GUID>
+    <PARENTCODE>bccc7d02-dad6-4283-b703-5592f147f6a6</PARENTCODE>
+    <CAPTION>管线设置</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>10981ae1-34c1-4046-ab60-4d73f0091328</GUID>
+    <PARENTCODE>d8ee775c-0ef2-4193-87ca-abbc8f8a82b2</PARENTCODE>
+    <CAPTION>字段配置</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.DataManageAndUpdate.ToolFieldManage</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>de4afe3c-fae5-4972-ab07-1ed75c19d0aa</GUID>
+    <PARENTCODE>bccc7d02-dad6-4283-b703-5592f147f6a6</PARENTCODE>
+    <CAPTION>单位管理</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>5c299c41-7cb4-45e9-add1-eb3e2c553b94</GUID>
+    <PARENTCODE>de4afe3c-fae5-4972-ab07-1ed75c19d0aa</PARENTCODE>
+    <CAPTION>权属单位管理</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.Tools.CmdBelongsManager</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>e58a479e-750a-4629-8107-13719c013eb4</GUID>
+    <PARENTCODE>de4afe3c-fae5-4972-ab07-1ed75c19d0aa</PARENTCODE>
+    <CAPTION>属性库内容更新</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.Tools.CmdOLEDbUpdata</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>b938ef5e-280d-4752-a8a4-4509e470463a</GUID>
+    <PARENTCODE>bccc7d02-dad6-4283-b703-5592f147f6a6</PARENTCODE>
+    <CAPTION>权限管理</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>2</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>fa847e32-0a86-42e1-8dad-dbf5fc993801</GUID>
+    <PARENTCODE>b938ef5e-280d-4752-a8a4-4509e470463a</PARENTCODE>
+    <CAPTION>用户管理</CAPTION>
+    <DLLFILE>AG.COM.SDM.Config.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Config.Manager.UserManageCommand</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>62bd7380-5e74-40d2-9384-ade516b8dbfc</GUID>
+    <PARENTCODE>bccc7d02-dad6-4283-b703-5592f147f6a6</PARENTCODE>
+    <CAPTION>其他</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>3</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>5c45efe1-e8bd-430e-b89c-8839dd1c86e7</GUID>
+    <PARENTCODE>62bd7380-5e74-40d2-9384-ade516b8dbfc</PARENTCODE>
+    <CAPTION>日志查看</CAPTION>
+    <DLLFILE>AG.COM.SDM.Config.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Config.Manager.LogManageCommand</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>602a1747-d9b2-48b9-92ae-83981fd956ae</GUID>
+    <PARENTCODE>62bd7380-5e74-40d2-9384-ade516b8dbfc</PARENTCODE>
+    <CAPTION>系统设置</CAPTION>
+    <DLLFILE>AG.COM.SDM.Config.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Config.Options.OptionsCommand</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>ee6fe98b-2e96-44e6-93ab-10181c66cef8</GUID>
+    <PARENTCODE>62bd7380-5e74-40d2-9384-ade516b8dbfc</PARENTCODE>
+    <CAPTION>捕捉设置</CAPTION>
+    <DLLFILE>AG.COM.SDM.Config.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Config.SnapConfigCommand</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>2</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>6d04bf3d-ddd8-49e3-a4fb-f17fa61c0f4a</GUID>
+    <PARENTCODE>62bd7380-5e74-40d2-9384-ade516b8dbfc</PARENTCODE>
+    <CAPTION>个人信息</CAPTION>
+    <DLLFILE>AG.COM.SDM.Config.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Config.Manager.LoginUserCommand</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>3</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>24ed65c7-c668-4972-82fb-24a7c1a549b5</GUID>
+    <PARENTCODE>menu</PARENTCODE>
+    <CAPTION>窗口</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPage</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>10</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>0c2b923f-dcca-4931-9a80-b8209bfa44d7</GUID>
+    <PARENTCODE>24ed65c7-c668-4972-82fb-24a7c1a549b5</PARENTCODE>
+    <CAPTION>窗口</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>97c4da09-2148-4e7e-a204-f7fc511a26a5</GUID>
+    <PARENTCODE>0c2b923f-dcca-4931-9a80-b8209bfa44d7</PARENTCODE>
+    <CAPTION>鹰眼视图</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.WindView.EagleView</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>b9f0dfb8-c0a3-4328-a5e6-1e623a206257</GUID>
+    <PARENTCODE>0c2b923f-dcca-4931-9a80-b8209bfa44d7</PARENTCODE>
+    <CAPTION>数据视图</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.WindView.TocView</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>877cee20-6e07-45d5-aebe-8034f45fd02b</GUID>
+    <PARENTCODE>menu</PARENTCODE>
+    <CAPTION>帮助</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPage</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>11</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>35b59900-cc48-4dff-a37c-a17cb18d40c2</GUID>
+    <PARENTCODE>877cee20-6e07-45d5-aebe-8034f45fd02b</PARENTCODE>
+    <CAPTION>关于</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>RibbonPageGroup</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>900cf610-9e78-4463-920e-0a4f334ad4e1</GUID>
+    <PARENTCODE>35b59900-cc48-4dff-a37c-a17cb18d40c2</PARENTCODE>
+    <CAPTION>操作说明</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.WindView.HelpView</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>88a0129d-c2f6-48b0-b26a-2e0ba4460185</GUID>
+    <PARENTCODE>35b59900-cc48-4dff-a37c-a17cb18d40c2</PARENTCODE>
+    <CAPTION>关于</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.WindView.AboutBoxCommad</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>True</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>toolbar</GUID>
+    <PARENTCODE>0</PARENTCODE>
+    <CAPTION>工具条</CAPTION>
+    <DLLFILE />
+    <CLASSNAME />
+    <MENUTYPE>Toolbar</MENUTYPE>
+    <EXT1 />
+    <EXT2 />
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>61053db0-d05c-43c0-af2f-0794736d6c71</GUID>
+    <PARENTCODE>toolbar</PARENTCODE>
+    <CAPTION>管理查询</CAPTION>
+    <DLLFILE>AG.COM.SDM.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.COM.SDM.Plugins.QueryStat.SimpleQuery</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>0</SORT>
+  </AGSDM_UIMENU>
+  <AGSDM_UIMENU>
+    <ID>0</ID>
+    <CODE />
+    <GUID>01bb98b4-b23d-40c0-994a-696875b20b93</GUID>
+    <PARENTCODE>toolbar</PARENTCODE>
+    <CAPTION>快速定位</CAPTION>
+    <DLLFILE>AG.Pipe.Plugins.dll</DLLFILE>
+    <CLASSNAME>AG.Pipe.Plugins.LocatorCommand</CLASSNAME>
+    <MENUTYPE>Item</MENUTYPE>
+    <EXT1>False</EXT1>
+    <EXT2>False</EXT2>
+    <EXT3 />
+    <EXT4 />
+    <EXT5 />
+    <EXT6 />
+    <EXT7 />
+    <EXT8 />
+    <EXT9 />
+    <EXT10 />
+    <SORT>1</SORT>
+  </AGSDM_UIMENU>
+</ArrayOfAGSDM_UIMENU>

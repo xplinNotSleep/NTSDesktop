@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0C54F19F-0FE1-4606-A217-A221C2CD0104}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AG.COM.SDM.Config</RootNamespace>
+    <AssemblyName>AG.COM.SDM.Config</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/AG.COM.SDM.Config/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\Debug\Bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '全部生成|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\全部生成\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '全部生成|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Debug\Bin\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AG.COM.SDM.Database, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Bin\AG.COM.SDM.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="AG.COM.SDM.Framework, Version=10.8.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Bin\AG.COM.SDM.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="AG.COM.SDM.Model, Version=10.8.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Bin\AG.COM.SDM.Model.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AG.COM.SDM.ORM, Version=2.0.11.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Bin\AG.COM.SDM.ORM.dll</HintPath>
+    </Reference>
+    <Reference Include="AG.COM.SDM.SystemUI, Version=10.8.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Bin\AG.COM.SDM.SystemUI.dll</HintPath>
+    </Reference>
+    <Reference Include="AG.COM.SDM.Utility, Version=10.8.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Bin\AG.COM.SDM.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dll\DevExpress.Utils.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dll\DevExpress.XtraBars.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dll\DevExpress.XtraEditors.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dll\NHibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\Dll\stdole.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.9.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dll\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonParam\CommonConstString.cs" />
+    <Compile Include="CommonParam\CommonVariables.cs" />
+    <Compile Include="CommonVariablesKeys.Designer.cs">
+      <DependentUpon>CommonVariablesKeys.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CommonParam\SystemInfo.cs" />
+    <Compile Include="CommonParam\ConstVariantConfig.cs" />
+    <Compile Include="ConfigHelper\DevThemeHelper.cs" />
+    <Compile Include="DbConnectParam\MinioServerConfig.cs" />
+    <Compile Include="DbConnectParam\SpatialDBConfig.cs" />
+    <Compile Include="DbConnectParam\OleDBConfig.cs" />
+    <Compile Include="DbConnUI\FrmDbOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DbConnUI\FrmDbOptions.Designer.cs">
+      <DependentUpon>FrmDbOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDesigner\AGLoginBaseEntity.cs" />
+    <Compile Include="LoginDesigner\LoginDesignHelper.cs" />
+    <Compile Include="Manager\Coclass\AbstractFactory.cs" />
+    <Compile Include="Manager\Coclass\DBSystemConfigHelper.cs" />
+    <Compile Include="Manager\Coclass\EnumOperateState.cs" />
+    <Compile Include="Manager\Coclass\FrameDepartment.cs" />
+    <Compile Include="Manager\Coclass\FrameFactory.cs" />
+    <Compile Include="Manager\Coclass\FrameLogin.cs" />
+    <Compile Include="Manager\Coclass\FrameMenu.cs" />
+    <Compile Include="Manager\Coclass\FramePost.cs" />
+    <Compile Include="Manager\Coclass\FrameRole.cs" />
+    <Compile Include="Manager\Coclass\FrameUser.cs" />
+    <Compile Include="Manager\Coclass\IDepartment.cs" />
+    <Compile Include="Manager\Coclass\IMenu.cs" />
+    <Compile Include="Manager\Coclass\IPost.cs" />
+    <Compile Include="Manager\Coclass\IRole.cs" />
+    <Compile Include="Manager\Coclass\IUser.cs" />
+    <Compile Include="Manager\Coclass\MapDocInfo.cs" />
+    <Compile Include="Manager\UI\CtrDeptLayer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager\UI\CtrDeptLayer.Designer.cs">
+      <DependentUpon>CtrDeptLayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\UI\CtrDeptProject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager\UI\CtrDeptProject.Designer.cs">
+      <DependentUpon>CtrDeptProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\UI\CtrPosition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager\UI\CtrPosition.Designer.cs">
+      <DependentUpon>CtrPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\UI\CtrServiceInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager\UI\CtrServiceInfo.Designer.cs">
+      <DependentUpon>CtrServiceInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\UI\FormAdvancedQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\UI\FormAdvancedQuery.Designer.cs">
+      <DependentUpon>FormAdvancedQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\UI\FormDBSystemParaInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\UI\FormDBSystemParaInfo.designer.cs">
+      <DependentUpon>FormDBSystemParaInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\UI\FormDBSystemParaManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\UI\FormDBSystemParaManager.designer.cs">
+      <DependentUpon>FormDBSystemParaManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\UI\FormDeptLayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\UI\FormDeptLayer.Designer.cs">
+      <DependentUpon>FormDeptLayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\UI\FormDeptProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\UI\FormDeptProject.Designer.cs">
+      <DependentUpon>FormDeptProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\UI\FormDeptUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\UI\FormDeptUser.Designer.cs">
+      <DependentUpon>FormDeptUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\UI\FormLoginUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\UI\FormLoginUser.Designer.cs">
+      <DependentUpon>FormLoginUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\UI\FormPositionInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\UI\FormPositionInfo.Designer.cs">
+      <DependentUpon>FormPositionInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\UI\FormPositionManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\UI\FormPositionManage.Designer.cs">
+      <DependentUpon>FormPositionManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\UI\FormUIDesignPreview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager\UI\FormUIDesignPreview.designer.cs">
+      <DependentUpon>FormUIDesignPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\UI\FormUIDesignRoleConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\UI\FormUIDesignRoleConfig.designer.cs">
+      <DependentUpon>FormUIDesignRoleConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\UI\FormUserSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\UI\FormUserSelect.Designer.cs">
+      <DependentUpon>FormUserSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\UI\CtrPageUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager\UI\CtrPageUC.designer.cs">
+      <DependentUpon>CtrPageUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\UI\FormUIMenuRoleConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\UI\FormUIMenuRoleConfig.designer.cs">
+      <DependentUpon>FormUIMenuRoleConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuConfig\MenuConfigNode.cs" />
+    <Compile Include="MenuConfig\MenuLoadHelper.cs" />
+    <Compile Include="MenuConfig\RoleHelper.cs" />
+    <Compile Include="CommonParam\ProjectFeatureHelper.cs" />
+    <Compile Include="ORMConfig\ORMHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CommonVariablesKeys.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CommonVariablesKeys.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DbConnUI\FrmDbOptions.resx">
+      <DependentUpon>FrmDbOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\UI\FormDeptUser.resx">
+      <DependentUpon>FormDeptUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\UI\FormUIMenuRoleConfig.resx">
+      <DependentUpon>FormUIMenuRoleConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\UI\CtrDepartment.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CtrDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\UI\CtrRole.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CtrRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\UI\CtrUser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CtrUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\UI\FormDepartmentInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDepartmentInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\UI\FormPrivilegeManage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPrivilegeManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\UI\FormRoleInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormRoleInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\UI\FormUserInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Manager\Coclass\EnumPrivilegeType.cs" />
+    <Compile Include="Manager\UI\CtrDepartment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager\UI\CtrDepartment.Designer.cs">
+      <DependentUpon>CtrDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\UI\CtrRole.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager\UI\CtrRole.Designer.cs">
+      <DependentUpon>CtrRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\UI\CtrUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager\UI\CtrUser.Designer.cs">
+      <DependentUpon>CtrUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Coclass\DepartmentInfo.cs" />
+    <Compile Include="Manager\UI\FormDepartmentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\UI\FormDepartmentInfo.Designer.cs">
+      <DependentUpon>FormDepartmentInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\UI\FormPrivilegeManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\UI\FormPrivilegeManage.Designer.cs">
+      <DependentUpon>FormPrivilegeManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\UI\FormRoleInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\UI\FormRoleInfo.Designer.cs">
+      <DependentUpon>FormRoleInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\UI\FormUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\UI\FormUserInfo.Designer.cs">
+      <DependentUpon>FormUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Coclass\IPrivilegeOperate.cs" />
+    <Compile Include="Manager\Coclass\RoleInfo.cs" />
+    <Compile Include="Manager\Coclass\UserInfo.cs" />
+    <Compile Include="ConfigHelper\ResourceHelper.cs" />
+    <Compile Include="UIDesign\UIDesignHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Manager\UI\FormDBSystemParaInfo.resx">
+      <DependentUpon>FormDBSystemParaInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\UI\FormDBSystemParaManager.resx">
+      <DependentUpon>FormDBSystemParaManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\UI\CtrDeptLayer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CtrDeptLayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\UI\CtrDeptProject.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CtrDeptProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\UI\CtrPosition.resx">
+      <DependentUpon>CtrPosition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\UI\CtrServiceInfo.resx">
+      <DependentUpon>CtrServiceInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\UI\FormAdvancedQuery.resx">
+      <DependentUpon>FormAdvancedQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\UI\FormDeptLayer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDeptLayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\UI\FormDeptProject.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDeptProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\UI\FormLoginUser.resx">
+      <DependentUpon>FormLoginUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\UI\FormPositionInfo.resx">
+      <DependentUpon>FormPositionInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\UI\FormPositionManage.resx">
+      <DependentUpon>FormPositionManage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\UI\FormUIDesignPreview.resx">
+      <DependentUpon>FormUIDesignPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\UI\FormUIDesignRoleConfig.resx">
+      <DependentUpon>FormUIDesignRoleConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\UI\FormUserSelect.resx">
+      <DependentUpon>FormUserSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\UI\CtrPageUC.resx">
+      <DependentUpon>CtrPageUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Command\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

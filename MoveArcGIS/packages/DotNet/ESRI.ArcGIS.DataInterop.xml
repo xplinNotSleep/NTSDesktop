@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>ESRI.ArcGIS.DataInterop</name>
+  </assembly>
+  <members>
+    <member name="T:ESRI.ArcGIS.DataInterop.FMECursorHelper">
+      <summary>FMECursorHelper Class</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataInterop.FMECursorHelperClass">
+      <summary>FMECursorHelper Class</summary>
+    </member>
+  </members>
+</doc>

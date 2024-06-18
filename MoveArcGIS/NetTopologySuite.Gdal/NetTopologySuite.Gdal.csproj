@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DDD6BE91-22D5-4D6F-83C0-F04557718DBB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NetTopologySuite.Gdal</RootNamespace>
+    <AssemblyName>NetTopologySuite.Gdal</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="gdalconst_csharp, Version=3.8.5.0, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=MSIL">
+      <HintPath>..\packages\GDAL.3.8.5\lib\netstandard2.0\gdalconst_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="gdal_csharp, Version=3.8.5.0, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=MSIL">
+      <HintPath>..\packages\GDAL.3.8.5\lib\netstandard2.0\gdal_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ogr_csharp, Version=3.8.5.0, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=MSIL">
+      <HintPath>..\packages\GDAL.3.8.5\lib\netstandard2.0\ogr_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="osr_csharp, Version=3.8.5.0, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=MSIL">
+      <HintPath>..\packages\GDAL.3.8.5\lib\netstandard2.0\osr_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extension\DataSourceExtension.cs" />
+    <Compile Include="Extension\EncodingUtils.cs" />
+    <Compile Include="Extension\FeatureDefnExtension.cs" />
+    <Compile Include="Extension\FeatureExtension.cs" />
+    <Compile Include="Extension\FieldExtension.cs" />
+    <Compile Include="Extension\GeometryExtension.cs" />
+    <Compile Include="Extension\LayerExtension.cs" />
+    <Compile Include="GdalConfiguration.cs" />
+    <Compile Include="GdalLayerUtils.cs" />
+    <Compile Include="GdalSelf\FeatureLayer.cs" />
+    <Compile Include="GdalSelf\FieldAttribute.cs" />
+    <Compile Include="GdalSelf\GdalLoader.cs" />
+    <Compile Include="GdalSelf\GdalReader.cs" />
+    <Compile Include="GdalSelf\IFeatureLayer.cs" />
+    <Compile Include="GdalSelf\IReader.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NetTopologySuite.Features\NetTopologySuite.Features.csproj">
+      <Project>{144033fe-65e7-4250-a30c-9bd48b7b1fbe}</Project>
+      <Name>NetTopologySuite.Features</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetTopologySuite\NetTopologySuite.csproj">
+      <Project>{44a666f2-a8a5-4553-abd4-f87e09377441}</Project>
+      <Name>NetTopologySuite</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

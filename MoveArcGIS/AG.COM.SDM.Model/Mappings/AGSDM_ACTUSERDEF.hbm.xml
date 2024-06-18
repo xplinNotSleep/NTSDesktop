@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+  <class name="AG.COM.SDM.Model.AGSDM_ACTUSERDEF,AG.COM.SDM.Model" table="AM_ACTUSERDEF">
+
+<id name="ID" column="ID" type="Decimal" unsaved-value="0">
+<generator class="sequence">
+<param name="sequence">AGSDM_SEQ_ACTUSERDEF</param>
+</generator>
+</id>
+<property column="PROCESSDEFID" type="String" name="PROCESSDEFID"  />
+<property column="ACTIVITYDEFID" type="String" name="ACTIVITYDEFID"  />
+<property column="WFUSERID" type="Decimal" name="WFUSERID"  />
+<property column="WFUSERTYPE" type="int" name="WFUSERTYPE"  />
+
+
+  </class>
+</hibernate-mapping>
+

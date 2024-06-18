@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+	<class name="AG.COM.SDM.Model.AGSDM_LOGGER,AG.COM.SDM.Model" table="AM_LOGGER">
+
+    <id name="OBJECTID" column="OBJECTID" type="Decimal" unsaved-value="0">
+      <generator class="sequence">
+        <param name="sequence">AGSDM_SEQ_LOGGER</param>
+      </generator>
+    </id>
+    <property column="LOGUSER" type="String" name="LOGUSER" length="50" />
+    <property column="HOSTNAME" type="String" name="HOSTNAME" length="50" />
+    <property column="USERNAME" type="String" name="USERNAME" length="50" />
+    <property column="LOGTIME" type="DateTime" name="LOGTIME" />
+    <property column="LOGMSG" type="String" name="LOGMSG" length="2147483647" />
+    <property column="LOGTYPE" type="String" name="LOGTYPE" length="100" />
+    <property column="LOGLEVEL" type="String" name="LOGLEVEL" length="50" />
+    <property column="PRODUCTNAME" type="String" name="PRODUCTNAME" length="100" />		
+	</class>
+</hibernate-mapping>

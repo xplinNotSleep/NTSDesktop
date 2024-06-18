@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6ABB052C-8FDD-4629-940F-F5525A922F29}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AG.COM.SDM.Framework</RootNamespace>
+    <AssemblyName>AG.COM.SDM.Framework</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Debug\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '全部生成|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\全部生成\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '全部生成|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Debug\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AG.COM.SDM.SystemUI, Version=10.8.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Bin\AG.COM.SDM.SystemUI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dll\DevExpress.Utils.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dll\DevExpress.XtraBars.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dll\DevExpress.XtraEditors.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>..\Dll\stdole.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseCommandAdapter.cs" />
+    <Compile Include="DocumentView\Interfaces\IHelpDocumentView.cs" />
+    <Compile Include="DocumentView\Interfaces\IMainDocumentView.cs" />
+    <Compile Include="DocumentView\UI\DockDocumentServiceEx.cs" />
+    <Compile Include="DocumentView\UI\HelpDocument.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocumentView\UI\HelpDocument.designer.cs">
+      <DependentUpon>HelpDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentView\UI\MainDocument.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocumentView\UI\MainDocument.Designer.cs">
+      <DependentUpon>MainDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentView\UI\MainMessageFilter.cs" />
+    <Compile Include="DocumentView\UI\SubDocument.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocumentView\UI\SubDocument.Designer.cs">
+      <DependentUpon>SubDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentView\UI\TocDocument.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocumentView\UI\TocDocument.Designer.cs">
+      <DependentUpon>TocDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DockDocumentService.cs" />
+    <Compile Include="DocumentView\Interfaces\ITocDocumentView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventHandler.cs" />
+    <Compile Include="Framework.cs" />
+    <Compile Include="HookHelper.cs" />
+    <Compile Include="Interface\IFramework.cs" />
+    <Compile Include="Interface\IDockDocumentService.cs" />
+    <Compile Include="Interface\IPluginsService.cs" />
+    <Compile Include="Interface\IMenuService.cs" />
+    <Compile Include="MenuService.cs" />
+    <Compile Include="Interface\IToolBarService.cs" />
+    <Compile Include="Interface\IFrameworkEvents.cs" />
+    <Compile Include="Interface\IHookHelper.cs" />
+    <Compile Include="PluginsService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ToolBarService.cs" />
+    <Compile Include="UIDesignLoader\CoClass\UIDesignControl.cs" />
+    <Compile Include="UIDesignLoader\CoClass\BindFunHelper.cs" />
+    <Compile Include="Utility\CommonEnum.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Bitmaps\drag.cur" />
+    <EmbeddedResource Include="DocumentView\UI\HelpDocument.resx">
+      <DependentUpon>HelpDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentView\UI\MainDocument.resx">
+      <DependentUpon>MainDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentView\UI\SubDocument.resx">
+      <DependentUpon>SubDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentView\UI\TocDocument.resx">
+      <DependentUpon>TocDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="Bitmaps\eye2.ico" />
+    <Content Include="Bitmaps\eye1.ico" />
+    <Content Include="Bitmaps\line.bmp" />
+    <Content Include="Bitmaps\point.bmp" />
+    <Content Include="Bitmaps\polygon.bmp" />
+    <Content Include="Bitmaps\anno.ico" />
+    <Content Include="Bitmaps\layers.bmp" />
+    <Content Include="Bitmaps\map.bmp" />
+    <Content Include="Bitmaps\raster.bmp" />
+    <Content Include="Bitmaps\treeview.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ESRIImportCache="ESRI.ArcGIS.Carto|ESRI.ArcGIS.Display|ESRI.ArcGIS.esriSystem|ESRI.ArcGIS.Geodatabase|ESRI.ArcGIS.Geometry|ESRI.ArcGIS.SystemUI" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

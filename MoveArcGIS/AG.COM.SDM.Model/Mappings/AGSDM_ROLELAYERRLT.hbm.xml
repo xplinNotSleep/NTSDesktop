@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+  <class name="AG.COM.SDM.Model.AGSDM_ROLELAYERRLT,AG.COM.SDM.Model" table="AM_ROLELAYERRLT">
+
+    <id name="ID" column="ID" type="Decimal" unsaved-value="0">
+      <generator class="sequence">
+        <param name="sequence">AGSDM_SEQ_ROLELAYERRLT</param>
+      </generator>
+    </id>
+    <property column="ROLEID" type="Decimal" name="ROLEID" />
+    <property column="LAYERID" type="Decimal" name="LAYERID" />
+
+  </class>
+</hibernate-mapping>

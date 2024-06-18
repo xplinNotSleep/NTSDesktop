@@ -1,0 +1,14 @@
+D:\Code\CSharp\MoveArcGIS\NetTopologySuite.IO.Esri.Shapefile\obj\Debug\NetTopologySuite.IO.Esri.Shapefile.csproj.AssemblyReference.cache
+D:\Code\CSharp\MoveArcGIS\NetTopologySuite.IO.Esri.Shapefile\obj\Debug\NetTopologySuite.IO.Esri.Shapefile.csproj.CoreCompileInputs.cache
+D:\Code\CSharp\MoveArcGIS\Debug\Bin\NetTopologySuite.IO.Esri.Shapefile.dll
+D:\Code\CSharp\MoveArcGIS\Debug\Bin\NetTopologySuite.IO.Esri.Shapefile.pdb
+D:\Code\CSharp\MoveArcGIS\NetTopologySuite.IO.Esri.Shapefile\obj\Debug\NetTopol.4F91A846.Up2Date
+D:\Code\CSharp\MoveArcGIS\NetTopologySuite.IO.Esri.Shapefile\obj\Debug\NetTopologySuite.IO.Esri.Shapefile.dll
+D:\Code\CSharp\MoveArcGIS\NetTopologySuite.IO.Esri.Shapefile\obj\Debug\NetTopologySuite.IO.Esri.Shapefile.pdb
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite.IO.Esri.Shapefile\obj\Debug\NetTopologySuite.IO.Esri.Shapefile.csproj.AssemblyReference.cache
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite.IO.Esri.Shapefile\obj\Debug\NetTopologySuite.IO.Esri.Shapefile.csproj.CoreCompileInputs.cache
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite.IO.Esri.Shapefile\obj\Debug\NetTopologySuite.IO.Esri.Shapefile.dll
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite.IO.Esri.Shapefile\obj\Debug\NetTopologySuite.IO.Esri.Shapefile.pdb
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\Debug\Bin\NetTopologySuite.IO.Esri.Shapefile.dll
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\Debug\Bin\NetTopologySuite.IO.Esri.Shapefile.pdb
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\NetTopologySuite.IO.Esri.Shapefile\obj\Debug\NetTopol.4F91A846.Up2Date

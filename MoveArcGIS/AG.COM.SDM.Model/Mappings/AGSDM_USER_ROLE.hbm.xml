@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+	<class name="AG.COM.SDM.Model.AGSDM_USER_ROLE,AG.COM.SDM.Model" table="AM_USER_ROLE">
+
+		<id name="UR_ID" column="UR_ID" type="Decimal" unsaved-value="0">
+			<generator class="sequence">
+				<param name="sequence">AGSDM_SEQ_USER_ROLE</param>
+			</generator>
+		</id>
+		<property column="USER_ID" type="String" name="USER_ID" />
+		<property column="ROLE_ID" type="String" name="ROLE_ID" />
+		
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  default-lazy="false">
+	<class name="AG.COM.SDM.Model.AGSDM_USERPOSITIONRLT,AG.COM.SDM.Model" table="AM_USERPOSITIONRLT">
+
+		<id name="ID" column="ID" type="Decimal" unsaved-value="0">
+      <generator class="sequence">
+        <param name="sequence">AMSDM_SEQ_USERPOSITIONRLT</param>
+      </generator>
+		</id>
+		<property column="USER_ID" type="Decimal" name="USER_ID" />
+		<property column="POS_ID" type="Decimal" name="POS_ID" />
+		<property column="IS_MAIN" type="String" name="IS_MAIN" length="1" />
+		<property column="DEL_FLAG" type="String" name="DEL_FLAG" length="1" />
+		<property column="ASSIGN_TIME" type="DateTime" name="ASSIGN_TIME" />
+		<property column="ASSIGN_USER" type="String" name="ASSIGN_USER" length="20" />
+		
+	</class>
+</hibernate-mapping>
