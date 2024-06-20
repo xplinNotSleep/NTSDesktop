@@ -48,5 +48,5 @@ F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.DataOperate\obj\Debug\AG.COM.
 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.DataOperate\obj\Debug\AG.COM.SDM.DataOperate.csproj.GenerateResource.cache
 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\Debug\Bin\AG.COM.SDM.DataOperate.dll
 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\Debug\Bin\AG.COM.SDM.DataOperate.pdb
-F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.DataOperate\obj\Debug\AG.COM.S.5372B0C3.Up2Date
 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.DataOperate\obj\Debug\AG.COM.SDM.DataOperate.FrmShpImportToDb.resources
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.DataOperate\obj\Debug\AG.COM.SDM.DataOperate.csproj.CopyComplete

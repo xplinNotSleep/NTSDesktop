@@ -54,4 +54,4 @@ F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.OperateCommand\obj\Debug\AG.C
 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.OperateCommand\obj\Debug\AG.COM.SDM.OperateCommand.csproj.GenerateResource.cache
 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\Debug\Bin\AG.COM.SDM.OperateCommand.dll
 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\Debug\Bin\AG.COM.SDM.OperateCommand.pdb
-F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.OperateCommand\obj\Debug\AG.COM.S.FFE69072.Up2Date
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.OperateCommand\obj\Debug\AG.COM.SDM.OperateCommand.csproj.CopyComplete

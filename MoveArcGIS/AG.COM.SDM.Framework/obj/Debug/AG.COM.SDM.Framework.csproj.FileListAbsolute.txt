@@ -64,4 +64,4 @@ F:\techStu\CSharp\NTSDesktop\MoveArcGIS\Debug\Bin\AG.COM.SDM.Framework.dll
 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\Debug\Bin\AG.COM.SDM.Framework.pdb
 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.Framework\obj\Debug\AG.COM.SDM.Framework.DocumentView.UI.SubDocument.resources
 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.Framework\obj\Debug\AG.COM.SDM.Framework.csproj.AssemblyReference.cache
-F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.Framework\obj\Debug\AG.COM.S.BAD39F39.Up2Date
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.Framework\obj\Debug\AG.COM.SDM.Framework.csproj.CopyComplete

@@ -5,4 +5,4 @@ F:\techStu\CSharp\NTSDesktop\MoveArcGIS\Debug\Bin\AG.COM.SDM.Database.pdb
 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.Database\obj\Debug\AG.COM.SDM.Database.dll
 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.Database\obj\Debug\AG.COM.SDM.Database.pdb
 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.Database\obj\Debug\AG.COM.SDM.Database.csproj.AssemblyReference.cache
-F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.Database\obj\Debug\AG.COM.S.485DBA55.Up2Date
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.Database\obj\Debug\AG.COM.SDM.Database.csproj.CopyComplete

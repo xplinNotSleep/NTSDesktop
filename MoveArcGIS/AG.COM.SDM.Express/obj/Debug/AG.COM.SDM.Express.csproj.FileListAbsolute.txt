@@ -89,4 +89,4 @@ F:\techStu\CSharp\NTSDesktop\MoveArcGIS\Debug\Bin\AG-Main.exe.config
 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\Debug\Bin\AG.COM.SDM.Express.XML
 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\Debug\Bin\AG-Main.exe
 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\Debug\Bin\AG-Main.pdb
-F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.Express\obj\Debug\AG.COM.S.F3C8FAF3.Up2Date
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.Express\obj\Debug\AG.COM.SDM.Express.csproj.CopyComplete

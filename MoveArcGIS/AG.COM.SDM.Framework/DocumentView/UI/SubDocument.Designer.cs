@@ -29,10 +29,13 @@
         private void InitializeComponent()
         {
             this.SubgroupBox = new System.Windows.Forms.GroupBox();
+            this.subTextBox = new System.Windows.Forms.TextBox();
+            this.SubgroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // SubgroupBox
             // 
+            this.SubgroupBox.Controls.Add(this.subTextBox);
             this.SubgroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SubgroupBox.Location = new System.Drawing.Point(0, 0);
             this.SubgroupBox.Name = "SubgroupBox";
@@ -41,6 +44,15 @@
             this.SubgroupBox.TabStop = false;
             this.SubgroupBox.Text = "辅助模块";
             // 
+            // subTextBox
+            // 
+            this.subTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.subTextBox.Location = new System.Drawing.Point(3, 21);
+            this.subTextBox.Multiline = true;
+            this.subTextBox.Name = "subTextBox";
+            this.subTextBox.Size = new System.Drawing.Size(320, 259);
+            this.subTextBox.TabIndex = 0;
+            // 
             // SubDocument
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -48,6 +60,8 @@
             this.Controls.Add(this.SubgroupBox);
             this.Name = "SubDocument";
             this.Size = new System.Drawing.Size(326, 283);
+            this.SubgroupBox.ResumeLayout(false);
+            this.SubgroupBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -55,5 +69,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox SubgroupBox;
+        private System.Windows.Forms.TextBox subTextBox;
     }
 }

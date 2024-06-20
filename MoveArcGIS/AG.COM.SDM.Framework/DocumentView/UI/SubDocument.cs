@@ -13,12 +13,23 @@ namespace AG.COM.SDM.Framework.DocumentView.UI
 {
     public partial class SubDocument : DockDocument, IDocumentView
     {
-
         private IFramework m_Framework;
         public SubDocument(IFramework p_Framework)
         {
             InitializeComponent();
             m_Framework = p_Framework;
+        }
+
+        public string SubDocText
+        {
+            get
+            {
+                return this.subTextBox.Text;
+            }
+            set
+            {
+                this.subTextBox.Text = value;
+            }
         }
 
         #region IDocumentView 成员

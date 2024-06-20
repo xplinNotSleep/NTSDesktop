@@ -27,3 +27,4 @@ F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.SystemUI\obj\Debug\AG.COM.SDM
 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.SystemUI\obj\Debug\AG.COM.SDM.SystemUI.FrmTrackProgress.resources
 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.SystemUI\obj\Debug\AG.COM.SDM.SystemUI.FrmTrackNoPause.resources
 F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.SystemUI\obj\Debug\AG.COM.SDM.SystemUI.csproj.AssemblyReference.cache
+F:\techStu\CSharp\NTSDesktop\MoveArcGIS\AG.COM.SDM.SystemUI\obj\Debug\AG.COM.SDM.SystemUI.FrmDataOperateProgress.resources

@@ -48,7 +48,7 @@ namespace AG.COM.SDM.DataOperate
         {
             //先创建一个数据表并添加可以自增的id字段
             bool IsCreateTable = adoDb.CreateTable(layerName, idField);
-            if(!IsCreateTable)
+            if (!IsCreateTable)
             {
                 return false;
             }
@@ -60,7 +60,7 @@ namespace AG.COM.SDM.DataOperate
             }
             //添加其他字段
             bool addOtherFields = AddFields(adoDb, layerName, FieldInfos);
-            if(!addOtherFields)
+            if (!addOtherFields)
             {
                 return false;
             }
@@ -74,11 +74,11 @@ namespace AG.COM.SDM.DataOperate
         /// <param name="layerName"></param>
         /// <param name="dicFieldInfos"></param>
         /// <returns></returns>
-        public static bool AddFields(AdoDatabase adoDb, string layerName, 
+        public static bool AddFields(AdoDatabase adoDb, string layerName,
             DbfField[] FieldInfos)
         {
             int count = 0;
-            foreach(DbfField dbfField in FieldInfos)
+            foreach (DbfField dbfField in FieldInfos)
             {
                 string fieldName = dbfField.Name;
                 //string fieldType = ConvertToType(dbfField.FieldType);
@@ -98,13 +98,13 @@ namespace AG.COM.SDM.DataOperate
             switch (dbfType)
             {
                 case DbfType.Character:
-                    fieldType = "varchar"+$"({dbfField.Length})";
+                    fieldType = "varchar" + $"({dbfField.Length})";
                     break;
                 case DbfType.Date:
                     fieldType = "date";
                     break;
                 case DbfType.Numeric:
-                    fieldType = "numeric"+ $"({dbfField.Length})";
+                    fieldType = "numeric" + $"({dbfField.Length})";
                     //fieldType = "numeric" + $"({dbfField.Length},{dbfField.NumericScale})";
                     break;
                 case DbfType.Float:
@@ -122,6 +122,77 @@ namespace AG.COM.SDM.DataOperate
             }
             return fieldType;
 
+        }
+
+        /// <summary>
+        /// 将源数据中的属性信息和几何坐标插入目标数据表中
+        /// </summary>
+        /// <param name="geoType"></param>
+        /// <param name="adoDb"></param>
+        /// <param name="LayerName"></param>
+        /// <param name="dicFieldInfos"></param>
+        /// <param name="fieldGeo"></param>
+        /// <param name="geometry"></param>
+        /// <param name="SRID"></param>
+        /// <returns></returns>
+        public static void InsertInTable(GeoType geoType, AdoDatabase adoDb, string LayerName,
+            Dictionary<DbfField, object> dicFieldInfos,
+            string fieldGeo, Geometry geometry, int SRID)
+        {
+            string strGeoInsert = GetGeoQuery(geoType, geometry, SRID);
+            if (strGeoInsert == "")
+            {
+                AutoCloseMsgBox.Show($"暂不支持导入{geoType}格式的数据!", "警告", 1000);
+                return;
+            }
+
+            string columnsStr = $"{fieldGeo}";
+            string columnsParams = $"{strGeoInsert}";
+            foreach (DbfField dbfField in dicFieldInfos.Keys)
+            {
+                string pickFieldName = dbfField.Name;
+                columnsStr += $",{pickFieldName}";
+                if (dicFieldInfos[dbfField] == null)
+                {
+                    if (dbfField.FieldType == DbfType.Character)
+                    {
+                        columnsParams += $",''";
+                    }
+                    else
+                    {
+                        columnsParams += $",null";
+                    }
+
+                }
+                string fieldValue = dicFieldInfos[dbfField].ToString();
+                //如果对应字段的属性值不为空，则sql里面添加要插入的字段值
+                if (!string.IsNullOrEmpty(fieldValue))
+                {
+                    if (dbfField.FieldType == DbfType.Date)
+                    {
+                        columnsParams += $",to_date('{fieldValue}','YYYY-MM-DD')";
+                    }
+                    else
+                    {
+                        columnsParams += $",'{fieldValue}'";
+                    }
+                }
+                else
+                {
+                    if (dbfField.FieldType == DbfType.Character)
+                    {
+                        columnsParams += $",''";
+                    }
+                    else
+                    {
+                        columnsParams += $",null";
+                    }
+                }
+            }
+            string sqlInsert = $"insert into {LayerName} ({columnsStr}) values ({columnsParams})";
+            bool IsInsert = adoDb.Execute(sqlInsert);
+
+            return;
         }
 
         /// <summary>
@@ -156,7 +227,7 @@ namespace AG.COM.SDM.DataOperate
                     columnsStr += $",{pickFieldName}";
                     if (dicFieldInfos[dbfField] == null)
                     {
-                        if(dbfField.FieldType == DbfType.Character)
+                        if (dbfField.FieldType == DbfType.Character)
                         {
                             columnsParams += $",''";
                         }
@@ -164,7 +235,7 @@ namespace AG.COM.SDM.DataOperate
                         {
                             columnsParams += $",null";
                         }
-                        
+
                     }
                     string fieldValue = dicFieldInfos[dbfField].ToString();
                     //如果对应字段的属性值不为空，则sql里面添加要插入的字段值
@@ -203,7 +274,6 @@ namespace AG.COM.SDM.DataOperate
             }
         }
 
-        
         /// <summary>
         /// 根据源数据中获取出的几何初始化几何插入sql段
         /// </summary>

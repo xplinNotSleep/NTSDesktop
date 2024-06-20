@@ -64,8 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Operate\Common\GeoType.cs" />
-    <Compile Include="Operate\SpatialDbOperate\ShpToDbHelperBackup.cs" />
-    <Compile Include="Operate\SpatialDbOperate\SpatialDbHelperBackup.cs" />
+    <Compile Include="Operate\SpatialDbOperate\ShpToDbAsyncHelper.cs" />
     <Compile Include="Operate\SpatialDbOperate\SpatialDbHelper.cs" />
     <Compile Include="Operate\SpatialDbOperate\ShpToDbHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

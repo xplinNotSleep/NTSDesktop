@@ -1,7 +1,7 @@
 ﻿
 namespace AG.COM.SDM.DataOperate
 {
-    partial class FrmShpImportToDb
+    partial class FrmShpImportToDbAsync
     {
         /// <summary> 
         /// 必需的设计器变量。
@@ -32,10 +32,9 @@ namespace AG.COM.SDM.DataOperate
             this.txtSource = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnDbSet = new System.Windows.Forms.Button();
-            this.btnImportThread = new System.Windows.Forms.Button();
+            this.btnImport = new System.Windows.Forms.Button();
             this.btnSource = new System.Windows.Forms.Button();
             this.IsCheckOverload = new System.Windows.Forms.CheckBox();
-            this.btnImport = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtSource
@@ -64,16 +63,15 @@ namespace AG.COM.SDM.DataOperate
             this.btnDbSet.UseVisualStyleBackColor = true;
             this.btnDbSet.Click += new System.EventHandler(this.btnDbSet_Click);
             // 
-            // btnImportThread
+            // btnImport
             // 
-            this.btnImportThread.Enabled = false;
-            this.btnImportThread.Location = new System.Drawing.Point(629, 186);
-            this.btnImportThread.Name = "btnImportThread";
-            this.btnImportThread.Size = new System.Drawing.Size(127, 45);
-            this.btnImportThread.TabIndex = 4;
-            this.btnImportThread.Text = "确认导入多线程";
-            this.btnImportThread.UseVisualStyleBackColor = true;
-            this.btnImportThread.Click += new System.EventHandler(this.btnImportThread_Click);
+            this.btnImport.Location = new System.Drawing.Point(648, 186);
+            this.btnImport.Name = "btnImport";
+            this.btnImport.Size = new System.Drawing.Size(108, 45);
+            this.btnImport.TabIndex = 4;
+            this.btnImport.Text = "确认导入";
+            this.btnImport.UseVisualStyleBackColor = true;
+            this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
             // 
             // btnSource
             // 
@@ -95,24 +93,13 @@ namespace AG.COM.SDM.DataOperate
             this.IsCheckOverload.Text = "是否覆盖数据库中同名数据";
             this.IsCheckOverload.UseVisualStyleBackColor = true;
             // 
-            // btnImport
-            // 
-            this.btnImport.Location = new System.Drawing.Point(370, 186);
-            this.btnImport.Name = "btnImport";
-            this.btnImport.Size = new System.Drawing.Size(108, 45);
-            this.btnImport.TabIndex = 10;
-            this.btnImport.Text = "确认导入";
-            this.btnImport.UseVisualStyleBackColor = true;
-            this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
-            // 
             // FrmShpImportToDb
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnImport);
             this.Controls.Add(this.IsCheckOverload);
             this.Controls.Add(this.btnSource);
-            this.Controls.Add(this.btnImportThread);
+            this.Controls.Add(this.btnImport);
             this.Controls.Add(this.btnDbSet);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSource);
@@ -129,9 +116,8 @@ namespace AG.COM.SDM.DataOperate
         private System.Windows.Forms.TextBox txtSource;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnDbSet;
-        private System.Windows.Forms.Button btnImportThread;
+        private System.Windows.Forms.Button btnImport;
         private System.Windows.Forms.Button btnSource;
         private System.Windows.Forms.CheckBox IsCheckOverload;
-        private System.Windows.Forms.Button btnImport;
     }
 }

@@ -23,7 +23,7 @@ namespace AG.COM.SDM.DataOperate
     /// <summary>
     /// 矢量数据入库帮助类
     /// </summary>
-    public static class ShpToDbHelper
+    public static class ShpToDbAsyncHelper
     {
         /// <summary>
         /// 创建shp图层
@@ -74,9 +74,9 @@ namespace AG.COM.SDM.DataOperate
                 InsertFeature(feature, sourceShpUtil, dbfFields,
                     geoType, adoDb, shpName, SRID, progressValue,
                     features.Length, frmTrack);
-
+                
             }
-
+            
         }
 
         /// <summary>
@@ -88,14 +88,16 @@ namespace AG.COM.SDM.DataOperate
         /// <param name="IsOverload"></param>
         /// <param name="SRID"></param>
         /// <returns></returns>
-        public static bool IsCreateLayer(string shpFile, string shpName,
-            AdoDatabase adoDb, bool IsOverload, int SRID, FrmDataOperateProgress frmTrack)
+        public static async Task<bool> IsCreateLayer(string shpFile, string shpName,
+            AdoDatabase adoDb, bool IsOverload, int SRID, FrmTrackNoPause frmTrack)
         {
             //进程被终止
             if (frmTrack.IsBreak)
             {
                 return false;
             }
+            frmTrack.TotalMsg = $"导入数据{shpName}";
+            Application.DoEvents();
             //先查询数据库中是否存在指定名称的数据表
             bool IsExistLayer = SpatialDbHelper.ExistTable(adoDb, shpName);
             if (IsExistLayer)
@@ -117,15 +119,13 @@ namespace AG.COM.SDM.DataOperate
             int succount = 0;
             int progressValue = 0;
             Feature[] features = sourceShpUtil.ReadAllFeatures(shpFile);
-            frmTrack.SubMaxValue = features.Length;
-            frmTrack.SubProValue = 0;
-            Application.DoEvents();
             //遍历每个获取的要素
             foreach (Feature feature in features)
             {
                 if (frmTrack.IsBreak) break;
+
+                await Task.Delay(100);
                 progressValue++;
-                
                 #region 是否成功将矢量图层中每个要素插入到数据库中
                 bool IsInsert = IsInsertFeature(feature, sourceShpUtil, dbfFields,
                     geoType, adoDb, shpName, SRID, progressValue,
@@ -134,10 +134,13 @@ namespace AG.COM.SDM.DataOperate
                 {
                     succount++;
                 }
-                //进程被终止
-                if (frmTrack.IsBreak)
+                else
                 {
-                    break;
+                    //进程被终止
+                    if (frmTrack.IsBreak)
+                    {
+                        break;
+                    }
                 }
                 #endregion
             }
@@ -197,15 +200,15 @@ namespace AG.COM.SDM.DataOperate
         /// <returns></returns>
         public static bool IsInsertFeature(Feature feature, ShapefileUtils sourceShpUtil,
            DbfField[] dbfFields, GeoType geoType, AdoDatabase adoDb, string layerName,
-           int SRID, int progressValue, int featureCount, FrmDataOperateProgress frmTrack)
+           int SRID, int progressValue, int featureCount, FrmTrackNoPause frmTrack)
         {
             //如果被点击终止，则不再执行下述操作
-            if (frmTrack.IsBreak)
+            if(frmTrack.IsBreak)
             {
                 return false;
             }
-            frmTrack.SubMsg = $"正在导入要素{progressValue}/{featureCount}";
-            frmTrack.SubProValue++;
+            frmTrack.ProValue++;
+            frmTrack.SubMsg = "进度:" + progressValue + "/" + featureCount;
             Application.DoEvents();
 
             //获取该要素的几何信息

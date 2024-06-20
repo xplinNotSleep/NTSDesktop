@@ -49,7 +49,7 @@ namespace AG.COM.SDM.OperateCommand
         {
             try
             {
-                FrmShpImportToDb frmShpToDb = new FrmShpImportToDb();
+                FrmShpImportToDb frmShpToDb = new FrmShpImportToDb(m_hookHelper);
                 IDockDocumentService tDockDocumentService = m_hookHelper.DockDocumentService;
                 if (!tDockDocumentService.ContainsDocument(frmShpToDb.TabText))
                 {
